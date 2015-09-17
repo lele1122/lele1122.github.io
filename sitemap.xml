@@ -5,55 +5,55 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2015-09-17T17:14:34-00:00</lastmod>
+<lastmod>2015-09-17T21:09:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2015-09-17T17:14:34-00:00</lastmod>
+<lastmod>2015-09-17T21:09:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2015-09-17T17:14:34-00:00</lastmod>
+<lastmod>2015-09-17T21:09:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2015-09-17T17:14:34-00:00</lastmod>
+<lastmod>2015-09-17T21:09:06-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/pages/Me.html</loc>
+<loc>/Me.html</loc>
 <lastmod>2015-09-13T16:20:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/Blog.html</loc>
+<loc>/coding/Blog.html</loc>
 <lastmod>2015-09-13T21:07:00+08:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
 </url>
 
 <url>
-<loc>/Blog-Themes.html</loc>
+<loc>/coding/Blog-Themes.html</loc>
 <lastmod>2015-09-13T21:07:00+08:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
 </url>
 
 <url>
-<loc>/category/coding.html</loc>
+<loc>/coding/index.html</loc>
 <lastmod>2015-09-13T21:07:00+06:55</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
