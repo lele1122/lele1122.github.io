@@ -4,56 +4,56 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>/</loc>
-<lastmod>2015-09-18T16:00:47-00:00</lastmod>
+<loc>http://lele1122.github.io/</loc>
+<lastmod>2015-09-18T16:28:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/archives.html</loc>
-<lastmod>2015-09-18T16:00:47-00:00</lastmod>
+<loc>http://lele1122.github.io/archives.html</loc>
+<lastmod>2015-09-18T16:28:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tags.html</loc>
-<lastmod>2015-09-18T16:00:47-00:00</lastmod>
+<loc>http://lele1122.github.io/tags.html</loc>
+<lastmod>2015-09-18T16:28:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/categories.html</loc>
-<lastmod>2015-09-18T16:00:47-00:00</lastmod>
+<loc>http://lele1122.github.io/categories.html</loc>
+<lastmod>2015-09-18T16:28:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/pages/Me.html</loc>
+<loc>http://lele1122.github.io/pages/Me.html</loc>
 <lastmod>2015-09-13T16:20:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
-<priority>0.5</priority>
+<priority>0.3</priority>
 </url>
 
 <url>
-<loc>/articles/coding/Blog.html</loc>
+<loc>http://lele1122.github.io/articles/coding/Blog.html</loc>
 <lastmod>2015-09-13T21:07:00+08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>/articles/coding/Blog-Themes.html</loc>
+<loc>http://lele1122.github.io/articles/coding/Blog-Themes.html</loc>
 <lastmod>2015-09-13T21:07:00+08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>/articles/coding/Blog-xxx.html</loc>
+<loc>http://lele1122.github.io/articles/coding/Blog-xxx.html</loc>
 <lastmod>2015-09-13T21:07:00+08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.7</priority>
