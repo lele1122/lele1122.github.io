@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://lele1122.github.io/</loc>
-<lastmod>2015-09-18T16:28:22-00:00</lastmod>
+<lastmod>2015-09-18T17:19:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://lele1122.github.io/archives.html</loc>
-<lastmod>2015-09-18T16:28:22-00:00</lastmod>
+<lastmod>2015-09-18T17:19:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://lele1122.github.io/tags.html</loc>
-<lastmod>2015-09-18T16:28:22-00:00</lastmod>
+<lastmod>2015-09-18T17:19:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://lele1122.github.io/categories.html</loc>
-<lastmod>2015-09-18T16:28:22-00:00</lastmod>
+<lastmod>2015-09-18T17:19:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -39,21 +39,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://lele1122.github.io/articles/coding/Blog.html</loc>
-<lastmod>2015-09-13T21:07:00+08:00</lastmod>
+<loc>http://lele1122.github.io/articles/coding/markdown-tips.html</loc>
+<lastmod>2015-09-15T21:00:00+08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
 <loc>http://lele1122.github.io/articles/coding/Blog-Themes.html</loc>
-<lastmod>2015-09-13T21:07:00+08:00</lastmod>
+<lastmod>2015-09-14T10:00:00+08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>http://lele1122.github.io/articles/coding/Blog-xxx.html</loc>
+<loc>http://lele1122.github.io/articles/coding/Blog.html</loc>
 <lastmod>2015-09-13T21:07:00+08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.7</priority>
