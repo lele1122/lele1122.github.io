@@ -5,21 +5,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2015-09-18T01:32:36-00:00</lastmod>
+<lastmod>2015-09-18T15:12:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2015-09-18T01:32:36-00:00</lastmod>
+<lastmod>2015-09-18T15:12:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2015-09-18T01:32:36-00:00</lastmod>
+<lastmod>2015-09-18T15:12:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -54,35 +54,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/coding/index.html</loc>
-<lastmod>2015-09-13T21:07:00+06:55</lastmod>
+<lastmod>2015-09-13T21:07:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tag/markdown.html</loc>
-<lastmod>2015-09-13T21:07:00+06:55</lastmod>
+<lastmod>2015-09-13T21:07:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tag/pelican.html</loc>
-<lastmod>2015-09-13T21:07:00+06:55</lastmod>
+<lastmod>2015-09-13T21:07:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tag/github.html</loc>
-<lastmod>2015-09-13T21:07:00+06:55</lastmod>
+<lastmod>2015-09-13T21:07:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/author/joe.html</loc>
-<lastmod>2015-09-13T21:07:00+06:55</lastmod>
+<lastmod>2015-09-13T21:07:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

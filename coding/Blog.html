@@ -69,12 +69,12 @@
 <div class="row-fluid">
         <div class="span8 offset2 article-content">
 
-            <h2>Overview</h2>
+            <h2 id="overview">Overview</h2>
 <p>This is my first time to use GitHub and Pelican to creating a personal website (blog page). The whole progress was made on Mac OS X, although I tried on the Windows 7 first. It proved it would be much more convenient if you tried on Mac.</p>
-<h2>Preparation</h2>
+<h2 id="preparation">Preparation</h2>
 <p>If this is your first time to use terminal, it will be better to get some basic knowledge about it. <a href="http://www.google.com">Google</a> is always your good teachers and friends! Github should also be learnt if you do not want to be massed with the git codes.
 Here are some recommended websites:</p>
-<h3>Terminal</h3>
+<h3 id="terminal">Terminal</h3>
 <ul>
 <li><a href="http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line">Introduction to the Mac OS X Command Line</a></li>
 <li><a href="https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-)">Terminal Cheatsheet for Mac (basics)</a></li>
@@ -87,7 +87,7 @@ Here are some recommended websites:</p>
 <li><a href="https://git-scm.com/book/zh/v2">git-scm (zh-CN)</a></li>
 </ul>
 <p>You need to register a GitHub account before the Pelican Setup. A repository named <code>username.github.io</code> should also be created. To reduce trouble, README file is not recommended to be created for the beginner of GitHub. They will be used in Chapter <a href="#1">Pelican Setup</a>.</p>
-<h2>Configure local environment</h2>
+<h2 id="configure-local-environment">Configure local environment</h2>
 <p>You will also need to install some basic package before this tutorial. I presume most latest Mac OS X come with Python.It may require administrator password for <code>$ sudo</code>. </p>
 <ol>
 <li>
@@ -165,7 +165,7 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
 </pre></div>
 
 
-<h2>Writing articles</h2>
+<h2 id="writing-articles">Writing articles</h2>
 <p>The default folder for writing articles are set in the <code>/blog/content</code>, which can be configured in <code>pelicanconf.py</code> if you want.  In this tutorial, the article (<code>.md</code> file)is put in <code>content</code>.
 Pelican needs metadata like <code>Title</code>(must),  <code>Date</code> (optional) and other optional information for smart settings. For example:</p>
 <div class="highlight"><pre><span class="n">Title</span><span class="o">:</span> <span class="n">Introduction</span> <span class="n">to</span> <span class="n">Creating</span> <span class="n">GitHub</span> <span class="n">Pages</span> <span class="k">with</span> <span class="n">Pelican</span>
@@ -193,7 +193,7 @@ Pelican needs metadata like <code>Title</code>(must),  <code>Date</code> (option
 
 
 <p>No matter which method you choose, some <code>.html</code> file will be generated in folder <code>output</code>. To debug easily and for the future convenient, I recommend to new a folder under blog, e.g. <code>/blog/gitblog</code> and copy the files in <code>output</code>to this folder. Why? I will explain later.</p>
-<h2>Upload the pages</h2>
+<h2 id="upload-the-pages">Upload the pages</h2>
 <p>Since all the html files are prepared, we only need to upload them to our GitHub. These part should be done after you have a basic knowledge of <a href="#2">GitHub</a>. If you have already created README file in GitHub, you may need to add <code>$ git pull origin master</code> before <code>$ git add .</code>.</p>
 <div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>gitblog
 <span class="nv">$ </span>git init
@@ -206,7 +206,7 @@ Pelican needs metadata like <code>Title</code>(must),  <code>Date</code> (option
 
 <p>You may need to input GitHub username and passward if you do not use SSH key introduced in Chapter <a href="#2">GitHub</a>.
 If no error, you can visit you blog by username.github.io.</p>
-<h2>Modify and update pages</h2>
+<h2 id="modify-and-update-pages">Modify and update pages</h2>
 <p>The reason to create another folder instead using <code>output</code> to upload pages is that every time you use <code>$ make html</code>, <code>output</code> will be replaced with new files. Thus, it would be better to copy the files from <code>output</code> into <code>gitblog</code> before uploading.</p>
 <p>Here is some commands for delete and update files:</p>
 <div class="highlight"><pre><span class="nv">$ </span>git rm ×××.html
@@ -216,7 +216,7 @@ If no error, you can visit you blog by username.github.io.</p>
 </pre></div>
 
 
-<h2>Summary</h2>
+<h2 id="summary">Summary</h2>
 <p>This article is only the introduction of setting up a personal blog by using <a href="https://github.com/">GitHub</a> and <a href="http://docs.getpelican.com/en/3.6.3/">Pelican</a>. Since this is my first time to use it, some condition my not be covered. Please comment below if there is any error.</p>
             <aside>
             <hr/>
