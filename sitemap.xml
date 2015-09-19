@@ -5,44 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://lele1122.github.io/</loc>
-<<<<<<< HEAD
-<lastmod>2015-09-20T01:05:12-00:00</lastmod>
-=======
-<lastmod>2015-09-20T00:49:20-00:00</lastmod>
->>>>>>> 462f44dd0a422a1b48aa7a235bb25ddbe3c91cc9
+<lastmod>2015-09-20T01:10:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://lele1122.github.io/archives.html</loc>
-<<<<<<< HEAD
-<lastmod>2015-09-20T01:05:12-00:00</lastmod>
-=======
-<lastmod>2015-09-20T00:49:20-00:00</lastmod>
->>>>>>> 462f44dd0a422a1b48aa7a235bb25ddbe3c91cc9
+<lastmod>2015-09-20T01:10:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://lele1122.github.io/tags.html</loc>
-<<<<<<< HEAD
-<lastmod>2015-09-20T01:05:12-00:00</lastmod>
-=======
-<lastmod>2015-09-20T00:49:20-00:00</lastmod>
->>>>>>> 462f44dd0a422a1b48aa7a235bb25ddbe3c91cc9
+<lastmod>2015-09-20T01:10:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://lele1122.github.io/categories.html</loc>
-<<<<<<< HEAD
-<lastmod>2015-09-20T01:05:12-00:00</lastmod>
-=======
-<lastmod>2015-09-20T00:49:20-00:00</lastmod>
->>>>>>> 462f44dd0a422a1b48aa7a235bb25ddbe3c91cc9
+<lastmod>2015-09-20T01:10:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
