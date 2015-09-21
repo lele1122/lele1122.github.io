@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>+OK</title><link>http://lele1122.github.io/</link><description></description><atom:link href="http://lele1122.github.io/feeds/joe.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 21 Sep 2015 13:53:00 +0800</lastBuildDate><item><title>Markdown Tips</title><link>http://lele1122.github.io/markdown-tips.html</link><description>
-&lt;h1 id="_1"&gt;关于页面内跳转&lt;/h1&gt;
+&lt;h1 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;关于页面内跳转&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;定义一个锚(id)：&lt;code&gt;&amp;lt;span id="jump"&amp;gt;跳转到的地方&amp;lt;/span&amp;gt;&lt;/code&gt;&lt;br/&gt;
 使用markdown语法：&lt;code&gt;[点击跳转](#jump)&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id="_2"&gt;举例&lt;/h2&gt;
+&lt;h2 id="_2"&gt;&lt;a class="toclink" href="#_2"&gt;举例&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;跳到[底部](#end)
 ...
 ...
@@ -11,15 +11,15 @@
 &lt;span class="nt"&gt;&amp;lt;h3&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"end"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;底部&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;跳到&lt;a href="#end"&gt;底部&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="end"&gt;底部&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Tue, 15 Sep 2015 00:00:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-09-15:markdown-tips.html</guid><category>Pelican</category><category>Markdown</category></item><item><title>Blog Setting with Theme Elegant</title><link>http://lele1122.github.io/pelican-settings.html</link><description>
-&lt;h2 id="disqus"&gt;Disqus&lt;/h2&gt;
+&lt;h3 id="end"&gt;底部&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Tue, 15 Sep 2015 00:00:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-09-15:markdown-tips.html</guid><category>Pelican</category><category>Markdown</category></item><item><title>Introduction to Pelican (2)</title><link>http://lele1122.github.io/pelican-settings.html</link><description>
+&lt;h2 id="disqus"&gt;&lt;a class="toclink" href="#disqus"&gt;Disqus&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Comments feature can be added by &lt;a href="https://disqus.com/"&gt;Disqus&lt;/a&gt;. If you do not have it, just register an account and set by steps. Add the following command in &lt;code&gt;pelicanconf.py&lt;/code&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;    DISQUS_SITENAME = 'shortname'
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;At first I tried several times but the function did not work. The reason is that I ignored the &lt;code&gt;SITEURL&lt;/code&gt;. To enable the comments feature, even you do not have a domain, you need to add the github page url:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;    SITEURL = 'http://username.github.io'
 &lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id="theme"&gt;Theme&lt;/h2&gt;
+&lt;h2 id="theme"&gt;&lt;a class="toclink" href="#theme"&gt;Theme&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;If you want to use themes other than the default one, you need to download the themes you want first. There is one way:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;cd blog
 git clone https://github.com/getpelican/pelican-themes.git
@@ -29,14 +29,14 @@ cd pelican-themes
 &lt;p&gt;Then, you can choose the themes you have in the &lt;code&gt;pelican-themes&lt;/code&gt; folder. To change the theme, you need to configure in &lt;code&gt;pelicanconf.py&lt;/code&gt;.For example:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;THEME = '/Users/User/Blog/pelican-themes/elegant'
 &lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id="search"&gt;Search&lt;/h2&gt;
+&lt;h2 id="search"&gt;&lt;a class="toclink" href="#search"&gt;Search&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The theme elegent v1.3 should have included the following search engin plugin.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.tipue.com/search/"&gt;Tipue Search&lt;/a&gt;, an open source site search engine jQuery plugin available under the &lt;a href="http://opensource.org/licenses/mit-license.php"&gt;MIT License&lt;/a&gt;, is used in my theme.&lt;/p&gt;
 &lt;p&gt;BeautifulSoup is required to use this plugin:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install beautifulsoup4
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The latest &lt;a href="http://www.tipue.com/search/"&gt;Tipue Search&lt;/a&gt; is version 5.0. If you meet any problem with the search, please replace the default version with the newest version in &lt;a href="http://www.tipue.com/search/"&gt;Tipue Search&lt;/a&gt;. The format may change because of the replacement, so you may need to modify the &lt;code&gt;tipuesearch.css&lt;/code&gt; file or just use the default version. By the test, I found the main problem the all the results are &lt;code&gt;undefined&lt;/code&gt; may be caused by default &lt;code&gt;tipuesearch_set.js&lt;/code&gt; file in this theme.&lt;/p&gt;
-&lt;h2 id="plugins"&gt;Plugins&lt;/h2&gt;
+&lt;h2 id="plugins"&gt;&lt;a class="toclink" href="#plugins"&gt;Plugins&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Easiest way to install and use these plugins is cloning this repo:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;git clone --recursive https://github.com/getpelican/pelican-plugins
 &lt;/pre&gt;&lt;/div&gt;
@@ -45,14 +45,14 @@ cd pelican-themes
 PLUGINS = ['tipue_search']
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The detail of plugins can be read from on &lt;a href="https://github.com/getpelican/pelican-plugins"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="pages"&gt;Pages&lt;/h2&gt;
-&lt;p&gt;If you create a folder named &lt;code&gt;pages&lt;/code&gt;, all the files in this folder will be static pages. All the pages can be added to the menu By setting &lt;code&gt;DISPLAY_PAGES_ON_MENU&lt;/code&gt; in &lt;code&gt;pelicanconf.py&lt;/code&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Mon, 21 Sep 2015 13:53:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-09-14:pelican-settings.html</guid><category>GitHub</category><category>Pelican</category><category>Markdown</category></item><item><title>Introduction to Pelican</title><link>http://lele1122.github.io/pelican-intro.html</link><description>
-&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;h2 id="pages"&gt;&lt;a class="toclink" href="#pages"&gt;Pages&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;If you create a folder named &lt;code&gt;pages&lt;/code&gt;, all the files in this folder will be static pages. All the pages can be added to the menu By setting &lt;code&gt;DISPLAY_PAGES_ON_MENU&lt;/code&gt; in &lt;code&gt;pelicanconf.py&lt;/code&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Mon, 21 Sep 2015 13:53:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-09-14:pelican-settings.html</guid><category>GitHub</category><category>Pelican</category><category>Markdown</category></item><item><title>Introduction to Pelican (1)</title><link>http://lele1122.github.io/pelican-intro.html</link><description>
+&lt;h2 id="overview"&gt;&lt;a class="toclink" href="#overview"&gt;Overview&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;This is my first time to use GitHub and Pelican to creating a personal website (blog page). The whole progress was made on Mac OS X, although I tried on the Windows 7 first. It proved it would be much more convenient if you tried on Mac.&lt;/p&gt;
-&lt;h2 id="preparation"&gt;Preparation&lt;/h2&gt;
+&lt;h2 id="preparation"&gt;&lt;a class="toclink" href="#preparation"&gt;Preparation&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;If this is your first time to use terminal, it will be better to get some basic knowledge about it. &lt;a href="http://www.google.com"&gt;Google&lt;/a&gt; is always your good teachers and friends! Github should also be learnt if you do not want to be massed with the git codes.
 Here are some recommended websites:&lt;/p&gt;
-&lt;h3 id="terminal"&gt;Terminal&lt;/h3&gt;
+&lt;h3 id="terminal"&gt;&lt;a class="toclink" href="#terminal"&gt;Terminal&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line"&gt;Introduction to the Mac OS X Command Line&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-)"&gt;Terminal Cheatsheet for Mac (basics)&lt;/a&gt;&lt;/li&gt;
@@ -64,7 +64,7 @@ Here are some recommended websites:&lt;/p&gt;
 &lt;li&gt;&lt;a href="https://git-scm.com/book/zh/v2"&gt;git-scm (zh-CN)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You need to register a GitHub account before the Pelican Setup. A repository named &lt;code&gt;username.github.io&lt;/code&gt; should also be created. To reduce trouble, README file is not recommended to be created for the beginner of GitHub. They will be used in Chapter &lt;a href="#1"&gt;Pelican Setup&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="configure-local-environment"&gt;Configure local environment&lt;/h2&gt;
+&lt;h2 id="configure-local-environment"&gt;&lt;a class="toclink" href="#configure-local-environment"&gt;Configure local environment&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;You will also need to install some basic package before this tutorial. I presume most latest Mac OS X come with Python.It may require administrator password for &lt;code&gt;$ sudo&lt;/code&gt;. &lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -125,7 +125,7 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 ├── pelicanconf.py       
 └── publishconf.py
 &lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id="writing-articles"&gt;Writing articles&lt;/h2&gt;
+&lt;h2 id="writing-articles"&gt;&lt;a class="toclink" href="#writing-articles"&gt;Writing articles&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The default folder for writing articles are set in the &lt;code&gt;/blog/content&lt;/code&gt;, which can be configured in &lt;code&gt;pelicanconf.py&lt;/code&gt; if you want.  In this tutorial, the article (&lt;code&gt;.md&lt;/code&gt; file)is put in &lt;code&gt;content&lt;/code&gt;.
 Pelican needs metadata like &lt;code&gt;Title&lt;/code&gt;(must),  &lt;code&gt;Date&lt;/code&gt; (optional) and other optional information for smart settings. For example:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Introduction&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;Creating&lt;/span&gt; &lt;span class="n"&gt;GitHub&lt;/span&gt; &lt;span class="n"&gt;Pages&lt;/span&gt; &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="n"&gt;Pelican&lt;/span&gt;
@@ -147,7 +147,7 @@ Pelican needs metadata like &lt;code&gt;Title&lt;/code&gt;(must),  &lt;code&gt;D
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;make html
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;No matter which method you choose, some &lt;code&gt;.html&lt;/code&gt; file will be generated in folder &lt;code&gt;output&lt;/code&gt;. To debug easily and for the future convenient, I recommend to new a folder under blog, e.g. &lt;code&gt;/blog/gitblog&lt;/code&gt; and copy the files in &lt;code&gt;output&lt;/code&gt;to this folder. Why? I will explain later.&lt;/p&gt;
-&lt;h2 id="upload-the-pages"&gt;Upload the pages&lt;/h2&gt;
+&lt;h2 id="upload-the-pages"&gt;&lt;a class="toclink" href="#upload-the-pages"&gt;Upload the pages&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Since all the html files are prepared, we only need to upload them to our GitHub. These part should be done after you have a basic knowledge of &lt;a href="#2"&gt;GitHub&lt;/a&gt;. If you have already created README file in GitHub, you may need to add &lt;code&gt;$ git pull origin master&lt;/code&gt; before &lt;code&gt;$ git add .&lt;/code&gt;.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;gitblog
 &lt;span class="nv"&gt;$ &lt;/span&gt;git init
@@ -158,7 +158,7 @@ Pelican needs metadata like &lt;code&gt;Title&lt;/code&gt;(must),  &lt;code&gt;D
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;You may need to input GitHub username and passward if you do not use SSH key introduced in Chapter &lt;a href="#2"&gt;GitHub&lt;/a&gt;.
 If no error, you can visit you blog by username.github.io.&lt;/p&gt;
-&lt;h2 id="modify-and-update-pages"&gt;Modify and update pages&lt;/h2&gt;
+&lt;h2 id="modify-and-update-pages"&gt;&lt;a class="toclink" href="#modify-and-update-pages"&gt;Modify and update pages&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The reason to create another folder instead using &lt;code&gt;output&lt;/code&gt; to upload pages is that every time you use &lt;code&gt;$ make html&lt;/code&gt;, &lt;code&gt;output&lt;/code&gt; will be replaced with new files. Thus, it would be better to copy the files from &lt;code&gt;output&lt;/code&gt; into &lt;code&gt;gitblog&lt;/code&gt; before uploading.&lt;/p&gt;
 &lt;p&gt;Here is some commands for delete and update files:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git rm ×××.html
@@ -166,5 +166,5 @@ If no error, you can visit you blog by username.github.io.&lt;/p&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;git commit -m &lt;span class="s2"&gt;"some message"&lt;/span&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;git push -u origin master
 &lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id="summary"&gt;Summary&lt;/h2&gt;
+&lt;h2 id="summary"&gt;&lt;a class="toclink" href="#summary"&gt;Summary&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;This article is only the introduction of setting up a personal blog by using &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; and &lt;a href="http://docs.getpelican.com/en/3.6.3/"&gt;Pelican&lt;/a&gt;. Since this is my first time to use it, some condition my not be covered. Please comment below if there is any error.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Sun, 13 Sep 2015 21:07:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-09-13:pelican-intro.html</guid><category>GitHub</category><category>Pelican</category><category>Markdown</category></item></channel></rss>
