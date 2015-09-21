@@ -77,10 +77,30 @@
 </div>
 
 <div class="row-fluid">
-        <div class="span8 offset2 article-content">
+    <div class="span2 table-of-content">
+        <nav>
+        <h4>Contents</h4>
+        <div class="toc">
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#preparation">Preparation</a><ul>
+<li><a href="#terminal">Terminal</a></li>
+</ul>
+</li>
+<li><a href="#configure-local-environment">Configure local environment</a></li>
+<li><a href="#writing-articles">Writing articles</a></li>
+<li><a href="#upload-the-pages">Upload the pages</a></li>
+<li><a href="#modify-and-update-pages">Modify and update pages</a></li>
+<li><a href="#summary">Summary</a></li>
+</ul>
+</div>
+        </nav>
+    </div>
+    <div class="span8 article-content">
 
             
-            <h2 id="overview">Overview</h2>
+            
+<h2 id="overview">Overview</h2>
 <p>This is my first time to use GitHub and Pelican to creating a personal website (blog page). The whole progress was made on Mac OS X, although I tried on the Windows 7 first. It proved it would be much more convenient if you tried on Mac.</p>
 <h2 id="preparation">Preparation</h2>
 <p>If this is your first time to use terminal, it will be better to get some basic knowledge about it. <a href="http://www.google.com">Google</a> is always your good teachers and friends! Github should also be learnt if you do not want to be massed with the git codes.
@@ -91,7 +111,6 @@ Here are some recommended websites:</p>
 <li><a href="https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-)">Terminal Cheatsheet for Mac (basics)</a></li>
 </ul>
 <h3 id="2">GitHub</h3>
-
 <ul>
 <li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">GitHub教程 (zh-CN)</a></li>
 <li><a href="https://git-scm.com/book/en/v2">git-scm (En)</a></li>
@@ -105,37 +124,26 @@ Here are some recommended websites:</p>
 <p>Install pip:  </p>
 <div class="highlight"><pre><span class="nv">$ </span>sudo python get-pip.py
 </pre></div>
-
-
 </li>
 <li>
 <p>Install Pelican (most important) and Markdown (to support <code>.md</code>):</p>
 <div class="highlight"><pre><span class="nv">$ </span>sudo pip install pelican
 <span class="nv">$ </span>sudo pip install markdown
 </pre></div>
-
-
 </li>
 </ol>
 <p>Some people may have ValueError because of the unicode. You can check weather your terminal environment is in UTF-8 by <code>$ locale</code>. If not, you can temporarily change it by:</p>
 <div class="highlight"><pre><span class="nv">$ </span><span class="nb">export </span><span class="nv">LC_ALL</span><span class="o">=</span>en_US.UTF-8
 <span class="nv">$ </span><span class="nb">export </span><span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
 </pre></div>
-
-
 <h2 id="1">Pelican Setup</h2>
-
 <p>Create a local folder for the blog:</p>
 <div class="highlight"><pre><span class="nv">$ </span>mkdir blog <span class="c">#you can decide the name you want</span>
 <span class="nv">$ </span><span class="nb">cd </span>blog
 </pre></div>
-
-
 <p>Initialise the blog:</p>
 <div class="highlight"><pre><span class="nv">$ </span>pelican-quickstart
 </pre></div>
-
-
 <p>Just follow the steps to initialize:</p>
 <div class="highlight"><pre><span class="nv">$ </span>pelican-quickstart
 Where <span class="k">do</span> you want to create your new web site? <span class="o">[</span>.<span class="o">]</span>
@@ -157,14 +165,10 @@ Do you want to upload your website using Dropbox? <span class="o">(</span>y/N<sp
 Do you want to upload your website using S3? <span class="o">(</span>y/N<span class="o">)</span>
 Do you want to upload your website using Rackspace Cloud Files? <span class="o">(</span>y/N<span class="o">)</span>
 </pre></div>
-
-
 <p>If you want to take a look of the tree structure of the generated files, please install <a href="http://brew.sh/">Homebrew</a> and tree:</p>
-<div class="highlight"><pre><span class="nv">$ </span>ruby -e <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">&quot;</span> 
+<div class="highlight"><pre><span class="nv">$ </span>ruby -e <span class="s2">"</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">"</span> 
 <span class="nv">$ </span>brew install tree
 </pre></div>
-
-
 <p>Then you can use command <code>$ tree</code> to read the folder like this:</p>
 <div class="highlight"><pre>blog/
 ├── content               
@@ -174,8 +178,6 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
 ├── pelicanconf.py       
 └── publishconf.py
 </pre></div>
-
-
 <h2 id="writing-articles">Writing articles</h2>
 <p>The default folder for writing articles are set in the <code>/blog/content</code>, which can be configured in <code>pelicanconf.py</code> if you want.  In this tutorial, the article (<code>.md</code> file)is put in <code>content</code>.
 Pelican needs metadata like <code>Title</code>(must),  <code>Date</code> (optional) and other optional information for smart settings. For example:</p>
@@ -190,19 +192,13 @@ Pelican needs metadata like <code>Title</code>(must),  <code>Date</code> (option
 
 <span class="n">Here</span> <span class="k">is</span> <span class="n">the</span> <span class="n">content</span> <span class="n">you</span> <span class="n">want</span> <span class="n">to</span> <span class="n">write</span> <span class="k">in</span> <span class="n">Markdown</span> <span class="n">style</span><span class="o">....</span>
 </pre></div>
-
-
 <p>To generate the site locally, you can run command:</p>
 <div class="highlight"><pre><span class="nv">$ </span>make devserver
 </pre></div>
-
-
 <p>It serves your site to <a href="http://localhost:8000">http://localhost:8000</a>. You can preview the website locally first.</p>
 <p>Or you can just generate html without testing</p>
 <div class="highlight"><pre><span class="nv">$ </span>make html
 </pre></div>
-
-
 <p>No matter which method you choose, some <code>.html</code> file will be generated in folder <code>output</code>. To debug easily and for the future convenient, I recommend to new a folder under blog, e.g. <code>/blog/gitblog</code> and copy the files in <code>output</code>to this folder. Why? I will explain later.</p>
 <h2 id="upload-the-pages">Upload the pages</h2>
 <p>Since all the html files are prepared, we only need to upload them to our GitHub. These part should be done after you have a basic knowledge of <a href="#2">GitHub</a>. If you have already created README file in GitHub, you may need to add <code>$ git pull origin master</code> before <code>$ git add .</code>.</p>
@@ -210,11 +206,9 @@ Pelican needs metadata like <code>Title</code>(must),  <code>Date</code> (option
 <span class="nv">$ </span>git init
 <span class="nv">$ </span>git remote add origin https://github.com/username/username.github.io
 <span class="nv">$ </span>git add .
-<span class="nv">$ </span>git commit -m <span class="s2">&quot;first commit&quot;</span>
+<span class="nv">$ </span>git commit -m <span class="s2">"first commit"</span>
 <span class="nv">$ </span>git push -u origin master
 </pre></div>
-
-
 <p>You may need to input GitHub username and passward if you do not use SSH key introduced in Chapter <a href="#2">GitHub</a>.
 If no error, you can visit you blog by username.github.io.</p>
 <h2 id="modify-and-update-pages">Modify and update pages</h2>
@@ -222,11 +216,9 @@ If no error, you can visit you blog by username.github.io.</p>
 <p>Here is some commands for delete and update files:</p>
 <div class="highlight"><pre><span class="nv">$ </span>git rm ×××.html
 <span class="nv">$ </span>git add . 
-<span class="nv">$ </span>git commit -m <span class="s2">&quot;some message&quot;</span>
+<span class="nv">$ </span>git commit -m <span class="s2">"some message"</span>
 <span class="nv">$ </span>git push -u origin master
 </pre></div>
-
-
 <h2 id="summary">Summary</h2>
 <p>This article is only the introduction of setting up a personal blog by using <a href="https://github.com/">GitHub</a> and <a href="http://docs.getpelican.com/en/3.6.3/">Pelican</a>. Since this is my first time to use it, some condition my not be covered. Please comment below if there is any error.</p>
             <section>
