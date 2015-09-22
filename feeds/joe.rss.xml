@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>+OK</title><link>http://lele1122.github.io/</link><description></description><atom:link href="http://lele1122.github.io/feeds/joe.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 21 Sep 2015 13:53:00 +0800</lastBuildDate><item><title>Markdown Tips</title><link>http://lele1122.github.io/markdown-tips.html</link><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>+OK</title><link>http://lele1122.github.io/</link><description></description><atom:link href="http://lele1122.github.io/feeds/joe.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 21 Sep 2015 13:53:00 +0800</lastBuildDate><item><title>Markdown Tips</title><link>http://lele1122.github.io/markdown-tips-zh-CN.html</link><description>
 &lt;h1 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;关于页面内跳转&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;定义一个锚(id)：&lt;code&gt;&amp;lt;span id="jump"&amp;gt;跳转到的地方&amp;lt;/span&amp;gt;&lt;/code&gt;&lt;br/&gt;
 使用markdown语法：&lt;code&gt;[点击跳转](#jump)&lt;/code&gt;&lt;/p&gt;
@@ -11,23 +11,23 @@
 &lt;span class="nt"&gt;&amp;lt;h3&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"end"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;底部&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;跳到&lt;a href="#end"&gt;底部&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="end"&gt;底部&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Tue, 15 Sep 2015 00:00:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-09-15:markdown-tips.html</guid><category>Pelican</category><category>Markdown</category></item><item><title>Introduction to Pelican (2)</title><link>http://lele1122.github.io/pelican-settings.html</link><description>
+&lt;h3 id="end"&gt;底部&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Tue, 15 Sep 2015 00:00:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-09-15:markdown-tips-zh-CN.html</guid><category>Pelican</category><category>Markdown</category></item><item><title>Introduction to Pelican (2)</title><link>http://lele1122.github.io/pelican-settings-en-US.html</link><description>
 &lt;h2 id="disqus"&gt;&lt;a class="toclink" href="#disqus"&gt;Disqus&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Comments feature can be added by &lt;a href="https://disqus.com/"&gt;Disqus&lt;/a&gt;. If you do not have it, just register an account and set by steps. Add the following command in &lt;code&gt;pelicanconf.py&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;    DISQUS_SITENAME = 'shortname'
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ DISQUS_SITENAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'shortname'&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;At first I tried several times but the function did not work. The reason is that I ignored the &lt;code&gt;SITEURL&lt;/code&gt;. To enable the comments feature, even you do not have a domain, you need to add the github page url:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;    SITEURL = 'http://username.github.io'
+&lt;div class="highlight"&gt;&lt;pre&gt;S$ ITEURL = 'http://username.github.io'
 &lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id="theme"&gt;&lt;a class="toclink" href="#theme"&gt;Theme&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;If you want to use themes other than the default one, you need to download the themes you want first. There is one way:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;cd blog
-git clone https://github.com/getpelican/pelican-themes.git
-cd pelican-themes
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;blog
+&lt;span class="nv"&gt;$ &lt;/span&gt;git clone https://github.com/getpelican/pelican-themes.git
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;pelican-themes
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;It seems that some themes are lost when I clone them from pelican github, so it will be better to check the folders before using them. You can always download themes online and put them in the folder you want.&lt;/p&gt;
 &lt;p&gt;Then, you can choose the themes you have in the &lt;code&gt;pelican-themes&lt;/code&gt; folder. To change the theme, you need to configure in &lt;code&gt;pelicanconf.py&lt;/code&gt;.For example:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;THEME = '/Users/User/Blog/pelican-themes/elegant'
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'/Users/User/Blog/pelican-themes/elegant'&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id="search"&gt;&lt;a class="toclink" href="#search"&gt;Search&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The theme elegent v1.3 should have included the following search engin plugin.&lt;/p&gt;
@@ -38,15 +38,15 @@ cd pelican-themes
 &lt;p&gt;The latest &lt;a href="http://www.tipue.com/search/"&gt;Tipue Search&lt;/a&gt; is version 5.0. If you meet any problem with the search, please replace the default version with the newest version in &lt;a href="http://www.tipue.com/search/"&gt;Tipue Search&lt;/a&gt;. The format may change because of the replacement, so you may need to modify the &lt;code&gt;tipuesearch.css&lt;/code&gt; file or just use the default version. By the test, I found the main problem the all the results are &lt;code&gt;undefined&lt;/code&gt; may be caused by default &lt;code&gt;tipuesearch_set.js&lt;/code&gt; file in this theme.&lt;/p&gt;
 &lt;h2 id="plugins"&gt;&lt;a class="toclink" href="#plugins"&gt;Plugins&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Easiest way to install and use these plugins is cloning this repo:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;git clone --recursive https://github.com/getpelican/pelican-plugins
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git clone --recursive https://github.com/getpelican/pelican-plugins
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;and activating the ones you want in your settings file:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;PLUGIN_PATHS = ['/Users/User/Blog/pelican-plugins']
-PLUGINS = ['tipue_search']
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'/Users/User/Blog/pelican-plugins'&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="nv"&gt;$ PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'tipue_search'&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The detail of plugins can be read from on &lt;a href="https://github.com/getpelican/pelican-plugins"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="pages"&gt;&lt;a class="toclink" href="#pages"&gt;Pages&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;If you create a folder named &lt;code&gt;pages&lt;/code&gt;, all the files in this folder will be static pages. All the pages can be added to the menu By setting &lt;code&gt;DISPLAY_PAGES_ON_MENU&lt;/code&gt; in &lt;code&gt;pelicanconf.py&lt;/code&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Mon, 21 Sep 2015 13:53:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-09-14:pelican-settings.html</guid><category>GitHub</category><category>Pelican</category><category>Markdown</category></item><item><title>Introduction to Pelican (1)</title><link>http://lele1122.github.io/pelican-intro.html</link><description>
+&lt;p&gt;If you create a folder named &lt;code&gt;pages&lt;/code&gt;, all the files in this folder will be static pages. All the pages can be added to the menu By setting &lt;code&gt;DISPLAY_PAGES_ON_MENU&lt;/code&gt; in &lt;code&gt;pelicanconf.py&lt;/code&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Mon, 21 Sep 2015 13:53:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-09-14:pelican-settings-en-US.html</guid><category>GitHub</category><category>Pelican</category><category>Elegant</category><category>Disqus</category><category>Theme</category><category>Search</category></item><item><title>Introduction to Pelican (1)</title><link>http://lele1122.github.io/pelican-intro-en-US.html</link><description>
 &lt;h2 id="overview"&gt;&lt;a class="toclink" href="#overview"&gt;Overview&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;This is my first time to use GitHub and Pelican to creating a personal website (blog page). The whole progress was made on Mac OS X, although I tried on the Windows 7 first. It proved it would be much more convenient if you tried on Mac.&lt;/p&gt;
 &lt;h2 id="preparation"&gt;&lt;a class="toclink" href="#preparation"&gt;Preparation&lt;/a&gt;&lt;/h2&gt;
@@ -167,4 +167,4 @@ If no error, you can visit you blog by username.github.io.&lt;/p&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;git push -u origin master
 &lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id="summary"&gt;&lt;a class="toclink" href="#summary"&gt;Summary&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;This article is only the introduction of setting up a personal blog by using &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; and &lt;a href="http://docs.getpelican.com/en/3.6.3/"&gt;Pelican&lt;/a&gt;. Since this is my first time to use it, some condition my not be covered. Please comment below if there is any error.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Sun, 13 Sep 2015 21:07:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-09-13:pelican-intro.html</guid><category>GitHub</category><category>Pelican</category><category>Markdown</category></item></channel></rss>
+&lt;p&gt;This article is only the introduction of setting up a personal blog by using &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; and &lt;a href="http://docs.getpelican.com/en/3.6.3/"&gt;Pelican&lt;/a&gt;. Since this is my first time to use it, some condition my not be covered. Please comment below if there is any error.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Sun, 13 Sep 2015 21:07:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-09-13:pelican-intro-en-US.html</guid><category>GitHub</category><category>Pelican</category><category>Markdown</category></item></channel></rss>
