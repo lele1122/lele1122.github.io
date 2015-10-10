@@ -1,5 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>+OK</title><link href="http://lele1122.github.io/" rel="alternate"></link><link href="http://lele1122.github.io/feeds/joe.atom.xml" rel="self"></link><id>http://lele1122.github.io/</id><updated>2015-09-29T16:07:00+08:00</updated><entry><title>烟霾</title><link href="http://lele1122.github.io/haze-zh_CN.html" rel="alternate"></link><updated>2015-09-29T16:07:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-09-29:haze-zh_CN.html</id><summary type="html">&lt;p&gt;来新加坡已经将近5年了。期间心情有好有坏，就像曾经所写的博客一样，在忙碌中不知不觉的长草忘却。转眼间，自己都已经毕业了，回顾过去，有些事情还是那么的相似。无论在屋内心情如何，每次出门，新加坡的天气却让人精神振奋。蓝天白云，让长期在中国雾霾下成长的感慨蓝天是外国的蓝。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>+OK</title><link href="http://lele1122.github.io/" rel="alternate"></link><link href="http://lele1122.github.io/feeds/joe.atom.xml" rel="self"></link><id>http://lele1122.github.io/</id><updated>2015-10-10T16:34:00+08:00</updated><entry><title>Vim Tutorial (4)</title><link href="http://lele1122.github.io/vim-tutorial-plugins-en-US.html" rel="alternate"></link><updated>2015-10-10T16:34:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-10:vim-tutorial-plugins-en-US.html</id><summary type="html">&lt;h2 id="add-plugins"&gt;&lt;a class="toclink" href="#add-plugins"&gt;Add Plugins&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;There are many ways to add plugins, but it would be hard to manage plugins. To solve this problem, the plugin manager &lt;a href="https://github.com/VundleVim/Vundle.vim"&gt;Vundle&lt;/a&gt; will be helpful.&lt;/p&gt;
+&lt;h3 id="vundle-set-up"&gt;&lt;a class="toclink" href="#vundle-set-up"&gt;Vundle Set-Up&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id="configure-plugins"&gt;&lt;a class="toclink" href="#configure-plugins"&gt;Configure Plugins&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Put this at the top of your &lt;code&gt;.vimrc&lt;/code&gt; to use Vundle. Remove plugins you don't need, they are for illustration purposes. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;set nocompatible              &amp;quot; be iMproved, required
+filetype off                  &amp;quot; required
+
+&amp;quot; set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+&amp;quot; alternatively, pass a path where Vundle should install plugins
+&amp;quot;call vundle#begin(&amp;#39;~/some/path/here&amp;#39;)
+
+&amp;quot; let Vundle manage Vundle, required
+Plugin &amp;#39;VundleVim/Vundle.vim&amp;#39;
+
+&amp;quot; The following are examples of different formats supported.
+&amp;quot; Keep Plugin commands between vundle#begin/end.
+&amp;quot; plugin on GitHub repo
+Plugin &amp;#39;tpope/vim-fugitive&amp;#39;
+&amp;quot; plugin from http://vim-scripts.org/vim/scripts.html
+Plugin &amp;#39;L9&amp;#39;
+&amp;quot; Git plugin not hosted on GitHub
+Plugin &amp;#39;git://git.wincent.com/command-t.git&amp;#39;
+&amp;quot; git repos on your local machine (i.e. when working on your own plugin)
+Plugin &amp;#39;file:///home/gmarik/path/to/plugin&amp;#39;
+&amp;quot; The sparkup vim script is in a subdirectory of this repo called vim.
+&amp;quot; Pass the path to set the runtimepath properly.
+Plugin &amp;#39;rstacruz/sparkup&amp;#39;, {&amp;#39;rtp&amp;#39;: &amp;#39;vim/&amp;#39;}
+&amp;quot; Avoid a name conflict with L9
+Plugin &amp;#39;user/L9&amp;#39;, {&amp;#39;name&amp;#39;: &amp;#39;newL9&amp;#39;}
+
+&amp;quot; All of your Plugins must be added before the following line
+call vundle#end()            &amp;quot; required
+filetype plugin indent on    &amp;quot; required
+&amp;quot; To ignore plugin indent changes, instead use:
+&amp;quot;filetype plugin on
+
+&amp;quot; Put your non-Plugin stuff after this line
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id="brief-instructions"&gt;&lt;a class="toclink" href="#brief-instructions"&gt;Brief Instructions&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:PluginList&lt;/code&gt;         - lists configured plugins&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:PluginInstall&lt;/code&gt;      - installs plugins; append &lt;code&gt;!&lt;/code&gt; to update or just :PluginUpdate&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:PluginSearch foo&lt;/code&gt;   - searches for foo; append &lt;code&gt;!&lt;/code&gt; to refresh local cache&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:PluginClean&lt;/code&gt;        - confirms removal of unused plugins; append &lt;code&gt;!&lt;/code&gt; to auto-approve removal&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:h vundle&lt;/code&gt; for more details or wiki for FAQ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You may see some people use &lt;code&gt;BundleXxxx&lt;/code&gt; instead of &lt;code&gt;PluginXxxx&lt;/code&gt;. They are nearly the same but &lt;code&gt;PluginXxxx&lt;/code&gt; is recommended since 2014. &lt;code&gt;BundleXxxx&lt;/code&gt; still can be used only for compatibility reasons.&lt;/p&gt;
+&lt;/blockquote&gt;</summary><category term="vim"></category><category term="mac"></category><category term="plugins"></category><category term="config"></category></entry><entry><title>Vim Tutorial (3)</title><link href="http://lele1122.github.io/vim-tutorial-theme-en-US.html" rel="alternate"></link><updated>2015-10-10T14:15:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-10:vim-tutorial-theme-en-US.html</id><summary type="html">&lt;h2 id="theme"&gt;&lt;a class="toclink" href="#theme"&gt;Theme&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/chriskempson/tomorrow-theme"&gt;Tomorrow&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ethanschoonover.com/solarized"&gt;Solarized&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/tomasr/molokai"&gt;Molokai&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Put theme file in &lt;code&gt;~/.vim/colors&lt;/code&gt; and add &lt;code&gt;set runtimepath+=~/.vim&lt;/code&gt; in &lt;code&gt;~/.vimrc&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="font"&gt;&lt;a class="toclink" href="#font"&gt;Font&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;You need to make sure the font has already existed in the system. If not, you need to add TTF file. &lt;/p&gt;
+&lt;p&gt;Here I use &lt;a href="https://github.com/adobe-fonts/source-code-pro"&gt;Source-Code-Pro&lt;/a&gt; and &lt;a href="http://www.adobe.com/devnet/opentype/afdko.html"&gt;Adobe Font Development Kit for OpenType&lt;/a&gt; (AFDKO) will be needed to build this font file. Double click &lt;code&gt;FinishInstallOSX&lt;/code&gt; to install AFDKO and run &lt;code&gt;$ ./build.sh&lt;/code&gt; in the downloaded font directory to build all TTF. They will be in the &lt;code&gt;target&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;Open &lt;code&gt;Font Book&lt;/code&gt; in Mac and add all the TTF files into it by click &lt;code&gt;+&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Then you need to add the following to &lt;code&gt;.vimrc&lt;/code&gt; remember to use &lt;code&gt;_&lt;/code&gt; instead of space:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&amp;quot;set font and size
+set guifont=Source_Code_Pro:h15
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="vim"></category><category term="mac"></category><category term="theme"></category><category term="font"></category></entry><entry><title>Vim Tutorial (2)</title><link href="http://lele1122.github.io/vim-tutorial-config-en-US.html" rel="alternate"></link><updated>2015-10-09T11:50:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-09:vim-tutorial-config-en-US.html</id><summary type="html">
+&lt;h2 id="configure-vimrc-and-gvimrc"&gt;&lt;code&gt;~/.gvimrc&lt;/code&gt;&lt;a class="toclink" href="#configure-vimrc-and-gvimrc"&gt;Configure &lt;code&gt;~/.vimrc&lt;/code&gt; and &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;There are two setting files should be known: &lt;code&gt;vimrc&lt;/code&gt; and &lt;code&gt;gvimrc&lt;/code&gt;. They have two versions: global and user. &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;vimrc&lt;/code&gt;: the main vim configuration file&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To get the global &lt;code&gt;vimrc&lt;/code&gt; location:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="x"&gt;:echo &lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;VIM&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To get the user &lt;code&gt;vimrc&lt;/code&gt; location:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="x"&gt;:echo &lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you have never created user &lt;code&gt;vimrc&lt;/code&gt; before, you need to create one by yourself.&lt;/p&gt;
+&lt;p&gt;The user &lt;code&gt;vimrc&lt;/code&gt; will always &lt;strong&gt;overwrite&lt;/strong&gt; the global &lt;code&gt;vimrc&lt;/code&gt;. Thus, you only need to change the user &lt;code&gt;vimrc&lt;/code&gt; to configure &lt;code&gt;vim&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;gvimrc&lt;/code&gt;: the configuration file for Gvim&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ghim is Vim with GUI. It supports cursor, has more color and some other features. We only use &lt;code&gt;gvimrc&lt;/code&gt; for gvim specific additions, e.g. theme color.&lt;/p&gt;
+&lt;p&gt;Here is the command to create &lt;code&gt;.vimrc&lt;/code&gt; and &lt;code&gt;.gvimrc&lt;/code&gt; from &lt;code&gt;vimc_example.vim&lt;/code&gt; and &lt;code&gt;gvimrc_example.vim&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="x"&gt;:e &lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;VIMRUNTIME&lt;/span&gt;&lt;span class="x"&gt;/vimrc_example.vim  &lt;/span&gt;
+&lt;span class="x"&gt;:saveas ~/.vimrc  &lt;/span&gt;
+&lt;span class="x"&gt;:e &lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;VIMRUNTIME&lt;/span&gt;&lt;span class="x"&gt;/gvimrc_example.vim  &lt;/span&gt;
+&lt;span class="x"&gt;:saveas ~/.gvimrc&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;"&lt;/code&gt; is used for comment in &lt;code&gt;.vimrc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You may want to edit &lt;code&gt;.vimrc&lt;/code&gt; in Terminal by:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;open /Applications/TextEdit.app .vimrc
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;or in MacVim by:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;:e .vimrc
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="vim"></category><category term="mac"></category></entry><entry><title>Vim Tutorial (1)</title><link href="http://lele1122.github.io/vim-tutorial-start-en-US.html" rel="alternate"></link><updated>2015-10-10T00:00:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-09:vim-tutorial-start-en-US.html</id><summary type="html">
+&lt;h2 id="text-editors"&gt;&lt;a class="toclink" href="#text-editors"&gt;Text Editors&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;It is said there are three text editors in the world:&lt;a href="https://www.gnu.org/software/emacs/"&gt;Emacs&lt;/a&gt;, &lt;a href="http://www.vim.org/"&gt;Vim&lt;/a&gt; and others. No matter whether it is true or wrong (depending on you), you cannot deny that &lt;a href="https://www.gnu.org/software/emacs/"&gt;Emacs&lt;/a&gt; and &lt;a href="http://www.vim.org/"&gt;Vim&lt;/a&gt; are two powerful text editors. The debates between Emacs group and Vim group have never stopped.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Emacs is considered as 'God's editor' while Vim is 'the God of editor'. &lt;/p&gt;
+&lt;p&gt;Emac is actually an OS which pretends to be an editor.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="why-vim"&gt;&lt;a class="toclink" href="#why-vim"&gt;Why Vim&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;With the curiosity, I do the search and found the following picture describes the learning curves of some common text editors.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="full study curve" src="https://lh3.googleusercontent.com/knU9G9j_U1nkGfCZQ-7H_ncg-xAz5i_-OpWhg4sYWARnOKiUeT-tEtrjQahxZZ9wDjWFewaHQXFMGZ_CCs8iySHdvgSfJdsq9Q-uu7mzK5NZmOVix1Q4PF2B9yuGj2NUxRNBaHfcR9-lcZ5wa2g7uwckxnFq9TJXVtfBwou7zRIz2PIOoFlHxd4hvTgYBYJY_Z-rVSvt9fcztYkVOKK0xovKda1iePc-3_MABAanqYPRXMYzDa5yVSoBDlFLAzAP5IArVxYEuRtyhi2cZ9LdExqzbfcCGfdneT-SQ0yS-g3omPqVi-3aWeAL7ml3AxKFSx9Z3KNALejePf-sRrJQ2iYaaI5RjJ1QyHHXovkAncWjQ-VJLCQ52onivZr-f1_J-p6NoqHqWJWfDoY7vs_ALTKPq353XZ20mS_QQwfsnQ8nHktInRytZhjUVjwYgEygoQJROkPGT-5Jrm8fpmKPnHL4-0aYM_EQ-nC5p-5r1Qkk3hF3IOnoRpQNrR4ErHRJQR24-kZj0dKo61gDuOd4UUeGqJAJCK45XkBXBHeP1VE3=w802-h580-no"/&gt;
+&lt;em&gt;Study Curve of Editors&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It can be seen Vim has a very steep study curve and Emacs has a @#$%^&amp;amp;* ... &lt;/p&gt;
+&lt;p&gt;I choose Vim because it can be used in any OS, extendibility, and it looks cool!&lt;/p&gt;
+&lt;h2 id="macvim-installation"&gt;&lt;a class="toclink" href="#macvim-installation"&gt;MacVim Installation&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Mac has Vim already in terminal, but MacVim works better than the vim in Mac.&lt;/p&gt;
+&lt;p&gt;There are two methods to install MacVim:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Download &lt;a href="https://github.com/macvim-dev/macvim"&gt;MacVim&lt;/a&gt; and follow the instructions in &lt;code&gt;README_mac.txt&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can open MacVim directly as a normal app. This method help to configure MacVim easier.&lt;/p&gt;
+&lt;p&gt;You can also open MacVim from Terminal once you set by this (temporary):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;alias &lt;/span&gt;&lt;span class="nv"&gt;mvim&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'/Applications/MacVim.app/Contents/MacOS/MacVim'&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To know how to change persistently, change &lt;code&gt;.bash_profile&lt;/code&gt;. Try yourself ! &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To install MacVim by Terminal:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;brew install macvim
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To start MacVim:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mvim
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="ready-to-use"&gt;&lt;a class="toclink" href="#ready-to-use"&gt;Ready to Use ?!&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="basic-level"&gt;&lt;a class="toclink" href="#basic-level"&gt;Basic Level&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;After you start Vim, it is in the mode &lt;code&gt;normal&lt;/code&gt;, to enter mode &lt;code&gt;insert&lt;/code&gt;, press &lt;code&gt;i&lt;/code&gt;. You will see -insert- at left-bottom corner of Vim. If you want to return &lt;code&gt;normal&lt;/code&gt; mode, press &lt;code&gt;ESC&lt;/code&gt;. All the commands should be done in &lt;code&gt;normal&lt;/code&gt; mode.&lt;/p&gt;
+&lt;p&gt;Some basic command:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;i   → Insert mode
+ESC → Normal mode
+x   → delete character
+:w  → save file (add file name after :w)
+:q  → quit
+:wq → save file and quit
+dd  → delete the present sentence and copy to clipboard
+p   → paste from clipboard
+hjkl → (←↓↑→)
+:help &amp;lt;command&amp;gt; → display the help
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Practice and you can do the basic job that &lt;code&gt;Notepad&lt;/code&gt; can do.&lt;/p&gt;
+&lt;h3 id="advanced-level"&gt;&lt;a class="toclink" href="#advanced-level"&gt;Advanced Level&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;As mentioned before, Vim has a very steep learning curve. If you want to learn more, please practice with online tutorials. Please practice every week and do not use it at work before you can really efficiently use it.&lt;/p&gt;
+&lt;h2 id="study-resources"&gt;&lt;a class="toclink" href="#study-resources"&gt;Study Resources&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Basic:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://vim-adventures.com/"&gt;Vim-Adventures&lt;/a&gt;: game to familiar with the basic hotkeys.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://www.openvim.com/"&gt;Interactive Vim Tutorial&lt;/a&gt;: online typing tutorial&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://coolshell.cn/articles/5426.html"&gt;简明 Vim 练级攻略&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html"&gt;Graphical Cheat Sheet&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="vim"></category><category term="mac"></category></entry><entry><title>烟霾</title><link href="http://lele1122.github.io/haze-zh_CN.html" rel="alternate"></link><updated>2015-09-29T16:07:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-09-29:haze-zh_CN.html</id><summary type="html">&lt;p&gt;来新加坡已经将近5年了。期间心情有好有坏，就像曾经所写的博客一样，在忙碌中不知不觉的长草忘却。转眼间，自己都已经毕业了，回顾过去，有些事情还是那么的相似。无论在屋内心情如何，每次出门，新加坡的天气却让人精神振奋。蓝天白云，让长期在中国雾霾下成长的感慨蓝天是外国的蓝。&lt;/p&gt;
 &lt;p&gt;我记得在来新加坡的前几个月，我还因为看了一段鞭刑的视频说到长大不会前往新加坡，这个国家的刑法过于恐怖。可话说没多久，不知不觉的进了前往新加坡学习的项目。就像一个多月前，我看着新加坡本地论坛上有人二手售卖着空气净化器，对一旁的女朋友说：“在新加坡还有人往家里买空气净化器？搞笑呢。” 搞笑的却是没过多久，新加坡就被印尼烧芭所引发的森林大火产生的烟霾覆盖。空气中所弥漫的焦味即便在门窗关紧的室内都能闻到。从家中窗口望出去，楼下的公园几乎成为“仙境”:
 &lt;img alt="烟霾前" src="https://lh3.googleusercontent.com/5SDK589E5EymEEax9Zsi7XeJ_bLZT9sWhRx6bHNAzyM3Tx4AfDXn1CP0mtSOtdf3wlvpWo1krZZOBYFWABwPrDEkXyABpECpZhHIzRN7LXiA5x4W4uyAGReEDQDkXppaXIQ5Gd635Y4dCtswGkcpJbG9qMHYSLjzpyYaA3zuYwYUA0ZrgeF__cmoY9grrZxp_LBw32JXV_40S2VVn0LpMuX5xH9Mfnz9xhkMumhi0BT6AdviRUIijFJxVlJkby6zd3VLKArN07lPb7lOFqwTybTR3P962UQVN0lnZ8NbxEtySIhQvecWiYHGa9j-iliAtC3qu9pDoDDVQRFJxCEMbmr7gceqVt2F8lKAINSDiQCq4aIDQ0kERCtiaVba7jvsfIzSvAcG_M1DJCbIWT-8BqPBRG85i2hXY-u2SrDNQHG0s91wLVNDhpiEQIOTlE4my-PnasS_DDGcd6YJoXVOs0DzaQa7Hx7Bs63BMaiiD5ijicWChKiqyTEs6N9DiesKoDuoica6g7i8YGUHELLS8LztenpeEExCLowZJdMN21_b=w1698-h955-no" /&gt;
 &lt;img alt="烟霾后" src="https://lh3.googleusercontent.com/bw3OPTvkinGoVy6rH1-AQYqPFvNZlGJk7RWdxqYo4zt2aRHqMIAKObv49gtzxnWKYsQqwJDGrChmWjKsuTvwDG0BPBgrWyruRMT-m3sguNcZ0ybNQSYCUZVv_RFlJKQfAKkAmcJhDMB_ovgRQd6-fQ23Ste2sp0RJa-uLlzgS5x_IQ03rlTnlQtkNs9TmDD1YuJWwz-yyq_TbzhULY7rYQa3744YgDjKFfQZfPiQGCBtVE8AnTYf5hxPji2BmdtUyFkZIQgpVenJ2bGM1sT6ry8gHqVHtI-_XXulU1aVLV8i_-pnhA2nvDBUTUg27J4ow0YbrKRLT7x-E5VrMQUUGyCClBnYvWHOV754jsPO_9UkS-oWjjFJ9UBIapTLrMLoN6YqbEs_peGk_BAi8L7zA9HEMZdatTsHnB515crKHOUVCrwkRQx4X7a3akxkWTdl_HexfB7Zn1j17MWEzUpNregqdnKpTQPuSuG73c6agYYMotmt2gIkkKxAtToifRXzMHde8vQbIj5gA0XuYK-jIh7hUT70fbgsSKHRis0I_pir=w1698-h955-no" /&gt;

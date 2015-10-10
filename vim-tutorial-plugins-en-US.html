@@ -12,19 +12,19 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="Singapore, Life, Haze, Self, " />
+<meta name="keywords" content="vim, mac, plugins, config, Coding, " />
 
-<meta property="og:title" content="烟霾 "/>
-<meta property="og:url" content="http://lele1122.github.io/haze-zh_CN.html" />
-<meta property="og:description" content="来新加坡已经将近5年了。期间心情有好有坏，就像曾经所写的博客一样，在忙碌中不知不觉的长草忘却。转眼间，自己都已经毕业了，回顾过去，有些事情还是那么的相似。无论在屋内心情如何，每次出门，新加坡的天气却让人精神振奋。蓝天白云，让长期在中国雾霾下成长的感慨蓝天是外国的蓝。 我记得在来新加坡的前几个月，我还因为看了一段鞭刑的视频说到长大不会前往新加坡，这个国家的刑法过于恐怖。可话说没多久，不知不觉的进了前往新加坡学习的项目。就像一个多月前，我看着新加坡本地论坛上有人二手售卖着空气净化器，对一旁的女朋友说：“在新加坡还有人往家里买空气净化器？搞笑呢。” 搞笑的却是没过多久，新加坡就被印尼烧芭所引发的森林大火产生的烟霾覆盖 ..." />
+<meta property="og:title" content="Vim Tutorial (4)  - Configure Vim "/>
+<meta property="og:url" content="http://lele1122.github.io/vim-tutorial-plugins-en-US.html" />
+<meta property="og:description" content="Add Plugins There are many ways to add plugins, but it would be hard to manage plugins. To solve this problem, the plugin manager Vundle ..." />
 <meta property="og:site_name" content="+OK" />
 <meta property="og:article:author" content="Joe" />
-<meta property="og:article:published_time" content="2015-09-29T13:45:00+08:00" />
-<meta property="" content="2015-09-29T16:07:00+08:00" />
-<meta name="twitter:title" content="烟霾 ">
-<meta name="twitter:description" content="来新加坡已经将近5年了。期间心情有好有坏，就像曾经所写的博客一样，在忙碌中不知不觉的长草忘却。转眼间，自己都已经毕业了，回顾过去，有些事情还是那么的相似。无论在屋内心情如何，每次出门，新加坡的天气却让人精神振奋。蓝天白云，让长期在中国雾霾下成长的感慨蓝天是外国的蓝。 我记得在来新加坡的前几个月，我还因为看了一段鞭刑的视频说到长大不会前往新加坡，这个国家的刑法过于恐怖。可话说没多久，不知不觉的进了前往新加坡学习的项目。就像一个多月前，我看着新加坡本地论坛上有人二手售卖着空气净化器，对一旁的女朋友说：“在新加坡还有人往家里买空气净化器？搞笑呢。” 搞笑的却是没过多久，新加坡就被印尼烧芭所引发的森林大火产生的烟霾覆盖 ...">
+<meta property="og:article:published_time" content="2015-10-10T16:34:00+08:00" />
+<meta property="" content="2015-10-10T16:34:00+08:00" />
+<meta name="twitter:title" content="Vim Tutorial (4)  - Configure Vim ">
+<meta name="twitter:description" content="Add Plugins There are many ways to add plugins, but it would be hard to manage plugins. To solve this problem, the plugin manager Vundle ...">
 
-        <title>烟霾  · +OK
+        <title>Vim Tutorial (4)  - Configure Vim  · +OK
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -82,7 +82,7 @@
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="http://lele1122.github.io/haze-zh_CN.html"> 烟霾  </a></h1>
+    <h1><a href="http://lele1122.github.io/vim-tutorial-plugins-en-US.html"> Vim Tutorial (4)  <small> Configure Vim </small>  </a></h1>
     </header>
 </div>
 
@@ -90,24 +90,74 @@
         <div class="span8 offset2 article-content">
 
             
-            <p>来新加坡已经将近5年了。期间心情有好有坏，就像曾经所写的博客一样，在忙碌中不知不觉的长草忘却。转眼间，自己都已经毕业了，回顾过去，有些事情还是那么的相似。无论在屋内心情如何，每次出门，新加坡的天气却让人精神振奋。蓝天白云，让长期在中国雾霾下成长的感慨蓝天是外国的蓝。</p>
-<p>我记得在来新加坡的前几个月，我还因为看了一段鞭刑的视频说到长大不会前往新加坡，这个国家的刑法过于恐怖。可话说没多久，不知不觉的进了前往新加坡学习的项目。就像一个多月前，我看着新加坡本地论坛上有人二手售卖着空气净化器，对一旁的女朋友说：“在新加坡还有人往家里买空气净化器？搞笑呢。” 搞笑的却是没过多久，新加坡就被印尼烧芭所引发的森林大火产生的烟霾覆盖。空气中所弥漫的焦味即便在门窗关紧的室内都能闻到。从家中窗口望出去，楼下的公园几乎成为“仙境”:
-<img alt="烟霾前" src="https://lh3.googleusercontent.com/5SDK589E5EymEEax9Zsi7XeJ_bLZT9sWhRx6bHNAzyM3Tx4AfDXn1CP0mtSOtdf3wlvpWo1krZZOBYFWABwPrDEkXyABpECpZhHIzRN7LXiA5x4W4uyAGReEDQDkXppaXIQ5Gd635Y4dCtswGkcpJbG9qMHYSLjzpyYaA3zuYwYUA0ZrgeF__cmoY9grrZxp_LBw32JXV_40S2VVn0LpMuX5xH9Mfnz9xhkMumhi0BT6AdviRUIijFJxVlJkby6zd3VLKArN07lPb7lOFqwTybTR3P962UQVN0lnZ8NbxEtySIhQvecWiYHGa9j-iliAtC3qu9pDoDDVQRFJxCEMbmr7gceqVt2F8lKAINSDiQCq4aIDQ0kERCtiaVba7jvsfIzSvAcG_M1DJCbIWT-8BqPBRG85i2hXY-u2SrDNQHG0s91wLVNDhpiEQIOTlE4my-PnasS_DDGcd6YJoXVOs0DzaQa7Hx7Bs63BMaiiD5ijicWChKiqyTEs6N9DiesKoDuoica6g7i8YGUHELLS8LztenpeEExCLowZJdMN21_b=w1698-h955-no" />
-<img alt="烟霾后" src="https://lh3.googleusercontent.com/bw3OPTvkinGoVy6rH1-AQYqPFvNZlGJk7RWdxqYo4zt2aRHqMIAKObv49gtzxnWKYsQqwJDGrChmWjKsuTvwDG0BPBgrWyruRMT-m3sguNcZ0ybNQSYCUZVv_RFlJKQfAKkAmcJhDMB_ovgRQd6-fQ23Ste2sp0RJa-uLlzgS5x_IQ03rlTnlQtkNs9TmDD1YuJWwz-yyq_TbzhULY7rYQa3744YgDjKFfQZfPiQGCBtVE8AnTYf5hxPji2BmdtUyFkZIQgpVenJ2bGM1sT6ry8gHqVHtI-_XXulU1aVLV8i_-pnhA2nvDBUTUg27J4ow0YbrKRLT7x-E5VrMQUUGyCClBnYvWHOV754jsPO_9UkS-oWjjFJ9UBIapTLrMLoN6YqbEs_peGk_BAi8L7zA9HEMZdatTsHnB515crKHOUVCrwkRQx4X7a3akxkWTdl_HexfB7Zn1j17MWEzUpNregqdnKpTQPuSuG73c6agYYMotmt2gIkkKxAtToifRXzMHde8vQbIj5gA0XuYK-jIh7hUT70fbgsSKHRis0I_pir=w1698-h955-no" />
-<em>上图为烟霾前，下图为烟霾后</em></p>
-<p>出于无奈，只好上网购买了N95口罩。有时候不得不感慨新加坡物价之贵，好多东西自己网上从中国快递买来都能比楼下超市购买便宜一倍。可以理解新加坡食物贵，但各种电子，生活产品为何如此之贵，有时甚至比其他地区贵上一倍，让好多人不得不从美亚或者淘宝购买，费解。</p>
-<p>茶余饭后，再也不能轻松的去楼下跑跑步，散散心；也不能开着窗呼吸新鲜空气；甚至不能拉开窗帘，因为小小的缝隙让屋外的焦味肆意侵入。</p>
-<p>唯一庆幸的是父母来的日子。他们好不容易有机会能出国感受国内看不到的蓝天白云，幸亏没在这段时间过来。</p>
+            <h2 id="add-plugins"><a class="toclink" href="#add-plugins">Add Plugins</a></h2>
+<p>There are many ways to add plugins, but it would be hard to manage plugins. To solve this problem, the plugin manager <a href="https://github.com/VundleVim/Vundle.vim">Vundle</a> will be helpful.</p>
+<h3 id="vundle-set-up"><a class="toclink" href="#vundle-set-up">Vundle Set-Up</a></h3>
+<div class="highlight"><pre><span class="nv">$ </span>git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+</pre></div>
+
+
+<h3 id="configure-plugins"><a class="toclink" href="#configure-plugins">Configure Plugins</a></h3>
+<p>Put this at the top of your <code>.vimrc</code> to use Vundle. Remove plugins you don't need, they are for illustration purposes. </p>
+<div class="highlight"><pre>set nocompatible              &quot; be iMproved, required
+filetype off                  &quot; required
+
+&quot; set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+&quot; alternatively, pass a path where Vundle should install plugins
+&quot;call vundle#begin(&#39;~/some/path/here&#39;)
+
+&quot; let Vundle manage Vundle, required
+Plugin &#39;VundleVim/Vundle.vim&#39;
+
+&quot; The following are examples of different formats supported.
+&quot; Keep Plugin commands between vundle#begin/end.
+&quot; plugin on GitHub repo
+Plugin &#39;tpope/vim-fugitive&#39;
+&quot; plugin from http://vim-scripts.org/vim/scripts.html
+Plugin &#39;L9&#39;
+&quot; Git plugin not hosted on GitHub
+Plugin &#39;git://git.wincent.com/command-t.git&#39;
+&quot; git repos on your local machine (i.e. when working on your own plugin)
+Plugin &#39;file:///home/gmarik/path/to/plugin&#39;
+&quot; The sparkup vim script is in a subdirectory of this repo called vim.
+&quot; Pass the path to set the runtimepath properly.
+Plugin &#39;rstacruz/sparkup&#39;, {&#39;rtp&#39;: &#39;vim/&#39;}
+&quot; Avoid a name conflict with L9
+Plugin &#39;user/L9&#39;, {&#39;name&#39;: &#39;newL9&#39;}
+
+&quot; All of your Plugins must be added before the following line
+call vundle#end()            &quot; required
+filetype plugin indent on    &quot; required
+&quot; To ignore plugin indent changes, instead use:
+&quot;filetype plugin on
+
+&quot; Put your non-Plugin stuff after this line
+</pre></div>
+
+
+<h3 id="brief-instructions"><a class="toclink" href="#brief-instructions">Brief Instructions</a></h3>
+<ul>
+<li><code>:PluginList</code>         - lists configured plugins</li>
+<li><code>:PluginInstall</code>      - installs plugins; append <code>!</code> to update or just :PluginUpdate</li>
+<li><code>:PluginSearch foo</code>   - searches for foo; append <code>!</code> to refresh local cache</li>
+<li><code>:PluginClean</code>        - confirms removal of unused plugins; append <code>!</code> to auto-approve removal</li>
+<li><code>:h vundle</code> for more details or wiki for FAQ</li>
+</ul>
+<blockquote>
+<p>You may see some people use <code>BundleXxxx</code> instead of <code>PluginXxxx</code>. They are nearly the same but <code>PluginXxxx</code> is recommended since 2014. <code>BundleXxxx</code> still can be used only for compatibility reasons.</p>
+</blockquote>
             <section>
     <p id="post-share-links">
     Share on:
-    <a href="http://twitter.com/home?status=%E7%83%9F%E9%9C%BE%20http%3A//lele1122.github.io/haze-zh_CN.html" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="http://twitter.com/home?status=Vim%20Tutorial%20%284%29%20Configure%20Vim%20http%3A//lele1122.github.io/vim-tutorial-plugins-en-US.html" target="_blank" title="Share on Twitter">Twitter</a>
     ❄
-    <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=http%3A//lele1122.github.io/haze-zh_CN.html" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=http%3A//lele1122.github.io/vim-tutorial-plugins-en-US.html" target="_blank" title="Share on Facebook">Facebook</a>
     ❄
-    <a href="https://plus.google.com/share?url=http%3A//lele1122.github.io/haze-zh_CN.html" target="_blank" title="Share on Google Plus">Google+</a>
+    <a href="https://plus.google.com/share?url=http%3A//lele1122.github.io/vim-tutorial-plugins-en-US.html" target="_blank" title="Share on Google Plus">Google+</a>
     ❄
-    <a href="mailto:?subject=%E7%83%9F%E9%9C%BE&amp;body=http%3A//lele1122.github.io/haze-zh_CN.html" target="_blank" title="Share via Email">Email</a>
+    <a href="mailto:?subject=Vim%20Tutorial%20%284%29%20Configure%20Vim&amp;body=http%3A//lele1122.github.io/vim-tutorial-plugins-en-US.html" target="_blank" title="Share via Email">Email</a>
     </p>
 </section>
 
@@ -117,7 +167,7 @@
     <div class="accordion-group">
         <div class="accordion-heading">
             <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2"
-                href="http://lele1122.github.io/haze-zh_CN.html#disqus_thread">
+                href="http://lele1122.github.io/vim-tutorial-plugins-en-US.html#disqus_thread">
                 Comments
             </a>
         </div>
@@ -127,8 +177,8 @@
                     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'plusok';
-        var disqus_identifier = 'http://lele1122.github.io/haze-zh_CN.html';
-    var disqus_url = 'http://lele1122.github.io/haze-zh_CN.html';
+        var disqus_identifier = 'http://lele1122.github.io/vim-tutorial-plugins-en-US.html';
+    var disqus_url = 'http://lele1122.github.io/vim-tutorial-plugins-en-US.html';
 
     (function() {
          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -147,11 +197,19 @@
 </section>
 
             <hr/>
+<section>
+    <h2>Related Posts</h2>
+<ul class="related-posts-list">
+<li><a href="http://lele1122.github.io/vim-tutorial-start-en-US.html" title="Vim Tutorial (1) - Start Using Vim">Vim Tutorial (1) <small>Start Using Vim</small></a></li>
+<li><a href="http://lele1122.github.io/vim-tutorial-config-en-US.html" title="Vim Tutorial (2) - Configure Vim">Vim Tutorial (2) <small>Configure Vim</small></a></li>
+<li><a href="http://lele1122.github.io/vim-tutorial-theme-en-US.html" title="Vim Tutorial (3) - Theme and Font">Vim Tutorial (3) <small>Theme and Font</small></a></li>
+</ul>
+<hr />
+</section>
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="http://lele1122.github.io/pelican-settings-en-US.html" title="Previous: Introduction to Pelican (2) - Theme &#39;Elegant&#39; Settings">Introduction to Pelican (2) <small>Theme 'Elegant' Settings</small></a></li>
-                <li class="next-article"><a href="http://lele1122.github.io/vim-tutorial-start-en-US.html" title="Next: Vim Tutorial (1) - Start Using Vim">Vim Tutorial (1) <small>Start Using Vim</small></a> »</li>
+                <li class="previous-article">« <a href="http://lele1122.github.io/vim-tutorial-theme-en-US.html" title="Previous: Vim Tutorial (3) - Theme and Font">Vim Tutorial (3) <small>Theme and Font</small></a></li>
             </ul>
             </nav>
             </aside>
@@ -159,23 +217,26 @@
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time pubdate="pubdate" datetime="2015-09-29T13:45:00+08:00">Sep 29, 2015</time>
+            <time pubdate="pubdate" datetime="2015-10-10T16:34:00+08:00">Oct 10, 2015</time>
 
 <h4>Last Updated</h4>
-<time datetime="2015-09-29T16:07:00+08:00">Sep 29, 2015</time>
+<time datetime="2015-10-10T16:34:00+08:00">Oct 10, 2015</time>
 
             <h4>Category</h4>
-            <a class="category-link" href="http://lele1122.github.io/categories.html#self-ref">Self</a>
+            <a class="category-link" href="http://lele1122.github.io/categories.html#coding-ref">Coding</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="http://lele1122.github.io/tags.html#haze-ref">Haze
+                <li><a href="http://lele1122.github.io/tags.html#config-ref">config
                     <span>1</span>
 </a></li>
-                <li><a href="http://lele1122.github.io/tags.html#life-ref">Life
+                <li><a href="http://lele1122.github.io/tags.html#mac-ref">mac
+                    <span>4</span>
+</a></li>
+                <li><a href="http://lele1122.github.io/tags.html#plugins-ref">plugins
                     <span>1</span>
 </a></li>
-                <li><a href="http://lele1122.github.io/tags.html#singapore-ref">Singapore
-                    <span>1</span>
+                <li><a href="http://lele1122.github.io/tags.html#vim-ref">vim
+                    <span>4</span>
 </a></li>
             </ul>
 <h4>Contact</h4>
