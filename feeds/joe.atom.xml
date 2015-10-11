@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>+OK</title><link href="http://lele1122.github.io/" rel="alternate"></link><link href="http://lele1122.github.io/feeds/joe.atom.xml" rel="self"></link><id>http://lele1122.github.io/</id><updated>2015-10-10T16:34:00+08:00</updated><entry><title>Vim Tutorial (4)</title><link href="http://lele1122.github.io/vim-tutorial-plugins-en-US.html" rel="alternate"></link><updated>2015-10-10T16:34:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-10:vim-tutorial-plugins-en-US.html</id><summary type="html">&lt;h2 id="add-plugins"&gt;&lt;a class="toclink" href="#add-plugins"&gt;Add Plugins&lt;/a&gt;&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>+OK</title><link href="http://lele1122.github.io/" rel="alternate"></link><link href="http://lele1122.github.io/feeds/joe.atom.xml" rel="self"></link><id>http://lele1122.github.io/</id><updated>2015-10-11T18:13:00+08:00</updated><entry><title>毛氏红烧肉</title><link href="http://lele1122.github.io/red-cooked-pork-zh-CN.html" rel="alternate"></link><updated>2015-10-11T18:13:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-11:red-cooked-pork-zh-CN.html</id><summary type="html">&lt;p&gt;有时候一道菜做了即便还是没能做好，主要原因是没有总结归纳。为了防止以后出现类似问题，我把最近做一道菜可能错误写下以免日后再犯。&lt;/p&gt;
+&lt;p&gt;这里先写一道关于红烧肉的。毛氏红烧肉，不放酱油。&lt;/p&gt;
+&lt;h2 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;材料&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;五花肉，料酒，老姜，蒜蓉，糖，盐，水，葱花&lt;/p&gt;
+&lt;p&gt;当然还有八角花椒桂皮什么的等等，我暂时都没就没用，如果加了味道应该更浓郁。&lt;/p&gt;
+&lt;p&gt;因为没有度量工具，总是没法很精确的计算出用量，这里先凑合的写：适量 （不许笑！）&lt;/p&gt;
+&lt;h2 id="_2"&gt;&lt;a class="toclink" href="#_2"&gt;步骤&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="_3"&gt;&lt;a class="toclink" href="#_3"&gt;生肉处理&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;其实关于红烧肉有很多做法，这篇所写的应该算是毛氏红烧肉。网上有很多教程，比如要开水煮肉块，炒完糖色直接放红烧肉；有的要冷水煮整块之后才能切肉，有的都不过水直接放入一大锅油来脱脂。每个都是饭店大厨，你也分不清谁家的更好。&lt;/p&gt;
+&lt;p&gt;总之，我是整块放入冷水里慢慢煮来过血水,加入葱姜蒜陈皮八角，大约25分钟。最终煮出来也挺嫩，不过也有可能是最后一步骤炖肉时炖嫩的，毕竟我不可能过完血水直接咬一口肉吧。然后切成块以备后用。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;关键&lt;/em&gt;：凉水，不加盐&lt;/p&gt;
+&lt;h3 id="_4"&gt;&lt;a class="toclink" href="#_4"&gt;炒糖色&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;锅中放油，放入大量白砂糖或者冰糖或者红糖，炒至红褐色冒泡，然后加点水搅匀。&lt;/p&gt;
+&lt;h3 id="_5"&gt;&lt;a class="toclink" href="#_5"&gt;炒肉&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;锅中热油，加各种葱姜，有香味后继续加各种大料，然后加肉块。煸肉的时候要10-15分钟让油析出，表面金黄。然后可以加入糖色，大碗黄酒, 少许水，大火炖5分钟左右后小火炖半小时左右。最后大火收汁盛出。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;关键&lt;/em&gt;：不加酱油&lt;/p&gt;</summary><category term="pork"></category><category term="cooking"></category><category term="dish"></category></entry><entry><title>Vim Tutorial (4)</title><link href="http://lele1122.github.io/vim-tutorial-plugins-en-US.html" rel="alternate"></link><updated>2015-10-10T16:34:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-10:vim-tutorial-plugins-en-US.html</id><summary type="html">&lt;h2 id="add-plugins"&gt;&lt;a class="toclink" href="#add-plugins"&gt;Add Plugins&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;With Plugins, you can use Vim more efficiently. But you'd better be proficient with Vim before adding any plugins.&lt;/p&gt;
 &lt;p&gt;There are many ways to add plugins, but it would be hard to manage plugins. To solve this problem, the plugin manager &lt;a href="https://github.com/VundleVim/Vundle.vim"&gt;Vundle&lt;/a&gt; will be helpful.&lt;/p&gt;
 &lt;h3 id="vundle-set-up"&gt;&lt;a class="toclink" href="#vundle-set-up"&gt;Vundle Set-Up&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
@@ -98,7 +114,7 @@ set guifont=Source_Code_Pro:h15
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;or in MacVim by:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;:e .vimrc
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="vim"></category><category term="mac"></category></entry><entry><title>Vim Tutorial (1)</title><link href="http://lele1122.github.io/vim-tutorial-start-en-US.html" rel="alternate"></link><updated>2015-10-10T00:00:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-09:vim-tutorial-start-en-US.html</id><summary type="html">
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="vim"></category><category term="mac"></category></entry><entry><title>Vim Tutorial (1)</title><link href="http://lele1122.github.io/vim-tutorial-start-en-US.html" rel="alternate"></link><updated>2015-10-10T23:59:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-09:vim-tutorial-start-en-US.html</id><summary type="html">
 &lt;h2 id="text-editors"&gt;&lt;a class="toclink" href="#text-editors"&gt;Text Editors&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;It is said there are three text editors in the world:&lt;a href="https://www.gnu.org/software/emacs/"&gt;Emacs&lt;/a&gt;, &lt;a href="http://www.vim.org/"&gt;Vim&lt;/a&gt; and others. No matter whether it is true or wrong (depending on you), you cannot deny that &lt;a href="https://www.gnu.org/software/emacs/"&gt;Emacs&lt;/a&gt; and &lt;a href="http://www.vim.org/"&gt;Vim&lt;/a&gt; are two powerful text editors. The debates between Emacs group and Vim group have never stopped.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -106,7 +122,7 @@ set guifont=Source_Code_Pro:h15
 &lt;p&gt;Emac is actually an OS which pretends to be an editor.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id="why-vim"&gt;&lt;a class="toclink" href="#why-vim"&gt;Why Vim&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;With the curiosity, I do the search and found the following picture describes the learning curves of some common text editors.&lt;/p&gt;
+&lt;p&gt;With curiosity, I did search and found the following picture describing the learning curves of some common text editors.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="full study curve" src="https://lh3.googleusercontent.com/knU9G9j_U1nkGfCZQ-7H_ncg-xAz5i_-OpWhg4sYWARnOKiUeT-tEtrjQahxZZ9wDjWFewaHQXFMGZ_CCs8iySHdvgSfJdsq9Q-uu7mzK5NZmOVix1Q4PF2B9yuGj2NUxRNBaHfcR9-lcZ5wa2g7uwckxnFq9TJXVtfBwou7zRIz2PIOoFlHxd4hvTgYBYJY_Z-rVSvt9fcztYkVOKK0xovKda1iePc-3_MABAanqYPRXMYzDa5yVSoBDlFLAzAP5IArVxYEuRtyhi2cZ9LdExqzbfcCGfdneT-SQ0yS-g3omPqVi-3aWeAL7ml3AxKFSx9Z3KNALejePf-sRrJQ2iYaaI5RjJ1QyHHXovkAncWjQ-VJLCQ52onivZr-f1_J-p6NoqHqWJWfDoY7vs_ALTKPq353XZ20mS_QQwfsnQ8nHktInRytZhjUVjwYgEygoQJROkPGT-5Jrm8fpmKPnHL4-0aYM_EQ-nC5p-5r1Qkk3hF3IOnoRpQNrR4ErHRJQR24-kZj0dKo61gDuOd4UUeGqJAJCK45XkBXBHeP1VE3=w802-h580-no"/&gt;
 &lt;em&gt;Study Curve of Editors&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;It can be seen Vim has a very steep study curve and Emacs has a @#$%^&amp;amp;* ... &lt;/p&gt;
@@ -121,10 +137,10 @@ set guifont=Source_Code_Pro:h15
 &lt;p&gt;You can also open MacVim from Terminal once you set by this (temporary):&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;alias &lt;/span&gt;&lt;span class="nv"&gt;mvim&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'/Applications/MacVim.app/Contents/MacOS/MacVim'&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;To know how to change persistently, change &lt;code&gt;.bash_profile&lt;/code&gt;. Try yourself ! &lt;/p&gt;
+&lt;p&gt;With this installation method, I do not know a simple method to change persistently after upgrading to El Capitan with rootless usr folder. If you know, please tell me.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;To install MacVim by Terminal:&lt;/p&gt;
+&lt;p&gt;To install MacVim by Terminal (You must have installed Homebrew):&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;brew install macvim
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;To start MacVim:&lt;/p&gt;
@@ -134,7 +150,7 @@ set guifont=Source_Code_Pro:h15
 &lt;/ol&gt;
 &lt;h2 id="ready-to-use"&gt;&lt;a class="toclink" href="#ready-to-use"&gt;Ready to Use ?!&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="basic-level"&gt;&lt;a class="toclink" href="#basic-level"&gt;Basic Level&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;After you start Vim, it is in the mode &lt;code&gt;normal&lt;/code&gt;, to enter mode &lt;code&gt;insert&lt;/code&gt;, press &lt;code&gt;i&lt;/code&gt;. You will see -insert- at left-bottom corner of Vim. If you want to return &lt;code&gt;normal&lt;/code&gt; mode, press &lt;code&gt;ESC&lt;/code&gt;. All the commands should be done in &lt;code&gt;normal&lt;/code&gt; mode.&lt;/p&gt;
+&lt;p&gt;After you start MacVim, it is in the mode &lt;code&gt;normal&lt;/code&gt;, to enter mode &lt;code&gt;insert&lt;/code&gt;, press &lt;code&gt;i&lt;/code&gt;. You will see -insert- at left-bottom corner of Vim. If you want to return &lt;code&gt;normal&lt;/code&gt; mode, press &lt;code&gt;ESC&lt;/code&gt;. All the commands should be done in &lt;code&gt;normal&lt;/code&gt; mode.&lt;/p&gt;
 &lt;p&gt;Some basic command:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;i   → Insert mode
 ESC → Normal mode
@@ -164,6 +180,9 @@ hjkl → (←↓↑→)
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html"&gt;Graphical Cheat Sheet&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://danielmiessler.com/study/vim/#references"&gt;A vim Tutorial and Primer&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</summary><category term="vim"></category><category term="mac"></category></entry><entry><title>烟霾</title><link href="http://lele1122.github.io/haze-zh_CN.html" rel="alternate"></link><updated>2015-09-29T16:07:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-09-29:haze-zh_CN.html</id><summary type="html">&lt;p&gt;来新加坡已经将近5年了。期间心情有好有坏，就像曾经所写的博客一样，在忙碌中不知不觉的长草忘却。转眼间，自己都已经毕业了，回顾过去，有些事情还是那么的相似。无论在屋内心情如何，每次出门，新加坡的天气却让人精神振奋。蓝天白云，让长期在中国雾霾下成长的感慨蓝天是外国的蓝。&lt;/p&gt;
 &lt;p&gt;我记得在来新加坡的前几个月，我还因为看了一段鞭刑的视频说到长大不会前往新加坡，这个国家的刑法过于恐怖。可话说没多久，不知不觉的进了前往新加坡学习的项目。就像一个多月前，我看着新加坡本地论坛上有人二手售卖着空气净化器，对一旁的女朋友说：“在新加坡还有人往家里买空气净化器？搞笑呢。” 搞笑的却是没过多久，新加坡就被印尼烧芭所引发的森林大火产生的烟霾覆盖。空气中所弥漫的焦味即便在门窗关紧的室内都能闻到。从家中窗口望出去，楼下的公园几乎成为“仙境”:
@@ -244,6 +263,7 @@ Here are some recommended websites:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;LC_ALL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;en_US.UTF-8
 &lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;LANG&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;en_US.UTF-8
 &lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To change it persistently, you need to add above command in &lt;code&gt;~/.profile&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id="1"&gt;Pelican Setup&lt;/h2&gt;
 &lt;p&gt;Create a local folder for the blog:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir blog &lt;span class="c"&gt;#you can decide the name you want&lt;/span&gt;
