@@ -12,19 +12,19 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="vim, mac, plugins, config, Coding, " />
+<meta name="keywords" content="latex, sublime, skim, Coding, " />
 
-<meta property="og:title" content="Vim Tutorial (4)  - Configure Vim "/>
-<meta property="og:url" content="http://lele1122.github.io/vim-tutorial-plugins-en-US.html" />
-<meta property="og:description" content="Add Plugins With Plugins, you can use Vim more efficiently. But you&#39;d better be proficient with Vim before adding any plugins. There are many ..." />
+<meta property="og:title" content="Sublime Text + LaTeX Tool + Skim "/>
+<meta property="og:url" content="http://lele1122.github.io/sublime-latex-skim-en-US.html" />
+<meta property="og:description" content="Preparation Sublime Text 3 + LaTeXTools + Skim Sublime Text 3 You can download Sublime Text 3 for the evaluation without enforced time limit. LaTeXTools LaTeXTools is ..." />
 <meta property="og:site_name" content="+OK" />
 <meta property="og:article:author" content="Joe" />
-<meta property="og:article:published_time" content="2015-10-10T16:34:00+08:00" />
-<meta property="" content="2015-10-10T16:34:00+08:00" />
-<meta name="twitter:title" content="Vim Tutorial (4)  - Configure Vim ">
-<meta name="twitter:description" content="Add Plugins With Plugins, you can use Vim more efficiently. But you&#39;d better be proficient with Vim before adding any plugins. There are many ...">
+<meta property="og:article:published_time" content="2015-10-13T15:34:00+08:00" />
+<meta property="" content="2015-09-13T21:07:00+08:00" />
+<meta name="twitter:title" content="Sublime Text + LaTeX Tool + Skim ">
+<meta name="twitter:description" content="Preparation Sublime Text 3 + LaTeXTools + Skim Sublime Text 3 You can download Sublime Text 3 for the evaluation without enforced time limit. LaTeXTools LaTeXTools is ...">
 
-        <title>Vim Tutorial (4)  - Configure Vim  · +OK
+        <title>Sublime Text + LaTeX Tool + Skim  · +OK
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -82,7 +82,7 @@
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="http://lele1122.github.io/vim-tutorial-plugins-en-US.html"> Vim Tutorial (4)  <small> Configure Vim </small>  </a></h1>
+    <h1><a href="http://lele1122.github.io/sublime-latex-skim-en-US.html"> Sublime Text + LaTeX Tool + Skim  </a></h1>
     </header>
 </div>
 
@@ -90,75 +90,49 @@
         <div class="span8 offset2 article-content">
 
             
-            <h2 id="add-plugins"><a class="toclink" href="#add-plugins">Add Plugins</a></h2>
-<p>With Plugins, you can use Vim more efficiently. But you'd better be proficient with Vim before adding any plugins.</p>
-<p>There are many ways to add plugins, but it would be hard to manage plugins. To solve this problem, the plugin manager <a href="https://github.com/VundleVim/Vundle.vim">Vundle</a> will be helpful.</p>
-<h3 id="vundle-set-up"><a class="toclink" href="#vundle-set-up">Vundle Set-Up</a></h3>
-<div class="highlight"><pre><span class="nv">$ </span>git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-</pre></div>
-
-
-<h3 id="configure-plugins"><a class="toclink" href="#configure-plugins">Configure Plugins</a></h3>
-<p>Put this at the top of your <code>.vimrc</code> to use Vundle. Remove plugins you don't need, they are for illustration purposes. </p>
-<div class="highlight"><pre>set nocompatible              &quot; be iMproved, required
-filetype off                  &quot; required
-
-&quot; set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-&quot; alternatively, pass a path where Vundle should install plugins
-&quot;call vundle#begin(&#39;~/some/path/here&#39;)
-
-&quot; let Vundle manage Vundle, required
-Plugin &#39;VundleVim/Vundle.vim&#39;
-
-&quot; The following are examples of different formats supported.
-&quot; Keep Plugin commands between vundle#begin/end.
-&quot; plugin on GitHub repo
-Plugin &#39;tpope/vim-fugitive&#39;
-&quot; plugin from http://vim-scripts.org/vim/scripts.html
-Plugin &#39;L9&#39;
-&quot; Git plugin not hosted on GitHub
-Plugin &#39;git://git.wincent.com/command-t.git&#39;
-&quot; git repos on your local machine (i.e. when working on your own plugin)
-Plugin &#39;file:///home/gmarik/path/to/plugin&#39;
-&quot; The sparkup vim script is in a subdirectory of this repo called vim.
-&quot; Pass the path to set the runtimepath properly.
-Plugin &#39;rstacruz/sparkup&#39;, {&#39;rtp&#39;: &#39;vim/&#39;}
-&quot; Avoid a name conflict with L9
-Plugin &#39;user/L9&#39;, {&#39;name&#39;: &#39;newL9&#39;}
-
-&quot; All of your Plugins must be added before the following line
-call vundle#end()            &quot; required
-filetype plugin indent on    &quot; required
-&quot; To ignore plugin indent changes, instead use:
-&quot;filetype plugin on
-
-&quot; Put your non-Plugin stuff after this line
-</pre></div>
-
-
-<h3 id="brief-instructions"><a class="toclink" href="#brief-instructions">Brief Instructions</a></h3>
+            <h2 id="preparation"><a class="toclink" href="#preparation">Preparation</a></h2>
+<p><a href="http://www.sublimetext.com/3">Sublime Text 3</a> + <a href="https://github.com/SublimeText/LaTeXTools">LaTeXTools</a> + <a href="http://skim-app.sourceforge.net/">Skim</a> </p>
+<h3 id="sublime-text-3"><a class="toclink" href="#sublime-text-3">Sublime Text 3</a></h3>
+<p>You can download <a href="http://www.sublimetext.com/3">Sublime Text 3</a> for the evaluation without enforced time limit.</p>
+<h3 id="latextools"><a class="toclink" href="#latextools">LaTeXTools</a></h3>
+<p><a href="https://github.com/SublimeText/LaTeXTools">LaTeXTools</a> is a plugin for <a href="http://www.sublimetext.com/3">Sublime Text 3</a>, which provides LaTeX supports.</p>
+<p>Install <a href="https://packagecontrol.io/installation">Package Control</a> by following the instructions in <a href="https://packagecontrol.io/installation">Package Control</a>. </p>
+<p>In the Sublime Text 3 window, press Command + Shift + P (Command Palette) and type in <code>install</code> and return. It will search for a while. Then find <code>LaTeXTools</code> and install. </p>
+<p><img alt="Package Control Install" src="https://lh3.googleusercontent.com/pWQSxGVyyuIBccHzBSCNxdrwQqyUy4nA-CqGCwnGOxmrZ6T2IgocVC3T7GI7JZp3TIc07DWs0CBiLMGXu6kv-jY8fQjjzDJP3OI2aQN7pETwdhR-RrXdgu7CYAHnQ3RpXbhU7w8aUHhPta5K8gUY5yYe1bPs4EVyudUmLw3Em5fkGeljhp-1avbjx5uWXICEbCKwWzHmZSi9bikU45FkII-ZIXFHQNrn_mgupPT5gBYLA2eolg8Zq69TVxlt3GrJNUCZjr3BP8riMP2u7uEYMtt01_GZ9HkiZXkHva7f1rd9PU4IuJoci-DhTjiReAGUDeOBI34ngjHPJ381RY_AGG9xqsmh8UwCTBO4yJhoRoPZhSLikS2xGUYdMUaoarKunkl9xUN4pUA-lpAyJ0CIPMkoYcz8BZZUi9eDAtR_bnIPGcLVr-WeFMLhsXZTHTe02sRnaEjXUM23HQtwbnxBEoYXyprTPsIT98wvMc2hqJettCXf7VMcO7M007bqaVF4vxAwRVMrJIo7L6YIabFSg23SXH3mHEqyAfp9iWYi-sRT=w460-h52-no" />
+<em>Package control install</em></p>
+<p>If you are installing LaTeXTools for the first time, you need to create a configuration file, <code>LaTeXTools.sublime-settings</code>, in your <code>User</code> directory (off the Packages) directory. To do so, open the command palette from the Tools menu, search for "LaTeXTools: Reconfigure and migrate settings," and hit Return. </p>
+<h3 id="skim"><a class="toclink" href="#skim">Skim</a></h3>
+<p><a href="http://skim-app.sourceforge.net/">Skim</a> is a PDF reader to view PDF files.</p>
+<h2 id="basic-operations"><a class="toclink" href="#basic-operations">Basic Operations</a></h2>
+<p>Most LaTeXTools facilities are triggered using <code>Ctrl-l</code> (Windows, Linux) or <code>Cmd-l</code> (OS X), followed by some other key or key combination.</p>
+<h3 id="compiling-latex-files"><a class="toclink" href="#compiling-latex-files">Compiling LaTeX files</a></h3>
+<p>Keybinding: <code>Cmd-b</code></p>
+<p><strong>Multi-file documents</strong>: first line in the current file consists of the text <code>%!TEX root = &lt;master file name&gt;</code>.</p>
+<p><strong>TeX engine selection</strong>: first line of the current file consists of the text <code>%!TEX program = &lt;program&gt;</code>. 'pdflatex' is the default. For multi-file documents, the directive must be in the <em>root</em> file.</p>
+<h3 id="tips"><a class="toclink" href="#tips">Tips</a></h3>
+<p><strong>Forward Searching</strong>: <code>C-l,j</code></p>
+<p><strong>Reverse Searching</strong>: <code>Cmd+shift+click</code> in Skim, noble-clicking in Sumatra.</p>
+<p><strong>Jumping to sections and labels</strong>: <code>C-r</code></p>
+<p><strong>commands and environments</strong>: <code>C-l,c</code> for commands and <code>C-l,e</code> for environment.</p>
+<p><strong>Wrapping</strong>: <code>C-l,C-c</code> wraps the selected text in a LaTeX command structure, e.g. <code>blah</code> to <code>\cmd{blah}</code>. Then tab to the end of command. </p>
 <ul>
-<li><code>:PluginList</code>         - lists configured plugins</li>
-<li><code>:PluginInstall</code>      - installs plugins; append <code>!</code> to update or just :PluginUpdate</li>
-<li><code>:PluginSearch foo</code>   - searches for foo; append <code>!</code> to refresh local cache</li>
-<li><code>:PluginClean</code>        - confirms removal of unused plugins; append <code>!</code> to auto-approve removal</li>
-<li><code>:h vundle</code> for more details or wiki for FAQ</li>
+<li><code>C-l,C-e</code> gives you <code>\emph{blah}</code>, and the cursor moves to the end of the command.</li>
+<li><code>C-l,C-b</code> gives you <code>\textbf{blah}</code></li>
+<li><code>C-l,C-u</code> gives you <code>\underline{blah}</code></li>
+<li><code>C-l,C-t</code> gives you <code>\texttt{blah}</code></li>
+<li><code>C-l,C-n</code> wraps the selected text in a LaTeX environment structure. You get <code>\begin{env}</code>,<code>blah</code>, <code>\end{env}</code> on three separate lines, with env selected. Change env to whatever environment you want, then hit Tab to move to the end of the environment.</li>
 </ul>
-<blockquote>
-<p>You may see some people use <code>BundleXxxx</code> instead of <code>PluginXxxx</code>. They are nearly the same but <code>PluginXxxx</code> is recommended since 2014. <code>BundleXxxx</code> still can be used only for compatibility reasons.</p>
-</blockquote>
+<p><strong>Snippets</strong>: Tools|Snippets</p>
             <section>
     <p id="post-share-links">
     Share on:
-    <a href="http://twitter.com/home?status=Vim%20Tutorial%20%284%29%20Configure%20Vim%20http%3A//lele1122.github.io/vim-tutorial-plugins-en-US.html" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="http://twitter.com/home?status=Sublime%20Text%20%2B%20LaTeX%20Tool%20%2B%20Skim%20http%3A//lele1122.github.io/sublime-latex-skim-en-US.html" target="_blank" title="Share on Twitter">Twitter</a>
     ❄
-    <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=http%3A//lele1122.github.io/vim-tutorial-plugins-en-US.html" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=http%3A//lele1122.github.io/sublime-latex-skim-en-US.html" target="_blank" title="Share on Facebook">Facebook</a>
     ❄
-    <a href="https://plus.google.com/share?url=http%3A//lele1122.github.io/vim-tutorial-plugins-en-US.html" target="_blank" title="Share on Google Plus">Google+</a>
+    <a href="https://plus.google.com/share?url=http%3A//lele1122.github.io/sublime-latex-skim-en-US.html" target="_blank" title="Share on Google Plus">Google+</a>
     ❄
-    <a href="mailto:?subject=Vim%20Tutorial%20%284%29%20Configure%20Vim&amp;body=http%3A//lele1122.github.io/vim-tutorial-plugins-en-US.html" target="_blank" title="Share via Email">Email</a>
+    <a href="mailto:?subject=Sublime%20Text%20%2B%20LaTeX%20Tool%20%2B%20Skim&amp;body=http%3A//lele1122.github.io/sublime-latex-skim-en-US.html" target="_blank" title="Share via Email">Email</a>
     </p>
 </section>
 
@@ -168,7 +142,7 @@ filetype plugin indent on    &quot; required
     <div class="accordion-group">
         <div class="accordion-heading">
             <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2"
-                href="http://lele1122.github.io/vim-tutorial-plugins-en-US.html#disqus_thread">
+                href="http://lele1122.github.io/sublime-latex-skim-en-US.html#disqus_thread">
                 Comments
             </a>
         </div>
@@ -178,8 +152,8 @@ filetype plugin indent on    &quot; required
                     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'plusok';
-        var disqus_identifier = 'http://lele1122.github.io/vim-tutorial-plugins-en-US.html';
-    var disqus_url = 'http://lele1122.github.io/vim-tutorial-plugins-en-US.html';
+        var disqus_identifier = 'http://lele1122.github.io/sublime-latex-skim-en-US.html';
+    var disqus_url = 'http://lele1122.github.io/sublime-latex-skim-en-US.html';
 
     (function() {
          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -198,20 +172,10 @@ filetype plugin indent on    &quot; required
 </section>
 
             <hr/>
-<section>
-    <h2>Related Posts</h2>
-<ul class="related-posts-list">
-<li><a href="http://lele1122.github.io/vim-tutorial-start-en-US.html" title="Vim Tutorial (1) - Start Using Vim">Vim Tutorial (1) <small>Start Using Vim</small></a></li>
-<li><a href="http://lele1122.github.io/vim-tutorial-config-en-US.html" title="Vim Tutorial (2) - Configure Vim">Vim Tutorial (2) <small>Configure Vim</small></a></li>
-<li><a href="http://lele1122.github.io/vim-tutorial-theme-en-US.html" title="Vim Tutorial (3) - Theme and Font">Vim Tutorial (3) <small>Theme and Font</small></a></li>
-</ul>
-<hr />
-</section>
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="http://lele1122.github.io/vim-tutorial-theme-en-US.html" title="Previous: Vim Tutorial (3) - Theme and Font">Vim Tutorial (3) <small>Theme and Font</small></a></li>
-                <li class="next-article"><a href="http://lele1122.github.io/red-cooked-pork-zh_CN.html" title="Next: 毛氏红烧肉">毛氏红烧肉</a> »</li>
+                <li class="previous-article">« <a href="http://lele1122.github.io/red-cooked-pork-zh_CN.html" title="Previous: 毛氏红烧肉">毛氏红烧肉</a></li>
             </ul>
             </nav>
             </aside>
@@ -219,26 +183,23 @@ filetype plugin indent on    &quot; required
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time pubdate="pubdate" datetime="2015-10-10T16:34:00+08:00">Oct 10, 2015</time>
+            <time pubdate="pubdate" datetime="2015-10-13T15:34:00+08:00">Oct 13, 2015</time>
 
 <h4>Last Updated</h4>
-<time datetime="2015-10-10T16:34:00+08:00">Oct 10, 2015</time>
+<time datetime="2015-09-13T21:07:00+08:00">Sep 13, 2015</time>
 
             <h4>Category</h4>
             <a class="category-link" href="http://lele1122.github.io/categories.html#coding-ref">Coding</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="http://lele1122.github.io/tags.html#config-ref">config
+                <li><a href="http://lele1122.github.io/tags.html#latex-ref">latex
                     <span>1</span>
 </a></li>
-                <li><a href="http://lele1122.github.io/tags.html#mac-ref">mac
-                    <span>4</span>
-</a></li>
-                <li><a href="http://lele1122.github.io/tags.html#plugins-ref">plugins
+                <li><a href="http://lele1122.github.io/tags.html#skim-ref">skim
                     <span>1</span>
 </a></li>
-                <li><a href="http://lele1122.github.io/tags.html#vim-ref">vim
-                    <span>4</span>
+                <li><a href="http://lele1122.github.io/tags.html#sublime-ref">sublime
+                    <span>1</span>
 </a></li>
             </ul>
 <h4>Contact</h4>

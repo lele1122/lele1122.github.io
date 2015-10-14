@@ -12,19 +12,19 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="vim, mac, plugins, config, Coding, " />
+<meta name="keywords" content="pork, cooking, dish, Cooking, " />
 
-<meta property="og:title" content="Vim Tutorial (4)  - Configure Vim "/>
-<meta property="og:url" content="http://lele1122.github.io/vim-tutorial-plugins-en-US.html" />
-<meta property="og:description" content="Add Plugins With Plugins, you can use Vim more efficiently. But you&#39;d better be proficient with Vim before adding any plugins. There are many ..." />
+<meta property="og:title" content="毛氏红烧肉 "/>
+<meta property="og:url" content="http://lele1122.github.io/red-cooked-pork-zh_CN.html" />
+<meta property="og:description" content="有时候一道菜做了即便还是没能做好，主要原因是没有总结归纳。为了防止以后出现类似问题，我把最近做一道菜可能错误写下以免日后再犯。 这里先写一道关于红烧肉的。毛氏红烧肉，不放酱油。 材料 五花肉，料酒，老姜，蒜蓉，糖，盐，水，葱花 当然还有八角花椒桂皮什么的等等，我暂时都没就没用，如果加了味道应该更浓郁。 因为没有度量工具，总是没法很精确的计算出用量，这里先凑合的写：适量 （不许笑！） 步骤 ..." />
 <meta property="og:site_name" content="+OK" />
 <meta property="og:article:author" content="Joe" />
-<meta property="og:article:published_time" content="2015-10-10T16:34:00+08:00" />
-<meta property="" content="2015-10-10T16:34:00+08:00" />
-<meta name="twitter:title" content="Vim Tutorial (4)  - Configure Vim ">
-<meta name="twitter:description" content="Add Plugins With Plugins, you can use Vim more efficiently. But you&#39;d better be proficient with Vim before adding any plugins. There are many ...">
+<meta property="og:article:published_time" content="2015-10-11T16:16:00+08:00" />
+<meta property="" content="2015-10-11T18:13:00+08:00" />
+<meta name="twitter:title" content="毛氏红烧肉 ">
+<meta name="twitter:description" content="有时候一道菜做了即便还是没能做好，主要原因是没有总结归纳。为了防止以后出现类似问题，我把最近做一道菜可能错误写下以免日后再犯。 这里先写一道关于红烧肉的。毛氏红烧肉，不放酱油。 材料 五花肉，料酒，老姜，蒜蓉，糖，盐，水，葱花 当然还有八角花椒桂皮什么的等等，我暂时都没就没用，如果加了味道应该更浓郁。 因为没有度量工具，总是没法很精确的计算出用量，这里先凑合的写：适量 （不许笑！） 步骤 ...">
 
-        <title>Vim Tutorial (4)  - Configure Vim  · +OK
+        <title>毛氏红烧肉  · +OK
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -82,7 +82,7 @@
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="http://lele1122.github.io/vim-tutorial-plugins-en-US.html"> Vim Tutorial (4)  <small> Configure Vim </small>  </a></h1>
+    <h1><a href="http://lele1122.github.io/red-cooked-pork-zh_CN.html"> 毛氏红烧肉  </a></h1>
     </header>
 </div>
 
@@ -90,75 +90,32 @@
         <div class="span8 offset2 article-content">
 
             
-            <h2 id="add-plugins"><a class="toclink" href="#add-plugins">Add Plugins</a></h2>
-<p>With Plugins, you can use Vim more efficiently. But you'd better be proficient with Vim before adding any plugins.</p>
-<p>There are many ways to add plugins, but it would be hard to manage plugins. To solve this problem, the plugin manager <a href="https://github.com/VundleVim/Vundle.vim">Vundle</a> will be helpful.</p>
-<h3 id="vundle-set-up"><a class="toclink" href="#vundle-set-up">Vundle Set-Up</a></h3>
-<div class="highlight"><pre><span class="nv">$ </span>git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-</pre></div>
-
-
-<h3 id="configure-plugins"><a class="toclink" href="#configure-plugins">Configure Plugins</a></h3>
-<p>Put this at the top of your <code>.vimrc</code> to use Vundle. Remove plugins you don't need, they are for illustration purposes. </p>
-<div class="highlight"><pre>set nocompatible              &quot; be iMproved, required
-filetype off                  &quot; required
-
-&quot; set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-&quot; alternatively, pass a path where Vundle should install plugins
-&quot;call vundle#begin(&#39;~/some/path/here&#39;)
-
-&quot; let Vundle manage Vundle, required
-Plugin &#39;VundleVim/Vundle.vim&#39;
-
-&quot; The following are examples of different formats supported.
-&quot; Keep Plugin commands between vundle#begin/end.
-&quot; plugin on GitHub repo
-Plugin &#39;tpope/vim-fugitive&#39;
-&quot; plugin from http://vim-scripts.org/vim/scripts.html
-Plugin &#39;L9&#39;
-&quot; Git plugin not hosted on GitHub
-Plugin &#39;git://git.wincent.com/command-t.git&#39;
-&quot; git repos on your local machine (i.e. when working on your own plugin)
-Plugin &#39;file:///home/gmarik/path/to/plugin&#39;
-&quot; The sparkup vim script is in a subdirectory of this repo called vim.
-&quot; Pass the path to set the runtimepath properly.
-Plugin &#39;rstacruz/sparkup&#39;, {&#39;rtp&#39;: &#39;vim/&#39;}
-&quot; Avoid a name conflict with L9
-Plugin &#39;user/L9&#39;, {&#39;name&#39;: &#39;newL9&#39;}
-
-&quot; All of your Plugins must be added before the following line
-call vundle#end()            &quot; required
-filetype plugin indent on    &quot; required
-&quot; To ignore plugin indent changes, instead use:
-&quot;filetype plugin on
-
-&quot; Put your non-Plugin stuff after this line
-</pre></div>
-
-
-<h3 id="brief-instructions"><a class="toclink" href="#brief-instructions">Brief Instructions</a></h3>
-<ul>
-<li><code>:PluginList</code>         - lists configured plugins</li>
-<li><code>:PluginInstall</code>      - installs plugins; append <code>!</code> to update or just :PluginUpdate</li>
-<li><code>:PluginSearch foo</code>   - searches for foo; append <code>!</code> to refresh local cache</li>
-<li><code>:PluginClean</code>        - confirms removal of unused plugins; append <code>!</code> to auto-approve removal</li>
-<li><code>:h vundle</code> for more details or wiki for FAQ</li>
-</ul>
-<blockquote>
-<p>You may see some people use <code>BundleXxxx</code> instead of <code>PluginXxxx</code>. They are nearly the same but <code>PluginXxxx</code> is recommended since 2014. <code>BundleXxxx</code> still can be used only for compatibility reasons.</p>
-</blockquote>
+            <p>有时候一道菜做了即便还是没能做好，主要原因是没有总结归纳。为了防止以后出现类似问题，我把最近做一道菜可能错误写下以免日后再犯。</p>
+<p>这里先写一道关于红烧肉的。毛氏红烧肉，不放酱油。</p>
+<h2 id="_1"><a class="toclink" href="#_1">材料</a></h2>
+<p>五花肉，料酒，老姜，蒜蓉，糖，盐，水，葱花</p>
+<p>当然还有八角花椒桂皮什么的等等，我暂时都没就没用，如果加了味道应该更浓郁。</p>
+<p>因为没有度量工具，总是没法很精确的计算出用量，这里先凑合的写：适量 （不许笑！）</p>
+<h2 id="_2"><a class="toclink" href="#_2">步骤</a></h2>
+<h3 id="_3"><a class="toclink" href="#_3">生肉处理</a></h3>
+<p>其实关于红烧肉有很多做法，这篇所写的应该算是毛氏红烧肉。网上有很多教程，比如要开水煮肉块，炒完糖色直接放红烧肉；有的要冷水煮整块之后才能切肉，有的都不过水直接放入一大锅油来脱脂。每个都是饭店大厨，你也分不清谁家的更好。</p>
+<p>总之，我是整块放入冷水里慢慢煮来过血水,加入葱姜蒜陈皮八角，大约25分钟。最终煮出来也挺嫩，不过也有可能是最后一步骤炖肉时炖嫩的，毕竟我不可能过完血水直接咬一口肉吧。然后切成块以备后用。</p>
+<p><em>关键</em>：凉水，不加盐</p>
+<h3 id="_4"><a class="toclink" href="#_4">炒糖色</a></h3>
+<p>锅中放油，放入大量白砂糖或者冰糖或者红糖，炒至红褐色冒泡，然后加点水搅匀。</p>
+<h3 id="_5"><a class="toclink" href="#_5">炒肉</a></h3>
+<p>锅中热油，加各种葱姜，有香味后继续加各种大料，然后加肉块。煸肉的时候要10-15分钟让油析出，表面金黄。然后可以加入糖色，大碗黄酒, 少许水，大火炖5分钟左右后小火炖半小时左右。最后大火收汁盛出。</p>
+<p><em>关键</em>：不加酱油</p>
             <section>
     <p id="post-share-links">
     Share on:
-    <a href="http://twitter.com/home?status=Vim%20Tutorial%20%284%29%20Configure%20Vim%20http%3A//lele1122.github.io/vim-tutorial-plugins-en-US.html" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="http://twitter.com/home?status=%E6%AF%9B%E6%B0%8F%E7%BA%A2%E7%83%A7%E8%82%89%20http%3A//lele1122.github.io/red-cooked-pork-zh_CN.html" target="_blank" title="Share on Twitter">Twitter</a>
     ❄
-    <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=http%3A//lele1122.github.io/vim-tutorial-plugins-en-US.html" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=http%3A//lele1122.github.io/red-cooked-pork-zh_CN.html" target="_blank" title="Share on Facebook">Facebook</a>
     ❄
-    <a href="https://plus.google.com/share?url=http%3A//lele1122.github.io/vim-tutorial-plugins-en-US.html" target="_blank" title="Share on Google Plus">Google+</a>
+    <a href="https://plus.google.com/share?url=http%3A//lele1122.github.io/red-cooked-pork-zh_CN.html" target="_blank" title="Share on Google Plus">Google+</a>
     ❄
-    <a href="mailto:?subject=Vim%20Tutorial%20%284%29%20Configure%20Vim&amp;body=http%3A//lele1122.github.io/vim-tutorial-plugins-en-US.html" target="_blank" title="Share via Email">Email</a>
+    <a href="mailto:?subject=%E6%AF%9B%E6%B0%8F%E7%BA%A2%E7%83%A7%E8%82%89&amp;body=http%3A//lele1122.github.io/red-cooked-pork-zh_CN.html" target="_blank" title="Share via Email">Email</a>
     </p>
 </section>
 
@@ -168,7 +125,7 @@ filetype plugin indent on    &quot; required
     <div class="accordion-group">
         <div class="accordion-heading">
             <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2"
-                href="http://lele1122.github.io/vim-tutorial-plugins-en-US.html#disqus_thread">
+                href="http://lele1122.github.io/red-cooked-pork-zh_CN.html#disqus_thread">
                 Comments
             </a>
         </div>
@@ -178,8 +135,8 @@ filetype plugin indent on    &quot; required
                     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'plusok';
-        var disqus_identifier = 'http://lele1122.github.io/vim-tutorial-plugins-en-US.html';
-    var disqus_url = 'http://lele1122.github.io/vim-tutorial-plugins-en-US.html';
+        var disqus_identifier = 'http://lele1122.github.io/red-cooked-pork-zh_CN.html';
+    var disqus_url = 'http://lele1122.github.io/red-cooked-pork-zh_CN.html';
 
     (function() {
          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -198,20 +155,11 @@ filetype plugin indent on    &quot; required
 </section>
 
             <hr/>
-<section>
-    <h2>Related Posts</h2>
-<ul class="related-posts-list">
-<li><a href="http://lele1122.github.io/vim-tutorial-start-en-US.html" title="Vim Tutorial (1) - Start Using Vim">Vim Tutorial (1) <small>Start Using Vim</small></a></li>
-<li><a href="http://lele1122.github.io/vim-tutorial-config-en-US.html" title="Vim Tutorial (2) - Configure Vim">Vim Tutorial (2) <small>Configure Vim</small></a></li>
-<li><a href="http://lele1122.github.io/vim-tutorial-theme-en-US.html" title="Vim Tutorial (3) - Theme and Font">Vim Tutorial (3) <small>Theme and Font</small></a></li>
-</ul>
-<hr />
-</section>
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="http://lele1122.github.io/vim-tutorial-theme-en-US.html" title="Previous: Vim Tutorial (3) - Theme and Font">Vim Tutorial (3) <small>Theme and Font</small></a></li>
-                <li class="next-article"><a href="http://lele1122.github.io/red-cooked-pork-zh_CN.html" title="Next: 毛氏红烧肉">毛氏红烧肉</a> »</li>
+                <li class="previous-article">« <a href="http://lele1122.github.io/vim-tutorial-plugins-en-US.html" title="Previous: Vim Tutorial (4) - Configure Vim">Vim Tutorial (4) <small>Configure Vim</small></a></li>
+                <li class="next-article"><a href="http://lele1122.github.io/sublime-latex-skim-en-US.html" title="Next: Sublime Text + LaTeX Tool + Skim">Sublime Text + LaTeX Tool + Skim</a> »</li>
             </ul>
             </nav>
             </aside>
@@ -219,26 +167,23 @@ filetype plugin indent on    &quot; required
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time pubdate="pubdate" datetime="2015-10-10T16:34:00+08:00">Oct 10, 2015</time>
+            <time pubdate="pubdate" datetime="2015-10-11T16:16:00+08:00">Oct 11, 2015</time>
 
 <h4>Last Updated</h4>
-<time datetime="2015-10-10T16:34:00+08:00">Oct 10, 2015</time>
+<time datetime="2015-10-11T18:13:00+08:00">Oct 11, 2015</time>
 
             <h4>Category</h4>
-            <a class="category-link" href="http://lele1122.github.io/categories.html#coding-ref">Coding</a>
+            <a class="category-link" href="http://lele1122.github.io/categories.html#cooking-ref">Cooking</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="http://lele1122.github.io/tags.html#config-ref">config
+                <li><a href="http://lele1122.github.io/tags.html#cooking-ref">cooking
                     <span>1</span>
 </a></li>
-                <li><a href="http://lele1122.github.io/tags.html#mac-ref">mac
-                    <span>4</span>
-</a></li>
-                <li><a href="http://lele1122.github.io/tags.html#plugins-ref">plugins
+                <li><a href="http://lele1122.github.io/tags.html#dish-ref">dish
                     <span>1</span>
 </a></li>
-                <li><a href="http://lele1122.github.io/tags.html#vim-ref">vim
-                    <span>4</span>
+                <li><a href="http://lele1122.github.io/tags.html#pork-ref">pork
+                    <span>1</span>
 </a></li>
             </ul>
 <h4>Contact</h4>
