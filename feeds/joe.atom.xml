@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>+OK</title><link href="http://lele1122.github.io/" rel="alternate"></link><link href="http://lele1122.github.io/feeds/joe.atom.xml" rel="self"></link><id>http://lele1122.github.io/</id><updated>2015-10-11T18:13:00+08:00</updated><entry><title>Sublime Text + LaTeX Tool + Skim</title><link href="http://lele1122.github.io/sublime-latex-skim-en-US.html" rel="alternate"></link><updated>2015-09-13T21:07:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-13:sublime-latex-skim-en-US.html</id><summary type="html">&lt;h2 id="preparation"&gt;&lt;a class="toclink" href="#preparation"&gt;Preparation&lt;/a&gt;&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>+OK</title><link href="http://lele1122.github.io/" rel="alternate"></link><link href="http://lele1122.github.io/feeds/joe.atom.xml" rel="self"></link><id>http://lele1122.github.io/</id><updated>2015-10-14T14:57:00+08:00</updated><entry><title>Sublime Text + LaTeX Tool + Skim</title><link href="http://lele1122.github.io/sublime-latex-skim-en-US.html" rel="alternate"></link><updated>2015-10-14T14:57:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-13:sublime-latex-skim-en-US.html</id><summary type="html">
+&lt;h2 id="preparation"&gt;&lt;a class="toclink" href="#preparation"&gt;Preparation&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.sublimetext.com/3"&gt;Sublime Text 3&lt;/a&gt; + &lt;a href="https://github.com/SublimeText/LaTeXTools"&gt;LaTeXTools&lt;/a&gt; + &lt;a href="http://skim-app.sourceforge.net/"&gt;Skim&lt;/a&gt; &lt;/p&gt;
 &lt;h3 id="sublime-text-3"&gt;&lt;a class="toclink" href="#sublime-text-3"&gt;Sublime Text 3&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;You can download &lt;a href="http://www.sublimetext.com/3"&gt;Sublime Text 3&lt;/a&gt; for the evaluation without enforced time limit.&lt;/p&gt;
@@ -7,7 +8,7 @@
 &lt;p&gt;&lt;a href="https://github.com/SublimeText/LaTeXTools"&gt;LaTeXTools&lt;/a&gt; is a plugin for &lt;a href="http://www.sublimetext.com/3"&gt;Sublime Text 3&lt;/a&gt;, which provides LaTeX supports.&lt;/p&gt;
 &lt;p&gt;Install &lt;a href="https://packagecontrol.io/installation"&gt;Package Control&lt;/a&gt; by following the instructions in &lt;a href="https://packagecontrol.io/installation"&gt;Package Control&lt;/a&gt;. &lt;/p&gt;
 &lt;p&gt;In the Sublime Text 3 window, press Command + Shift + P (Command Palette) and type in &lt;code&gt;install&lt;/code&gt; and return. It will search for a while. Then find &lt;code&gt;LaTeXTools&lt;/code&gt; and install. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Package Control Install" src="https://lh3.googleusercontent.com/pWQSxGVyyuIBccHzBSCNxdrwQqyUy4nA-CqGCwnGOxmrZ6T2IgocVC3T7GI7JZp3TIc07DWs0CBiLMGXu6kv-jY8fQjjzDJP3OI2aQN7pETwdhR-RrXdgu7CYAHnQ3RpXbhU7w8aUHhPta5K8gUY5yYe1bPs4EVyudUmLw3Em5fkGeljhp-1avbjx5uWXICEbCKwWzHmZSi9bikU45FkII-ZIXFHQNrn_mgupPT5gBYLA2eolg8Zq69TVxlt3GrJNUCZjr3BP8riMP2u7uEYMtt01_GZ9HkiZXkHva7f1rd9PU4IuJoci-DhTjiReAGUDeOBI34ngjHPJ381RY_AGG9xqsmh8UwCTBO4yJhoRoPZhSLikS2xGUYdMUaoarKunkl9xUN4pUA-lpAyJ0CIPMkoYcz8BZZUi9eDAtR_bnIPGcLVr-WeFMLhsXZTHTe02sRnaEjXUM23HQtwbnxBEoYXyprTPsIT98wvMc2hqJettCXf7VMcO7M007bqaVF4vxAwRVMrJIo7L6YIabFSg23SXH3mHEqyAfp9iWYi-sRT=w460-h52-no" /&gt;
+&lt;p&gt;&lt;img alt="Package Control Install" src="https://lh3.googleusercontent.com/pWQSxGVyyuIBccHzBSCNxdrwQqyUy4nA-CqGCwnGOxmrZ6T2IgocVC3T7GI7JZp3TIc07DWs0CBiLMGXu6kv-jY8fQjjzDJP3OI2aQN7pETwdhR-RrXdgu7CYAHnQ3RpXbhU7w8aUHhPta5K8gUY5yYe1bPs4EVyudUmLw3Em5fkGeljhp-1avbjx5uWXICEbCKwWzHmZSi9bikU45FkII-ZIXFHQNrn_mgupPT5gBYLA2eolg8Zq69TVxlt3GrJNUCZjr3BP8riMP2u7uEYMtt01_GZ9HkiZXkHva7f1rd9PU4IuJoci-DhTjiReAGUDeOBI34ngjHPJ381RY_AGG9xqsmh8UwCTBO4yJhoRoPZhSLikS2xGUYdMUaoarKunkl9xUN4pUA-lpAyJ0CIPMkoYcz8BZZUi9eDAtR_bnIPGcLVr-WeFMLhsXZTHTe02sRnaEjXUM23HQtwbnxBEoYXyprTPsIT98wvMc2hqJettCXf7VMcO7M007bqaVF4vxAwRVMrJIo7L6YIabFSg23SXH3mHEqyAfp9iWYi-sRT=w460-h52-no"/&gt;
 &lt;em&gt;Package control install&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;If you are installing LaTeXTools for the first time, you need to create a configuration file, &lt;code&gt;LaTeXTools.sublime-settings&lt;/code&gt;, in your &lt;code&gt;User&lt;/code&gt; directory (off the Packages) directory. To do so, open the command palette from the Tools menu, search for "LaTeXTools: Reconfigure and migrate settings," and hit Return. &lt;/p&gt;
 &lt;h3 id="skim"&gt;&lt;a class="toclink" href="#skim"&gt;Skim&lt;/a&gt;&lt;/h3&gt;
@@ -31,7 +32,53 @@
 &lt;li&gt;&lt;code&gt;C-l,C-t&lt;/code&gt; gives you &lt;code&gt;\texttt{blah}&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;C-l,C-n&lt;/code&gt; wraps the selected text in a LaTeX environment structure. You get &lt;code&gt;\begin{env}&lt;/code&gt;,&lt;code&gt;blah&lt;/code&gt;, &lt;code&gt;\end{env}&lt;/code&gt; on three separate lines, with env selected. Change env to whatever environment you want, then hit Tab to move to the end of the environment.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Snippets&lt;/strong&gt;: Tools|Snippets&lt;/p&gt;</summary><category term="latex"></category><category term="sublime"></category><category term="skim"></category></entry><entry><title>毛氏红烧肉</title><link href="http://lele1122.github.io/red-cooked-pork-zh_CN.html" rel="alternate"></link><updated>2015-10-11T18:13:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-11:red-cooked-pork-zh_CN.html</id><summary type="html">&lt;p&gt;有时候一道菜做了即便还是没能做好，主要原因是没有总结归纳。为了防止以后出现类似问题，我把最近做一道菜可能错误写下以免日后再犯。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Snippets&lt;/strong&gt;: Tools|Snippets&lt;/p&gt;</summary><category term="latex"></category><category term="sublime"></category><category term="skim"></category></entry><entry><title>From Bash to Zsh</title><link href="http://lele1122.github.io/bash-to-zsh-en-US.html" rel="alternate"></link><updated>2015-10-14T14:57:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-11:bash-to-zsh-en-US.html</id><summary type="html">
+&lt;h2 id="install-zsh"&gt;&lt;a class="toclink" href="#install-zsh"&gt;Install Zsh&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;With Homebrew, you can just install Zsh by: &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;brew install zsh
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;As a beginner, you need not to memorise all the commands' options with autocomplete features of Zsh. The config can be simply clone from &lt;a href="https://github.com/robbyrussell/oh-my-zsh#the-manual-way"&gt;oh-my-zsh&lt;/a&gt;, which is one of the most starred projects in GitHub and it just fits us beginners!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;brew install autojump
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Autojump helps to go to the past folders with &lt;code&gt;j&lt;/code&gt; and abbreviation of the folder's name to fast jump in Zsh. Remember to add the following to &lt;code&gt;.zshrc&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;[[ -s `brew --prefix`/etc/autojump.sh ]] &amp;amp;&amp;amp; . `brew --prefix`/etc/autojump.sh
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here are some reasons why using Zsh instead of Bash:
+&lt;a href="http://lostjs.com/2012/09/27/zsh/"&gt;9 reason to use zsh (zh-CN)&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="plugin-tips"&gt;&lt;a class="toclink" href="#plugin-tips"&gt;Plugin Tips&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="git"&gt;&lt;a class="toclink" href="#git"&gt;Git&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The plugin Git is installed by default. It is very helpful to use the alias provided in this plugin.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Alias&lt;/th&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;g&lt;/td&gt;
+&lt;td&gt;git&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ga&lt;/td&gt;
+&lt;td&gt;git add&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gas&lt;/td&gt;
+&lt;td&gt;git add --all&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gcmsg&lt;/td&gt;
+&lt;td&gt;git commit -m&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ggp&lt;/td&gt;
+&lt;td&gt;git push origin $(current_branch)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;More alias can be viewed in &lt;a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet"&gt;Git Commands Cheat Sheet&lt;/a&gt;.&lt;/p&gt;</summary><category term="Bash"></category><category term="Zsh"></category><category term="Shell"></category></entry><entry><title>毛氏红烧肉</title><link href="http://lele1122.github.io/red-cooked-pork-zh_CN.html" rel="alternate"></link><updated>2015-10-11T18:13:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-11:red-cooked-pork-zh_CN.html</id><summary type="html">&lt;p&gt;有时候一道菜做了即便还是没能做好，主要原因是没有总结归纳。为了防止以后出现类似问题，我把最近做一道菜可能错误写下以免日后再犯。&lt;/p&gt;
 &lt;p&gt;这里先写一道关于红烧肉的。毛氏红烧肉，不放酱油。&lt;/p&gt;
 &lt;h2 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;材料&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;五花肉，料酒，老姜，蒜蓉，糖，盐，水，葱花&lt;/p&gt;
