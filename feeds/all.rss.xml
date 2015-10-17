@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>+OK</title><link>http://lele1122.github.io/</link><description></description><atom:link href="http://lele1122.github.io/feeds/joe.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 14 Oct 2015 14:57:00 +0800</lastBuildDate><item><title>Sublime Text + LaTeX Tool + Skim</title><link>http://lele1122.github.io/sublime-latex-skim-en-US.html</link><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>+OK</title><link>http://lele1122.github.io/</link><description></description><atom:link href="http://lele1122.github.io/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 14 Oct 2015 14:57:00 +0800</lastBuildDate><item><title>Sublime Text + LaTeX Tool + Skim</title><link>http://lele1122.github.io/sublime-latex-skim-en-US.html</link><description>
 &lt;h2 id="preparation"&gt;&lt;a class="toclink" href="#preparation"&gt;Preparation&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.sublimetext.com/3"&gt;Sublime Text 3&lt;/a&gt; + &lt;a href="https://github.com/SublimeText/LaTeXTools"&gt;LaTeXTools&lt;/a&gt; + &lt;a href="http://skim-app.sourceforge.net/"&gt;Skim&lt;/a&gt; &lt;/p&gt;
 &lt;h3 id="sublime-text-3"&gt;&lt;a class="toclink" href="#sublime-text-3"&gt;Sublime Text 3&lt;/a&gt;&lt;/h3&gt;

@@ -42,6 +42,8 @@
         <link rel="apple-touch-icon" sizes="120x120" href="http://lele1122.github.io/theme/images/apple-touch-icon-120x120.png" type="image/png" />
         <link rel="apple-touch-icon" sizes="144x144" href="http://lele1122.github.io/theme/images/apple-touch-icon-144x144.png" type="image/png" />
         <link rel="apple-touch-icon" sizes="152x152" href="http://lele1122.github.io/theme/images/apple-touch-icon-152x152.png" type="image/png" />
+        <link href="http://lele1122.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="+OK - Full Atom Feed" />
+        <link href="http://lele1122.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="+OK - Full RSS Feed" />
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -94,7 +96,9 @@
 <ul>
 <li><a href="#install-zsh">Install Zsh</a></li>
 <li><a href="#plugin-tips">Plugin Tips</a><ul>
-<li><a href="#git">Git</a></li>
+<li><a href="#git">git</a></li>
+<li><a href="#autojump">autojump</a></li>
+<li><a href="#osx">osx</a></li>
 </ul>
 </li>
 </ul>
@@ -110,15 +114,10 @@
 <div class="highlight"><pre><span class="nv">$ </span>brew install zsh
 </pre></div>
 <p>As a beginner, you need not to memorise all the commands' options with autocomplete features of Zsh. The config can be simply clone from <a href="https://github.com/robbyrussell/oh-my-zsh#the-manual-way">oh-my-zsh</a>, which is one of the most starred projects in GitHub and it just fits us beginners!</p>
-<div class="highlight"><pre><span class="nv">$ </span>brew install autojump
-</pre></div>
-<p>Autojump helps to go to the past folders with <code>j</code> and abbreviation of the folder's name to fast jump in Zsh. Remember to add the following to <code>.zshrc</code>:</p>
-<div class="highlight"><pre>[[ -s `brew --prefix`/etc/autojump.sh ]] &amp;&amp; . `brew --prefix`/etc/autojump.sh
-</pre></div>
 <p>Here are some reasons why using Zsh instead of Bash:
 <a href="http://lostjs.com/2012/09/27/zsh/">9 reason to use zsh (zh-CN)</a>.</p>
 <h2 id="plugin-tips"><a class="toclink" href="#plugin-tips">Plugin Tips</a></h2>
-<h3 id="git"><a class="toclink" href="#git">Git</a></h3>
+<h3 id="git"><a class="toclink" href="#git">git</a></h3>
 <p>The plugin Git is installed by default. It is very helpful to use the alias provided in this plugin.</p>
 <table>
 <thead>
@@ -151,6 +150,21 @@
 </tbody>
 </table>
 <p>More alias can be viewed in <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet">Git Commands Cheat Sheet</a>.</p>
+<h3 id="autojump"><a class="toclink" href="#autojump">autojump</a></h3>
+<p>Autojump helps to go to the past folders with <code>j</code> and the folder's name (fuzzy search) to fast jump in Zsh. It is one of the most powerful plugins in Zsh.</p>
+<p>First, you need to install it:</p>
+<div class="highlight"><pre><span class="nv">$ </span>brew install autojump
+</pre></div>
+<p>Then Remember to add the following code in <code>.zshrc</code>:</p>
+<div class="highlight"><pre>[[ -s `brew --prefix`/etc/autojump.sh ]] &amp;&amp; . `brew --prefix`/etc/autojump.sh
+</pre></div>
+<h3 id="osx"><a class="toclink" href="#osx">osx</a></h3>
+<ul>
+<li>man-preview file: open file in pdf by preview</li>
+<li>quick-look: quick preview</li>
+<li>pfd: show to the folder of current finder</li>
+<li>cdf: change to the folder of current finder</li>
+</ul>
             <section>
     <p id="post-share-links">
     Share on:

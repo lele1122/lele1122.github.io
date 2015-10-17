@@ -1,33 +1,302 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>+OK</title><link href="http://lele1122.github.io/" rel="alternate"></link><link href="http://lele1122.github.io/feeds/all.atom.xml" rel="self"></link><id>http://lele1122.github.io/</id><updated>2015-09-21T13:53:00+08:00</updated><entry><title>Markdown Tips</title><link href="http://lele1122.github.io/markdown-tips.html" rel="alternate"></link><updated>2015-09-15T00:00:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-09-15:markdown-tips.html</id><summary type="html">
-&lt;h1 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;关于页面内跳转&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;定义一个锚(id)：&lt;code&gt;&amp;lt;span id="jump"&amp;gt;跳转到的地方&amp;lt;/span&amp;gt;&lt;/code&gt;&lt;br/&gt;
-使用markdown语法：&lt;code&gt;[点击跳转](#jump)&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id="_2"&gt;&lt;a class="toclink" href="#_2"&gt;举例&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;跳到[底部](#end)
-...
-...
-...
-&lt;span class="nt"&gt;&amp;lt;h3&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"end"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;底部&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>+OK</title><link href="http://lele1122.github.io/" rel="alternate"></link><link href="http://lele1122.github.io/feeds/all.atom.xml" rel="self"></link><id>http://lele1122.github.io/</id><updated>2015-10-14T14:57:00+08:00</updated><entry><title>Sublime Text + LaTeX Tool + Skim</title><link href="http://lele1122.github.io/sublime-latex-skim-en-US.html" rel="alternate"></link><updated>2015-10-14T14:57:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-13:sublime-latex-skim-en-US.html</id><summary type="html">
+&lt;h2 id="preparation"&gt;&lt;a class="toclink" href="#preparation"&gt;Preparation&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.sublimetext.com/3"&gt;Sublime Text 3&lt;/a&gt; + &lt;a href="https://github.com/SublimeText/LaTeXTools"&gt;LaTeXTools&lt;/a&gt; + &lt;a href="http://skim-app.sourceforge.net/"&gt;Skim&lt;/a&gt; &lt;/p&gt;
+&lt;h3 id="sublime-text-3"&gt;&lt;a class="toclink" href="#sublime-text-3"&gt;Sublime Text 3&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You can download &lt;a href="http://www.sublimetext.com/3"&gt;Sublime Text 3&lt;/a&gt; for the evaluation without enforced time limit.&lt;/p&gt;
+&lt;h3 id="latextools"&gt;&lt;a class="toclink" href="#latextools"&gt;LaTeXTools&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/SublimeText/LaTeXTools"&gt;LaTeXTools&lt;/a&gt; is a plugin for &lt;a href="http://www.sublimetext.com/3"&gt;Sublime Text 3&lt;/a&gt;, which provides LaTeX supports.&lt;/p&gt;
+&lt;p&gt;Install &lt;a href="https://packagecontrol.io/installation"&gt;Package Control&lt;/a&gt; by following the instructions in &lt;a href="https://packagecontrol.io/installation"&gt;Package Control&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;In the Sublime Text 3 window, press Command + Shift + P (Command Palette) and type in &lt;code&gt;install&lt;/code&gt; and return. It will search for a while. Then find &lt;code&gt;LaTeXTools&lt;/code&gt; and install. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Package Control Install" src="https://lh3.googleusercontent.com/pWQSxGVyyuIBccHzBSCNxdrwQqyUy4nA-CqGCwnGOxmrZ6T2IgocVC3T7GI7JZp3TIc07DWs0CBiLMGXu6kv-jY8fQjjzDJP3OI2aQN7pETwdhR-RrXdgu7CYAHnQ3RpXbhU7w8aUHhPta5K8gUY5yYe1bPs4EVyudUmLw3Em5fkGeljhp-1avbjx5uWXICEbCKwWzHmZSi9bikU45FkII-ZIXFHQNrn_mgupPT5gBYLA2eolg8Zq69TVxlt3GrJNUCZjr3BP8riMP2u7uEYMtt01_GZ9HkiZXkHva7f1rd9PU4IuJoci-DhTjiReAGUDeOBI34ngjHPJ381RY_AGG9xqsmh8UwCTBO4yJhoRoPZhSLikS2xGUYdMUaoarKunkl9xUN4pUA-lpAyJ0CIPMkoYcz8BZZUi9eDAtR_bnIPGcLVr-WeFMLhsXZTHTe02sRnaEjXUM23HQtwbnxBEoYXyprTPsIT98wvMc2hqJettCXf7VMcO7M007bqaVF4vxAwRVMrJIo7L6YIabFSg23SXH3mHEqyAfp9iWYi-sRT=w460-h52-no"/&gt;
+&lt;em&gt;Package control install&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;If you are installing LaTeXTools for the first time, you need to create a configuration file, &lt;code&gt;LaTeXTools.sublime-settings&lt;/code&gt;, in your &lt;code&gt;User&lt;/code&gt; directory (off the Packages) directory. To do so, open the command palette from the Tools menu, search for "LaTeXTools: Reconfigure and migrate settings," and hit Return. &lt;/p&gt;
+&lt;h3 id="skim"&gt;&lt;a class="toclink" href="#skim"&gt;Skim&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://skim-app.sourceforge.net/"&gt;Skim&lt;/a&gt; is a PDF reader to view PDF files.&lt;/p&gt;
+&lt;h2 id="basic-operations"&gt;&lt;a class="toclink" href="#basic-operations"&gt;Basic Operations&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Most LaTeXTools facilities are triggered using &lt;code&gt;Ctrl-l&lt;/code&gt; (Windows, Linux) or &lt;code&gt;Cmd-l&lt;/code&gt; (OS X), followed by some other key or key combination.&lt;/p&gt;
+&lt;h3 id="compiling-latex-files"&gt;&lt;a class="toclink" href="#compiling-latex-files"&gt;Compiling LaTeX files&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Keybinding: &lt;code&gt;Cmd-b&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Multi-file documents&lt;/strong&gt;: first line in the current file consists of the text &lt;code&gt;%!TEX root = &amp;lt;master file name&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TeX engine selection&lt;/strong&gt;: first line of the current file consists of the text &lt;code&gt;%!TEX program = &amp;lt;program&amp;gt;&lt;/code&gt;. 'pdflatex' is the default. For multi-file documents, the directive must be in the &lt;em&gt;root&lt;/em&gt; file.&lt;/p&gt;
+&lt;h3 id="tips"&gt;&lt;a class="toclink" href="#tips"&gt;Tips&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Forward Searching&lt;/strong&gt;: &lt;code&gt;C-l,j&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reverse Searching&lt;/strong&gt;: &lt;code&gt;Cmd+shift+click&lt;/code&gt; in Skim, noble-clicking in Sumatra.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Jumping to sections and labels&lt;/strong&gt;: &lt;code&gt;C-r&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;commands and environments&lt;/strong&gt;: &lt;code&gt;C-l,c&lt;/code&gt; for commands and &lt;code&gt;C-l,e&lt;/code&gt; for environment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Wrapping&lt;/strong&gt;: &lt;code&gt;C-l,C-c&lt;/code&gt; wraps the selected text in a LaTeX command structure, e.g. &lt;code&gt;blah&lt;/code&gt; to &lt;code&gt;\cmd{blah}&lt;/code&gt;. Then tab to the end of command. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;C-l,C-e&lt;/code&gt; gives you &lt;code&gt;\emph{blah}&lt;/code&gt;, and the cursor moves to the end of the command.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-l,C-b&lt;/code&gt; gives you &lt;code&gt;\textbf{blah}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-l,C-u&lt;/code&gt; gives you &lt;code&gt;\underline{blah}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-l,C-t&lt;/code&gt; gives you &lt;code&gt;\texttt{blah}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C-l,C-n&lt;/code&gt; wraps the selected text in a LaTeX environment structure. You get &lt;code&gt;\begin{env}&lt;/code&gt;,&lt;code&gt;blah&lt;/code&gt;, &lt;code&gt;\end{env}&lt;/code&gt; on three separate lines, with env selected. Change env to whatever environment you want, then hit Tab to move to the end of the environment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Snippets&lt;/strong&gt;: Tools|Snippets&lt;/p&gt;</summary><category term="latex"></category><category term="sublime"></category><category term="skim"></category></entry><entry><title>From Bash to Zsh</title><link href="http://lele1122.github.io/bash-to-zsh-en-US.html" rel="alternate"></link><updated>2015-10-14T14:57:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-11:bash-to-zsh-en-US.html</id><summary type="html">
+&lt;h2 id="install-zsh"&gt;&lt;a class="toclink" href="#install-zsh"&gt;Install Zsh&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;With Homebrew, you can just install Zsh by: &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;brew install zsh
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;跳到&lt;a href="#end"&gt;底部&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="end"&gt;底部&lt;/h3&gt;</summary><category term="Pelican"></category><category term="Markdown"></category></entry><entry><title>Introduction to Pelican (2)</title><link href="http://lele1122.github.io/pelican-settings.html" rel="alternate"></link><updated>2015-09-21T13:53:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-09-14:pelican-settings.html</id><summary type="html">
+&lt;p&gt;As a beginner, you need not to memorise all the commands' options with autocomplete features of Zsh. The config can be simply clone from &lt;a href="https://github.com/robbyrussell/oh-my-zsh#the-manual-way"&gt;oh-my-zsh&lt;/a&gt;, which is one of the most starred projects in GitHub and it just fits us beginners!&lt;/p&gt;
+&lt;p&gt;Here are some reasons why using Zsh instead of Bash:
+&lt;a href="http://lostjs.com/2012/09/27/zsh/"&gt;9 reason to use zsh (zh-CN)&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="plugin-tips"&gt;&lt;a class="toclink" href="#plugin-tips"&gt;Plugin Tips&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="git"&gt;&lt;a class="toclink" href="#git"&gt;git&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The plugin Git is installed by default. It is very helpful to use the alias provided in this plugin.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Alias&lt;/th&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;g&lt;/td&gt;
+&lt;td&gt;git&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ga&lt;/td&gt;
+&lt;td&gt;git add&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gas&lt;/td&gt;
+&lt;td&gt;git add --all&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gcmsg&lt;/td&gt;
+&lt;td&gt;git commit -m&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ggp&lt;/td&gt;
+&lt;td&gt;git push origin $(current_branch)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;More alias can be viewed in &lt;a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet"&gt;Git Commands Cheat Sheet&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id="autojump"&gt;&lt;a class="toclink" href="#autojump"&gt;autojump&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Autojump helps to go to the past folders with &lt;code&gt;j&lt;/code&gt; and the folder's name (fuzzy search) to fast jump in Zsh. It is one of the most powerful plugins in Zsh.&lt;/p&gt;
+&lt;p&gt;First, you need to install it:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;brew install autojump
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then Remember to add the following code in &lt;code&gt;.zshrc&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;[[ -s `brew --prefix`/etc/autojump.sh ]] &amp;amp;&amp;amp; . `brew --prefix`/etc/autojump.sh
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="osx"&gt;&lt;a class="toclink" href="#osx"&gt;osx&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;man-preview file: open file in pdf by preview&lt;/li&gt;
+&lt;li&gt;quick-look: quick preview&lt;/li&gt;
+&lt;li&gt;pfd: show to the folder of current finder&lt;/li&gt;
+&lt;li&gt;cdf: change to the folder of current finder&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="Bash"></category><category term="Zsh"></category><category term="Shell"></category></entry><entry><title>毛氏红烧肉</title><link href="http://lele1122.github.io/red-cooked-pork-zh_CN.html" rel="alternate"></link><updated>2015-10-11T18:13:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-11:red-cooked-pork-zh_CN.html</id><summary type="html">&lt;p&gt;有时候一道菜做了即便还是没能做好，主要原因是没有总结归纳。为了防止以后出现类似问题，我把最近做一道菜可能错误写下以免日后再犯。&lt;/p&gt;
+&lt;p&gt;这里先写一道关于红烧肉的。毛氏红烧肉，不放酱油。&lt;/p&gt;
+&lt;h2 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;材料&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;五花肉，料酒，老姜，蒜蓉，糖，盐，水，葱花&lt;/p&gt;
+&lt;p&gt;当然还有八角花椒桂皮什么的等等，我暂时都没就没用，如果加了味道应该更浓郁。&lt;/p&gt;
+&lt;p&gt;因为没有度量工具，总是没法很精确的计算出用量，这里先凑合的写：适量 （不许笑！）&lt;/p&gt;
+&lt;h2 id="_2"&gt;&lt;a class="toclink" href="#_2"&gt;步骤&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="_3"&gt;&lt;a class="toclink" href="#_3"&gt;生肉处理&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;其实关于红烧肉有很多做法，这篇所写的应该算是毛氏红烧肉。网上有很多教程，比如要开水煮肉块，炒完糖色直接放红烧肉；有的要冷水煮整块之后才能切肉，有的都不过水直接放入一大锅油来脱脂。每个都是饭店大厨，你也分不清谁家的更好。&lt;/p&gt;
+&lt;p&gt;总之，我是整块放入冷水里慢慢煮来过血水,加入葱姜蒜陈皮八角，大约25分钟。最终煮出来也挺嫩，不过也有可能是最后一步骤炖肉时炖嫩的，毕竟我不可能过完血水直接咬一口肉吧。然后切成块以备后用。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;关键&lt;/em&gt;：凉水，不加盐&lt;/p&gt;
+&lt;h3 id="_4"&gt;&lt;a class="toclink" href="#_4"&gt;炒糖色&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;锅中放油，放入大量白砂糖或者冰糖或者红糖，炒至红褐色冒泡，然后加点水搅匀。&lt;/p&gt;
+&lt;h3 id="_5"&gt;&lt;a class="toclink" href="#_5"&gt;炒肉&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;锅中热油，加各种葱姜，有香味后继续加各种大料，然后加肉块。煸肉的时候要10-15分钟让油析出，表面金黄。然后可以加入糖色，大碗黄酒, 少许水，大火炖5分钟左右后小火炖半小时左右。最后大火收汁盛出。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;关键&lt;/em&gt;：不加酱油&lt;/p&gt;</summary><category term="pork"></category><category term="cooking"></category><category term="dish"></category></entry><entry><title>Vim Tutorial (4)</title><link href="http://lele1122.github.io/vim-tutorial-plugins-en-US.html" rel="alternate"></link><updated>2015-10-10T16:34:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-10:vim-tutorial-plugins-en-US.html</id><summary type="html">&lt;h2 id="add-plugins"&gt;&lt;a class="toclink" href="#add-plugins"&gt;Add Plugins&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;With Plugins, you can use Vim more efficiently. But you'd better be proficient with Vim before adding any plugins.&lt;/p&gt;
+&lt;p&gt;There are many ways to add plugins, but it would be hard to manage plugins. To solve this problem, the plugin manager &lt;a href="https://github.com/VundleVim/Vundle.vim"&gt;Vundle&lt;/a&gt; will be helpful.&lt;/p&gt;
+&lt;h3 id="vundle-set-up"&gt;&lt;a class="toclink" href="#vundle-set-up"&gt;Vundle Set-Up&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id="configure-plugins"&gt;&lt;a class="toclink" href="#configure-plugins"&gt;Configure Plugins&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Put this at the top of your &lt;code&gt;.vimrc&lt;/code&gt; to use Vundle. Remove plugins you don't need, they are for illustration purposes. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;set nocompatible              &amp;quot; be iMproved, required
+filetype off                  &amp;quot; required
+
+&amp;quot; set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+&amp;quot; alternatively, pass a path where Vundle should install plugins
+&amp;quot;call vundle#begin(&amp;#39;~/some/path/here&amp;#39;)
+
+&amp;quot; let Vundle manage Vundle, required
+Plugin &amp;#39;VundleVim/Vundle.vim&amp;#39;
+
+&amp;quot; The following are examples of different formats supported.
+&amp;quot; Keep Plugin commands between vundle#begin/end.
+&amp;quot; plugin on GitHub repo
+Plugin &amp;#39;tpope/vim-fugitive&amp;#39;
+&amp;quot; plugin from http://vim-scripts.org/vim/scripts.html
+Plugin &amp;#39;L9&amp;#39;
+&amp;quot; Git plugin not hosted on GitHub
+Plugin &amp;#39;git://git.wincent.com/command-t.git&amp;#39;
+&amp;quot; git repos on your local machine (i.e. when working on your own plugin)
+Plugin &amp;#39;file:///home/gmarik/path/to/plugin&amp;#39;
+&amp;quot; The sparkup vim script is in a subdirectory of this repo called vim.
+&amp;quot; Pass the path to set the runtimepath properly.
+Plugin &amp;#39;rstacruz/sparkup&amp;#39;, {&amp;#39;rtp&amp;#39;: &amp;#39;vim/&amp;#39;}
+&amp;quot; Avoid a name conflict with L9
+Plugin &amp;#39;user/L9&amp;#39;, {&amp;#39;name&amp;#39;: &amp;#39;newL9&amp;#39;}
+
+&amp;quot; All of your Plugins must be added before the following line
+call vundle#end()            &amp;quot; required
+filetype plugin indent on    &amp;quot; required
+&amp;quot; To ignore plugin indent changes, instead use:
+&amp;quot;filetype plugin on
+
+&amp;quot; Put your non-Plugin stuff after this line
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id="brief-instructions"&gt;&lt;a class="toclink" href="#brief-instructions"&gt;Brief Instructions&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:PluginList&lt;/code&gt;         - lists configured plugins&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:PluginInstall&lt;/code&gt;      - installs plugins; append &lt;code&gt;!&lt;/code&gt; to update or just :PluginUpdate&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:PluginSearch foo&lt;/code&gt;   - searches for foo; append &lt;code&gt;!&lt;/code&gt; to refresh local cache&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:PluginClean&lt;/code&gt;        - confirms removal of unused plugins; append &lt;code&gt;!&lt;/code&gt; to auto-approve removal&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:h vundle&lt;/code&gt; for more details or wiki for FAQ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You may see some people use &lt;code&gt;BundleXxxx&lt;/code&gt; instead of &lt;code&gt;PluginXxxx&lt;/code&gt;. They are nearly the same but &lt;code&gt;PluginXxxx&lt;/code&gt; is recommended since 2014. &lt;code&gt;BundleXxxx&lt;/code&gt; still can be used only for compatibility reasons.&lt;/p&gt;
+&lt;/blockquote&gt;</summary><category term="vim"></category><category term="mac"></category><category term="plugins"></category><category term="config"></category></entry><entry><title>Vim Tutorial (3)</title><link href="http://lele1122.github.io/vim-tutorial-theme-en-US.html" rel="alternate"></link><updated>2015-10-10T14:15:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-10:vim-tutorial-theme-en-US.html</id><summary type="html">&lt;h2 id="theme"&gt;&lt;a class="toclink" href="#theme"&gt;Theme&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/chriskempson/tomorrow-theme"&gt;Tomorrow&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ethanschoonover.com/solarized"&gt;Solarized&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/tomasr/molokai"&gt;Molokai&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Put theme file in &lt;code&gt;~/.vim/colors&lt;/code&gt; and add &lt;code&gt;set runtimepath+=~/.vim&lt;/code&gt; in &lt;code&gt;~/.vimrc&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="font"&gt;&lt;a class="toclink" href="#font"&gt;Font&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;You need to make sure the font has already existed in the system. If not, you need to add TTF file. &lt;/p&gt;
+&lt;p&gt;Here I use &lt;a href="https://github.com/adobe-fonts/source-code-pro"&gt;Source-Code-Pro&lt;/a&gt; and &lt;a href="http://www.adobe.com/devnet/opentype/afdko.html"&gt;Adobe Font Development Kit for OpenType&lt;/a&gt; (AFDKO) will be needed to build this font file. Double click &lt;code&gt;FinishInstallOSX&lt;/code&gt; to install AFDKO and run &lt;code&gt;$ ./build.sh&lt;/code&gt; in the downloaded font directory to build all TTF. They will be in the &lt;code&gt;target&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;Open &lt;code&gt;Font Book&lt;/code&gt; in Mac and add all the TTF files into it by click &lt;code&gt;+&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Then you need to add the following to &lt;code&gt;.vimrc&lt;/code&gt; remember to use &lt;code&gt;_&lt;/code&gt; instead of space:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&amp;quot;set font and size
+set guifont=Source_Code_Pro:h15
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="vim"></category><category term="mac"></category><category term="theme"></category><category term="font"></category></entry><entry><title>Vim Tutorial (2)</title><link href="http://lele1122.github.io/vim-tutorial-config-en-US.html" rel="alternate"></link><updated>2015-10-09T11:50:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-09:vim-tutorial-config-en-US.html</id><summary type="html">
+&lt;h2 id="configure-vimrc-and-gvimrc"&gt;&lt;code&gt;~/.gvimrc&lt;/code&gt;&lt;a class="toclink" href="#configure-vimrc-and-gvimrc"&gt;Configure &lt;code&gt;~/.vimrc&lt;/code&gt; and &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;There are two setting files should be known: &lt;code&gt;vimrc&lt;/code&gt; and &lt;code&gt;gvimrc&lt;/code&gt;. They have two versions: global and user. &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;vimrc&lt;/code&gt;: the main vim configuration file&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To get the global &lt;code&gt;vimrc&lt;/code&gt; location:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="x"&gt;:echo &lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;VIM&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To get the user &lt;code&gt;vimrc&lt;/code&gt; location:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="x"&gt;:echo &lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you have never created user &lt;code&gt;vimrc&lt;/code&gt; before, you need to create one by yourself.&lt;/p&gt;
+&lt;p&gt;The user &lt;code&gt;vimrc&lt;/code&gt; will always &lt;strong&gt;overwrite&lt;/strong&gt; the global &lt;code&gt;vimrc&lt;/code&gt;. Thus, you only need to change the user &lt;code&gt;vimrc&lt;/code&gt; to configure &lt;code&gt;vim&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;gvimrc&lt;/code&gt;: the configuration file for Gvim&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ghim is Vim with GUI. It supports cursor, has more color and some other features. We only use &lt;code&gt;gvimrc&lt;/code&gt; for gvim specific additions, e.g. theme color.&lt;/p&gt;
+&lt;p&gt;Here is the command to create &lt;code&gt;.vimrc&lt;/code&gt; and &lt;code&gt;.gvimrc&lt;/code&gt; from &lt;code&gt;vimc_example.vim&lt;/code&gt; and &lt;code&gt;gvimrc_example.vim&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="x"&gt;:e &lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;VIMRUNTIME&lt;/span&gt;&lt;span class="x"&gt;/vimrc_example.vim  &lt;/span&gt;
+&lt;span class="x"&gt;:saveas ~/.vimrc  &lt;/span&gt;
+&lt;span class="x"&gt;:e &lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;VIMRUNTIME&lt;/span&gt;&lt;span class="x"&gt;/gvimrc_example.vim  &lt;/span&gt;
+&lt;span class="x"&gt;:saveas ~/.gvimrc&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;"&lt;/code&gt; is used for comment in &lt;code&gt;.vimrc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You may want to edit &lt;code&gt;.vimrc&lt;/code&gt; in Terminal by:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;open /Applications/TextEdit.app .vimrc
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;or in MacVim by:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;:e .vimrc
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="vim"></category><category term="mac"></category></entry><entry><title>Vim Tutorial (1)</title><link href="http://lele1122.github.io/vim-tutorial-start-en-US.html" rel="alternate"></link><updated>2015-10-10T23:59:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-09:vim-tutorial-start-en-US.html</id><summary type="html">
+&lt;h2 id="text-editors"&gt;&lt;a class="toclink" href="#text-editors"&gt;Text Editors&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;It is said there are three text editors in the world:&lt;a href="https://www.gnu.org/software/emacs/"&gt;Emacs&lt;/a&gt;, &lt;a href="http://www.vim.org/"&gt;Vim&lt;/a&gt; and others. No matter whether it is true or wrong (depending on you), you cannot deny that &lt;a href="https://www.gnu.org/software/emacs/"&gt;Emacs&lt;/a&gt; and &lt;a href="http://www.vim.org/"&gt;Vim&lt;/a&gt; are two powerful text editors. The debates between Emacs group and Vim group have never stopped.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Emacs is considered as 'God's editor' while Vim is 'the God of editor'. &lt;/p&gt;
+&lt;p&gt;Emac is actually an OS which pretends to be an editor.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="why-vim"&gt;&lt;a class="toclink" href="#why-vim"&gt;Why Vim&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;With curiosity, I did search and found the following picture describing the learning curves of some common text editors.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="full study curve" src="https://lh3.googleusercontent.com/knU9G9j_U1nkGfCZQ-7H_ncg-xAz5i_-OpWhg4sYWARnOKiUeT-tEtrjQahxZZ9wDjWFewaHQXFMGZ_CCs8iySHdvgSfJdsq9Q-uu7mzK5NZmOVix1Q4PF2B9yuGj2NUxRNBaHfcR9-lcZ5wa2g7uwckxnFq9TJXVtfBwou7zRIz2PIOoFlHxd4hvTgYBYJY_Z-rVSvt9fcztYkVOKK0xovKda1iePc-3_MABAanqYPRXMYzDa5yVSoBDlFLAzAP5IArVxYEuRtyhi2cZ9LdExqzbfcCGfdneT-SQ0yS-g3omPqVi-3aWeAL7ml3AxKFSx9Z3KNALejePf-sRrJQ2iYaaI5RjJ1QyHHXovkAncWjQ-VJLCQ52onivZr-f1_J-p6NoqHqWJWfDoY7vs_ALTKPq353XZ20mS_QQwfsnQ8nHktInRytZhjUVjwYgEygoQJROkPGT-5Jrm8fpmKPnHL4-0aYM_EQ-nC5p-5r1Qkk3hF3IOnoRpQNrR4ErHRJQR24-kZj0dKo61gDuOd4UUeGqJAJCK45XkBXBHeP1VE3=w802-h580-no"/&gt;
+&lt;em&gt;Study Curve of Editors&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It can be seen Vim has a very steep study curve and Emacs has a @#$%^&amp;amp;* ... &lt;/p&gt;
+&lt;p&gt;I choose Vim because it can be used in any OS, extendibility, and it looks cool!&lt;/p&gt;
+&lt;h2 id="macvim-installation"&gt;&lt;a class="toclink" href="#macvim-installation"&gt;MacVim Installation&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Mac has Vim already in terminal, but MacVim works better than the vim in Mac.&lt;/p&gt;
+&lt;p&gt;There are two methods to install MacVim:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Download &lt;a href="https://github.com/macvim-dev/macvim"&gt;MacVim&lt;/a&gt; and follow the instructions in &lt;code&gt;README_mac.txt&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can open MacVim directly as a normal app. This method help to configure MacVim easier.&lt;/p&gt;
+&lt;p&gt;You can also open MacVim from Terminal once you set by this (temporary):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;alias &lt;/span&gt;&lt;span class="nv"&gt;mvim&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'/Applications/MacVim.app/Contents/MacOS/MacVim'&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;With this installation method, I do not know a simple method to change persistently after upgrading to El Capitan with rootless usr folder. If you know, please tell me.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To install MacVim by Terminal (You must have installed Homebrew):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;brew install macvim
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To start MacVim:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mvim
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="ready-to-use"&gt;&lt;a class="toclink" href="#ready-to-use"&gt;Ready to Use ?!&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="basic-level"&gt;&lt;a class="toclink" href="#basic-level"&gt;Basic Level&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;After you start MacVim, it is in the mode &lt;code&gt;normal&lt;/code&gt;, to enter mode &lt;code&gt;insert&lt;/code&gt;, press &lt;code&gt;i&lt;/code&gt;. You will see -insert- at left-bottom corner of Vim. If you want to return &lt;code&gt;normal&lt;/code&gt; mode, press &lt;code&gt;ESC&lt;/code&gt;. All the commands should be done in &lt;code&gt;normal&lt;/code&gt; mode.&lt;/p&gt;
+&lt;p&gt;Some basic command:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;i   → Insert mode
+ESC → Normal mode
+x   → delete character
+:w  → save file (add file name after :w)
+:q  → quit
+:wq → save file and quit
+dd  → delete the present sentence and copy to clipboard
+p   → paste from clipboard
+hjkl → (←↓↑→)
+:help &amp;lt;command&amp;gt; → display the help
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Practice and you can do the basic job that &lt;code&gt;Notepad&lt;/code&gt; can do.&lt;/p&gt;
+&lt;h3 id="advanced-level"&gt;&lt;a class="toclink" href="#advanced-level"&gt;Advanced Level&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;As mentioned before, Vim has a very steep learning curve. If you want to learn more, please practice with online tutorials. Please practice every week and do not use it at work before you can really efficiently use it.&lt;/p&gt;
+&lt;h2 id="study-resources"&gt;&lt;a class="toclink" href="#study-resources"&gt;Study Resources&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Basic:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://vim-adventures.com/"&gt;Vim-Adventures&lt;/a&gt;: game to familiar with the basic hotkeys.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://www.openvim.com/"&gt;Interactive Vim Tutorial&lt;/a&gt;: online typing tutorial&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://coolshell.cn/articles/5426.html"&gt;简明 Vim 练级攻略&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html"&gt;Graphical Cheat Sheet&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://danielmiessler.com/study/vim/#references"&gt;A vim Tutorial and Primer&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="vim"></category><category term="mac"></category></entry><entry><title>烟霾</title><link href="http://lele1122.github.io/haze-zh_CN.html" rel="alternate"></link><updated>2015-09-29T16:07:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-09-29:haze-zh_CN.html</id><summary type="html">&lt;p&gt;来新加坡已经将近5年了。期间心情有好有坏，就像曾经所写的博客一样，在忙碌中不知不觉的长草忘却。转眼间，自己都已经毕业了，回顾过去，有些事情还是那么的相似。无论在屋内心情如何，每次出门，新加坡的天气却让人精神振奋。蓝天白云，让长期在中国雾霾下成长的感慨蓝天是外国的蓝。&lt;/p&gt;
+&lt;p&gt;我记得在来新加坡的前几个月，我还因为看了一段鞭刑的视频说到长大不会前往新加坡，这个国家的刑法过于恐怖。可话说没多久，不知不觉的进了前往新加坡学习的项目。就像一个多月前，我看着新加坡本地论坛上有人二手售卖着空气净化器，对一旁的女朋友说：“在新加坡还有人往家里买空气净化器？搞笑呢。” 搞笑的却是没过多久，新加坡就被印尼烧芭所引发的森林大火产生的烟霾覆盖。空气中所弥漫的焦味即便在门窗关紧的室内都能闻到。从家中窗口望出去，楼下的公园几乎成为“仙境”:
+&lt;img alt="烟霾前" src="https://lh3.googleusercontent.com/5SDK589E5EymEEax9Zsi7XeJ_bLZT9sWhRx6bHNAzyM3Tx4AfDXn1CP0mtSOtdf3wlvpWo1krZZOBYFWABwPrDEkXyABpECpZhHIzRN7LXiA5x4W4uyAGReEDQDkXppaXIQ5Gd635Y4dCtswGkcpJbG9qMHYSLjzpyYaA3zuYwYUA0ZrgeF__cmoY9grrZxp_LBw32JXV_40S2VVn0LpMuX5xH9Mfnz9xhkMumhi0BT6AdviRUIijFJxVlJkby6zd3VLKArN07lPb7lOFqwTybTR3P962UQVN0lnZ8NbxEtySIhQvecWiYHGa9j-iliAtC3qu9pDoDDVQRFJxCEMbmr7gceqVt2F8lKAINSDiQCq4aIDQ0kERCtiaVba7jvsfIzSvAcG_M1DJCbIWT-8BqPBRG85i2hXY-u2SrDNQHG0s91wLVNDhpiEQIOTlE4my-PnasS_DDGcd6YJoXVOs0DzaQa7Hx7Bs63BMaiiD5ijicWChKiqyTEs6N9DiesKoDuoica6g7i8YGUHELLS8LztenpeEExCLowZJdMN21_b=w1698-h955-no" /&gt;
+&lt;img alt="烟霾后" src="https://lh3.googleusercontent.com/bw3OPTvkinGoVy6rH1-AQYqPFvNZlGJk7RWdxqYo4zt2aRHqMIAKObv49gtzxnWKYsQqwJDGrChmWjKsuTvwDG0BPBgrWyruRMT-m3sguNcZ0ybNQSYCUZVv_RFlJKQfAKkAmcJhDMB_ovgRQd6-fQ23Ste2sp0RJa-uLlzgS5x_IQ03rlTnlQtkNs9TmDD1YuJWwz-yyq_TbzhULY7rYQa3744YgDjKFfQZfPiQGCBtVE8AnTYf5hxPji2BmdtUyFkZIQgpVenJ2bGM1sT6ry8gHqVHtI-_XXulU1aVLV8i_-pnhA2nvDBUTUg27J4ow0YbrKRLT7x-E5VrMQUUGyCClBnYvWHOV754jsPO_9UkS-oWjjFJ9UBIapTLrMLoN6YqbEs_peGk_BAi8L7zA9HEMZdatTsHnB515crKHOUVCrwkRQx4X7a3akxkWTdl_HexfB7Zn1j17MWEzUpNregqdnKpTQPuSuG73c6agYYMotmt2gIkkKxAtToifRXzMHde8vQbIj5gA0XuYK-jIh7hUT70fbgsSKHRis0I_pir=w1698-h955-no" /&gt;
+&lt;em&gt;上图为烟霾前，下图为烟霾后&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;出于无奈，只好上网购买了N95口罩。有时候不得不感慨新加坡物价之贵，好多东西自己网上从中国快递买来都能比楼下超市购买便宜一倍。可以理解新加坡食物贵，但各种电子，生活产品为何如此之贵，有时甚至比其他地区贵上一倍，让好多人不得不从美亚或者淘宝购买，费解。&lt;/p&gt;
+&lt;p&gt;茶余饭后，再也不能轻松的去楼下跑跑步，散散心；也不能开着窗呼吸新鲜空气；甚至不能拉开窗帘，因为小小的缝隙让屋外的焦味肆意侵入。&lt;/p&gt;
+&lt;p&gt;唯一庆幸的是父母来的日子。他们好不容易有机会能出国感受国内看不到的蓝天白云，幸亏没在这段时间过来。&lt;/p&gt;</summary><category term="Singapore"></category><category term="Life"></category><category term="Haze"></category></entry><entry><title>Introduction to Pelican (2)</title><link href="http://lele1122.github.io/pelican-settings-en-US.html" rel="alternate"></link><updated>2015-09-21T13:53:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-09-14:pelican-settings-en-US.html</id><summary type="html">
 &lt;h2 id="disqus"&gt;&lt;a class="toclink" href="#disqus"&gt;Disqus&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Comments feature can be added by &lt;a href="https://disqus.com/"&gt;Disqus&lt;/a&gt;. If you do not have it, just register an account and set by steps. Add the following command in &lt;code&gt;pelicanconf.py&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;    DISQUS_SITENAME = 'shortname'
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ DISQUS_SITENAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'shortname'&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;At first I tried several times but the function did not work. The reason is that I ignored the &lt;code&gt;SITEURL&lt;/code&gt;. To enable the comments feature, even you do not have a domain, you need to add the github page url:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;    SITEURL = 'http://username.github.io'
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ ITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'http://username.github.io'&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id="theme"&gt;&lt;a class="toclink" href="#theme"&gt;Theme&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;If you want to use themes other than the default one, you need to download the themes you want first. There is one way:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;cd blog
-git clone https://github.com/getpelican/pelican-themes.git
-cd pelican-themes
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;blog
+&lt;span class="nv"&gt;$ &lt;/span&gt;git clone https://github.com/getpelican/pelican-themes.git
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;pelican-themes
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;It seems that some themes are lost when I clone them from pelican github, so it will be better to check the folders before using them. You can always download themes online and put them in the folder you want.&lt;/p&gt;
 &lt;p&gt;Then, you can choose the themes you have in the &lt;code&gt;pelican-themes&lt;/code&gt; folder. To change the theme, you need to configure in &lt;code&gt;pelicanconf.py&lt;/code&gt;.For example:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;THEME = '/Users/User/Blog/pelican-themes/elegant'
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'/Users/User/Blog/pelican-themes/elegant'&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id="search"&gt;&lt;a class="toclink" href="#search"&gt;Search&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The theme elegent v1.3 should have included the following search engin plugin.&lt;/p&gt;
@@ -38,15 +307,15 @@ cd pelican-themes
 &lt;p&gt;The latest &lt;a href="http://www.tipue.com/search/"&gt;Tipue Search&lt;/a&gt; is version 5.0. If you meet any problem with the search, please replace the default version with the newest version in &lt;a href="http://www.tipue.com/search/"&gt;Tipue Search&lt;/a&gt;. The format may change because of the replacement, so you may need to modify the &lt;code&gt;tipuesearch.css&lt;/code&gt; file or just use the default version. By the test, I found the main problem the all the results are &lt;code&gt;undefined&lt;/code&gt; may be caused by default &lt;code&gt;tipuesearch_set.js&lt;/code&gt; file in this theme.&lt;/p&gt;
 &lt;h2 id="plugins"&gt;&lt;a class="toclink" href="#plugins"&gt;Plugins&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Easiest way to install and use these plugins is cloning this repo:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;git clone --recursive https://github.com/getpelican/pelican-plugins
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git clone --recursive https://github.com/getpelican/pelican-plugins
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;and activating the ones you want in your settings file:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;PLUGIN_PATHS = ['/Users/User/Blog/pelican-plugins']
-PLUGINS = ['tipue_search']
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'/Users/User/Blog/pelican-plugins'&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="nv"&gt;$ PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'tipue_search'&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The detail of plugins can be read from on &lt;a href="https://github.com/getpelican/pelican-plugins"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="pages"&gt;&lt;a class="toclink" href="#pages"&gt;Pages&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;If you create a folder named &lt;code&gt;pages&lt;/code&gt;, all the files in this folder will be static pages. All the pages can be added to the menu By setting &lt;code&gt;DISPLAY_PAGES_ON_MENU&lt;/code&gt; in &lt;code&gt;pelicanconf.py&lt;/code&gt;.&lt;/p&gt;</summary><category term="GitHub"></category><category term="Pelican"></category><category term="Markdown"></category></entry><entry><title>Introduction to Pelican (1)</title><link href="http://lele1122.github.io/pelican-intro.html" rel="alternate"></link><updated>2015-09-13T21:07:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-09-13:pelican-intro.html</id><summary type="html">
+&lt;p&gt;If you create a folder named &lt;code&gt;pages&lt;/code&gt;, all the files in this folder will be static pages. All the pages can be added to the menu By setting &lt;code&gt;DISPLAY_PAGES_ON_MENU&lt;/code&gt; in &lt;code&gt;pelicanconf.py&lt;/code&gt;.&lt;/p&gt;</summary><category term="GitHub"></category><category term="Pelican"></category><category term="Elegant"></category><category term="Disqus"></category><category term="Theme"></category><category term="Search"></category></entry><entry><title>Introduction to Pelican (1)</title><link href="http://lele1122.github.io/pelican-intro-en-US.html" rel="alternate"></link><updated>2015-09-13T21:07:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-09-13:pelican-intro-en-US.html</id><summary type="html">
 &lt;h2 id="overview"&gt;&lt;a class="toclink" href="#overview"&gt;Overview&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;This is my first time to use GitHub and Pelican to creating a personal website (blog page). The whole progress was made on Mac OS X, although I tried on the Windows 7 first. It proved it would be much more convenient if you tried on Mac.&lt;/p&gt;
 &lt;h2 id="preparation"&gt;&lt;a class="toclink" href="#preparation"&gt;Preparation&lt;/a&gt;&lt;/h2&gt;
@@ -83,6 +352,7 @@ Here are some recommended websites:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;LC_ALL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;en_US.UTF-8
 &lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;LANG&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;en_US.UTF-8
 &lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To change it persistently, you need to add above command in &lt;code&gt;~/.profile&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id="1"&gt;Pelican Setup&lt;/h2&gt;
 &lt;p&gt;Create a local folder for the blog:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir blog &lt;span class="c"&gt;#you can decide the name you want&lt;/span&gt;
