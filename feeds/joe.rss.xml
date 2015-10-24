@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>+OK</title><link>http://lele1122.github.io/</link><description></description><atom:link href="http://lele1122.github.io/feeds/joe.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 20 Oct 2015 21:07:00 +0800</lastBuildDate><item><title>听ibuick谈找工作</title><link>http://lele1122.github.io/ibuick-work-en-US.html</link><description>&lt;h2 id="ibuick"&gt;&lt;a class="toclink" href="#ibuick"&gt;ibuick&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;一个很偶然的机会听到ibuick的奇人异事，于是好奇的我就google到了他。又因为在了解他的一些事情中发现了Podcast这个神奇的网络广播工具（虽然曾在年少清狂时subscribe过一些，但对当时的我来说，然并卵）。听他说了一些个人经历，觉得很有意思。其中有句话让我醍醐灌顶：&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>+OK</title><link>http://lele1122.github.io/</link><description></description><atom:link href="http://lele1122.github.io/feeds/joe.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 20 Oct 2015 21:07:00 +0800</lastBuildDate><item><title>听ibuick谈找工作</title><link>http://lele1122.github.io/ibuick-work-zh_CN.html</link><description>&lt;h2 id="ibuick"&gt;&lt;a class="toclink" href="#ibuick"&gt;ibuick&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;一个很偶然的机会听到ibuick的奇人异事，于是好奇的我就google到了他。又因为在了解他的一些事情中发现了Podcasts这个神奇的网络广播工具（虽然曾在年少清狂时subscribe过一些，但对当时的我来说，然并卵）。听他说了一些个人经历，觉得很有意思。其中有句话让我醍醐灌顶：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;工作经验很重要，不要为了钱找工作。找一个你会喜欢的工作。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;虽说这种类似的话已经听过很多遍，但就像很多父母说的道理一样，只有你自己经历了一些，才能真正感受到这句话的含义。至少现在，还为时不晚。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Tue, 20 Oct 2015 21:07:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-10-20:ibuick-work-en-US.html</guid><category>work</category></item><item><title>Sublime Text + LaTeX Tool + Skim</title><link>http://lele1122.github.io/sublime-latex-skim-en-US.html</link><description>
+&lt;p&gt;虽说这种类似的话已经听过很多遍，但就像很多父母说的道理一样，只有你自己经历了一些，才能真正感受到这句话的含义。至少现在，还为时不晚。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Tue, 20 Oct 2015 21:07:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-10-20:ibuick-work-zh_CN.html</guid><category>work</category></item><item><title>Sublime Text + LaTeX Tool + Skim</title><link>http://lele1122.github.io/sublime-latex-skim-en_US.html</link><description>
 &lt;h2 id="preparation"&gt;&lt;a class="toclink" href="#preparation"&gt;Preparation&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.sublimetext.com/3"&gt;Sublime Text 3&lt;/a&gt; + &lt;a href="https://github.com/SublimeText/LaTeXTools"&gt;LaTeXTools&lt;/a&gt; + &lt;a href="http://skim-app.sourceforge.net/"&gt;Skim&lt;/a&gt; &lt;/p&gt;
 &lt;h3 id="sublime-text-3"&gt;&lt;a class="toclink" href="#sublime-text-3"&gt;Sublime Text 3&lt;/a&gt;&lt;/h3&gt;
@@ -37,7 +37,7 @@
 &lt;li&gt;&lt;code&gt;C-l,C-t&lt;/code&gt; gives you &lt;code&gt;\texttt{blah}&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;C-l,C-n&lt;/code&gt; wraps the selected text in a LaTeX environment structure. You get &lt;code&gt;\begin{env}&lt;/code&gt;,&lt;code&gt;blah&lt;/code&gt;, &lt;code&gt;\end{env}&lt;/code&gt; on three separate lines, with env selected. Change env to whatever environment you want, then hit Tab to move to the end of the environment.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Snippets&lt;/strong&gt;: Tools|Snippets&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Wed, 14 Oct 2015 14:57:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-10-13:sublime-latex-skim-en-US.html</guid><category>latex</category><category>sublime</category><category>skim</category></item><item><title>From Bash to Zsh</title><link>http://lele1122.github.io/bash-to-zsh-en-US.html</link><description>
+&lt;p&gt;&lt;strong&gt;Snippets&lt;/strong&gt;: Tools|Snippets&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Wed, 14 Oct 2015 14:57:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-10-13:sublime-latex-skim-en_US.html</guid><category>latex</category><category>sublime</category><category>skim</category></item><item><title>From Bash to Zsh</title><link>http://lele1122.github.io/bash-to-zsh-en-US.html</link><description>
 &lt;h2 id="install-zsh"&gt;&lt;a class="toclink" href="#install-zsh"&gt;Install Zsh&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;With Homebrew, you can just install Zsh by: &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;brew install zsh
