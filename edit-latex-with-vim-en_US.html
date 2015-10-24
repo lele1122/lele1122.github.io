@@ -12,19 +12,19 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="latex, sublime, skim, Coding, " />
+<meta name="keywords" content="vim, latex, skim, pdf, Coding, " />
 
-<meta property="og:title" content="Sublime Text + LaTeX Tool + Skim "/>
-<meta property="og:url" content="http://lele1122.github.io/sublime-latex-skim-en_US.html" />
-<meta property="og:description" content="Preparation Sublime Text 3 + LaTeXTools + Skim Sublime Text 3 You can download Sublime Text 3 for the evaluation without enforced time limit. LaTeXTools LaTeXTools is ..." />
+<meta property="og:title" content="Edit LaTeX with Vim "/>
+<meta property="og:url" content="http://lele1122.github.io/edit-latex-with-vim-en_US.html" />
+<meta property="og:description" content="LaTeX-Suite Requirement:Vim, latex-suite, Skim. I presume you have the knowledge of vim. If you just heard about vim and want to use latex with ..." />
 <meta property="og:site_name" content="+OK" />
 <meta property="og:article:author" content="Joe" />
-<meta property="og:article:published_time" content="2015-10-13T15:34:00+08:00" />
-<meta property="" content="2015-10-14T14:57:00+08:00" />
-<meta name="twitter:title" content="Sublime Text + LaTeX Tool + Skim ">
-<meta name="twitter:description" content="Preparation Sublime Text 3 + LaTeXTools + Skim Sublime Text 3 You can download Sublime Text 3 for the evaluation without enforced time limit. LaTeXTools LaTeXTools is ...">
+<meta property="og:article:published_time" content="2015-10-19T21:32:00+08:00" />
+<meta property="" content="2015-10-19T21:32:00+08:00" />
+<meta name="twitter:title" content="Edit LaTeX with Vim ">
+<meta name="twitter:description" content="LaTeX-Suite Requirement:Vim, latex-suite, Skim. I presume you have the knowledge of vim. If you just heard about vim and want to use latex with ...">
 
-        <title>Sublime Text + LaTeX Tool + Skim  · +OK
+        <title>Edit LaTeX with Vim  · +OK
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -84,7 +84,7 @@
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="http://lele1122.github.io/sublime-latex-skim-en_US.html"> Sublime Text + LaTeX Tool + Skim  </a></h1>
+    <h1><a href="http://lele1122.github.io/edit-latex-with-vim-en_US.html"> Edit LaTeX with Vim  </a></h1>
     </header>
 </div>
 
@@ -94,15 +94,13 @@
         <h4>Contents</h4>
         <div class="toc">
 <ul>
-<li><a href="#preparation">Preparation</a><ul>
-<li><a href="#sublime-text-3">Sublime Text 3</a></li>
-<li><a href="#latextools">LaTeXTools</a></li>
+<li><a href="#latex-suite">LaTeX-Suite</a></li>
 <li><a href="#skim">Skim</a></li>
-</ul>
-</li>
-<li><a href="#basic-operations">Basic Operations</a><ul>
-<li><a href="#compiling-latex-files">Compiling LaTeX files</a></li>
-<li><a href="#tips">Tips</a></li>
+<li><a href="#how-to-use">How to Use</a><ul>
+<li><a href="#compile">Compile</a></li>
+<li><a href="#forward-and-inverse-search">Forward and Inverse Search</a></li>
+<li><a href="#key-macros"><alt> Key Macros</alt></a></li>
+<li><a href="#f9-completion">&lt;F9&gt;-Completion</a></li>
 </ul>
 </li>
 </ul>
@@ -113,49 +111,37 @@
 
             
             
-<h2 id="preparation"><a class="toclink" href="#preparation">Preparation</a></h2>
-<p><a href="http://www.sublimetext.com/3">Sublime Text 3</a> + <a href="https://github.com/SublimeText/LaTeXTools">LaTeXTools</a> + <a href="http://skim-app.sourceforge.net/">Skim</a> </p>
-<h3 id="sublime-text-3"><a class="toclink" href="#sublime-text-3">Sublime Text 3</a></h3>
-<p>You can download <a href="http://www.sublimetext.com/3">Sublime Text 3</a> for the evaluation without enforced time limit.</p>
-<h3 id="latextools"><a class="toclink" href="#latextools">LaTeXTools</a></h3>
-<p><a href="https://github.com/SublimeText/LaTeXTools">LaTeXTools</a> is a plugin for <a href="http://www.sublimetext.com/3">Sublime Text 3</a>, which provides LaTeX supports.</p>
-<p>Install <a href="https://packagecontrol.io/installation">Package Control</a> by following the instructions in <a href="https://packagecontrol.io/installation">Package Control</a>. </p>
-<p>In the Sublime Text 3 window, press Command + Shift + P (Command Palette) and type in <code>install</code> and return. It will search for a while. Then find <code>LaTeXTools</code> and install. </p>
-<p><img alt="Package Control Install" src="https://lh3.googleusercontent.com/pWQSxGVyyuIBccHzBSCNxdrwQqyUy4nA-CqGCwnGOxmrZ6T2IgocVC3T7GI7JZp3TIc07DWs0CBiLMGXu6kv-jY8fQjjzDJP3OI2aQN7pETwdhR-RrXdgu7CYAHnQ3RpXbhU7w8aUHhPta5K8gUY5yYe1bPs4EVyudUmLw3Em5fkGeljhp-1avbjx5uWXICEbCKwWzHmZSi9bikU45FkII-ZIXFHQNrn_mgupPT5gBYLA2eolg8Zq69TVxlt3GrJNUCZjr3BP8riMP2u7uEYMtt01_GZ9HkiZXkHva7f1rd9PU4IuJoci-DhTjiReAGUDeOBI34ngjHPJ381RY_AGG9xqsmh8UwCTBO4yJhoRoPZhSLikS2xGUYdMUaoarKunkl9xUN4pUA-lpAyJ0CIPMkoYcz8BZZUi9eDAtR_bnIPGcLVr-WeFMLhsXZTHTe02sRnaEjXUM23HQtwbnxBEoYXyprTPsIT98wvMc2hqJettCXf7VMcO7M007bqaVF4vxAwRVMrJIo7L6YIabFSg23SXH3mHEqyAfp9iWYi-sRT=w460-h52-no"/></p>
-<p><em>Package control install</em></p>
-<p>If you are installing LaTeXTools for the first time, you need to create a configuration file, <code>LaTeXTools.sublime-settings</code>, in your <code>User</code> directory (off the Packages) directory. To do so, open the command palette from the Tools menu, search for "LaTeXTools: Reconfigure and migrate settings," and hit Return. </p>
-<h3 id="skim"><a class="toclink" href="#skim">Skim</a></h3>
-<p><a href="http://skim-app.sourceforge.net/">Skim</a> is a PDF reader to view PDF files.</p>
-<h2 id="basic-operations"><a class="toclink" href="#basic-operations">Basic Operations</a></h2>
-<p>Most LaTeXTools facilities are triggered using <code>Ctrl-l</code> (Windows, Linux) or <code>Cmd-l</code> (OS X), followed by some other key or key combination.</p>
-<h3 id="compiling-latex-files"><a class="toclink" href="#compiling-latex-files">Compiling LaTeX files</a></h3>
-<p>Keybinding: <code>Cmd-b</code></p>
-<p><strong>Multi-file documents</strong>: first line in the current file consists of the text <code>%!TEX root = &lt;master file name&gt;</code>.</p>
-<p><strong>TeX engine selection</strong>: first line of the current file consists of the text <code>%!TEX program = &lt;program&gt;</code>. 'pdflatex' is the default. For multi-file documents, the directive must be in the <em>root</em> file.</p>
-<h3 id="tips"><a class="toclink" href="#tips">Tips</a></h3>
-<p><strong>Forward Searching</strong>: <code>C-l,j</code></p>
-<p><strong>Reverse Searching</strong>: <code>Cmd+shift+click</code> in Skim, noble-clicking in Sumatra.</p>
-<p><strong>Jumping to sections and labels</strong>: <code>C-r</code></p>
-<p><strong>commands and environments</strong>: <code>C-l,c</code> for commands and <code>C-l,e</code> for environment.</p>
-<p><strong>Wrapping</strong>: <code>C-l,C-c</code> wraps the selected text in a LaTeX command structure, e.g. <code>blah</code> to <code>\cmd{blah}</code>. Then tab to the end of command. </p>
-<ul>
-<li><code>C-l,C-e</code> gives you <code>\emph{blah}</code>, and the cursor moves to the end of the command.</li>
-<li><code>C-l,C-b</code> gives you <code>\textbf{blah}</code></li>
-<li><code>C-l,C-u</code> gives you <code>\underline{blah}</code></li>
-<li><code>C-l,C-t</code> gives you <code>\texttt{blah}</code></li>
-<li><code>C-l,C-n</code> wraps the selected text in a LaTeX environment structure. You get <code>\begin{env}</code>,<code>blah</code>, <code>\end{env}</code> on three separate lines, with env selected. Change env to whatever environment you want, then hit Tab to move to the end of the environment.</li>
-</ul>
-<p><strong>Snippets</strong>: Tools|Snippets</p>
+<h2 id="latex-suite"><a class="toclink" href="#latex-suite">LaTeX-Suite</a></h2>
+<blockquote>
+<p>Requirement:Vim, <a href="http://vim-latex.sourceforge.net/index.php?subject=download&amp;title=Download">latex-suite</a>, <a href="http://skim-app.sourceforge.net/">Skim</a>.</p>
+</blockquote>
+<p>I presume you have the knowledge of vim. If you just heard about vim and want to use latex with vim, please read the articles about <a href="http://lele1122.github.io/vim-tutorial-start-en-US.html">vim</a> and <a href="http://lele1122.github.io/vim-tutorial-plugins-en-US.html">vundle</a> before continue this article.</p>
+<h2 id="skim"><a class="toclink" href="#skim">Skim</a></h2>
+<p>Preferences --&gt; Sync --&gt; Choose <code>MacVim</code> and check "Check for file changes"</p>
+<h2 id="how-to-use"><a class="toclink" href="#how-to-use">How to Use</a></h2>
+<p>If you want to efficiently use vim to write LaTeX, please read <a href="http://vim-latex.sourceforge.net/index.php?subject=manual&amp;title=Manual#user-manual">User Manual</a>. There is also an <a href="http://michaelgoerz.net/refcards/vimlatexqrc.pdf">incomplete vim-latex cheat sheet</a> for convenience.</p>
+<p>For me, I have met some problems like compile and view in pdf, <alt> key macros and forward and inverse search.</alt></p>
+<h3 id="compile"><a class="toclink" href="#compile">Compile</a></h3>
+<p>If you just read <a href="http://michaelgoerz.net/refcards/vimlatexqrc.pdf">incomplete vim-latex cheat sheet</a>, you may see <code>\ll</code> for compile. Actually, <code>\</code> is <code>&lt;leader&gt;</code> by default, so you might press <code>,ll</code> if you have set <code>&lt;leader&gt;</code> as <code>,</code>. Before you compile the <code>.tex</code> file, you need to save the change before compile, or the pdf file will not change. </p>
+<h3 id="forward-and-inverse-search"><a class="toclink" href="#forward-and-inverse-search">Forward and Inverse Search</a></h3>
+<p>Forward Search: <code>&lt;leader&gt;ls</code></p>
+<p>Inverse Search: <code>Shift-Cmd-Click</code></p>
+<h3 id="key-macros"><a class="toclink" href="#key-macros"><alt> Key Macros</alt></a></h3>
+<p>I do not know the reason why <alt> key macros can not be used. If you know, please tell me.</alt></p>
+<h3 id="f9-completion"><a class="toclink" href="#f9-completion"><code>&lt;F9&gt;</code>-Completion</a></h3>
+<p>You may need to edit <code>texrc</code> file for the <code>&lt;F9&gt;</code>-completion of <code>\includegraphics{</code>, or it will not work:</p>
+<div class="highlight"><pre>TexLet g:Tex_ImageDir = '.'
+</pre></div>
             <section>
     <p id="post-share-links">
     Share on:
-    <a href="http://twitter.com/home?status=Sublime%20Text%20%2B%20LaTeX%20Tool%20%2B%20Skim%20http%3A//lele1122.github.io/sublime-latex-skim-en_US.html" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="http://twitter.com/home?status=Edit%20LaTeX%20with%20Vim%20%20http%3A//lele1122.github.io/edit-latex-with-vim-en_US.html" target="_blank" title="Share on Twitter">Twitter</a>
     ❄
-    <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=http%3A//lele1122.github.io/sublime-latex-skim-en_US.html" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=http%3A//lele1122.github.io/edit-latex-with-vim-en_US.html" target="_blank" title="Share on Facebook">Facebook</a>
     ❄
-    <a href="https://plus.google.com/share?url=http%3A//lele1122.github.io/sublime-latex-skim-en_US.html" target="_blank" title="Share on Google Plus">Google+</a>
+    <a href="https://plus.google.com/share?url=http%3A//lele1122.github.io/edit-latex-with-vim-en_US.html" target="_blank" title="Share on Google Plus">Google+</a>
     ❄
-    <a href="mailto:?subject=Sublime%20Text%20%2B%20LaTeX%20Tool%20%2B%20Skim&amp;body=http%3A//lele1122.github.io/sublime-latex-skim-en_US.html" target="_blank" title="Share via Email">Email</a>
+    <a href="mailto:?subject=Edit%20LaTeX%20with%20Vim%20&amp;body=http%3A//lele1122.github.io/edit-latex-with-vim-en_US.html" target="_blank" title="Share via Email">Email</a>
     </p>
 </section>
 
@@ -165,7 +151,7 @@
     <div class="accordion-group">
         <div class="accordion-heading">
             <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2"
-                href="http://lele1122.github.io/sublime-latex-skim-en_US.html#disqus_thread">
+                href="http://lele1122.github.io/edit-latex-with-vim-en_US.html#disqus_thread">
                 Comments
             </a>
         </div>
@@ -175,8 +161,8 @@
                     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'plusok';
-        var disqus_identifier = 'http://lele1122.github.io/sublime-latex-skim-en_US.html';
-    var disqus_url = 'http://lele1122.github.io/sublime-latex-skim-en_US.html';
+        var disqus_identifier = 'http://lele1122.github.io/edit-latex-with-vim-en_US.html';
+    var disqus_url = 'http://lele1122.github.io/edit-latex-with-vim-en_US.html';
 
     (function() {
          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -198,15 +184,19 @@
 <section>
     <h2>Related Posts</h2>
 <ul class="related-posts-list">
-<li><a href="http://lele1122.github.io/edit-latex-with-vim-en_US.html" title="Edit LaTeX with Vim">Edit LaTeX with Vim</a></li>
+<li><a href="http://lele1122.github.io/vim-airline-en_US.html" title="Vim Tutorial - Airline">Vim Tutorial <small>Airline</small></a></li>
+<li><a href="http://lele1122.github.io/vim-tutorial-start-en_US.html" title="Vim Tutorial (1) - Start Using Vim">Vim Tutorial (1) <small>Start Using Vim</small></a></li>
+<li><a href="http://lele1122.github.io/vim-tutorial-theme-en_US.html" title="Vim Tutorial (3) - Theme and Font">Vim Tutorial (3) <small>Theme and Font</small></a></li>
+<li><a href="http://lele1122.github.io/vim-tutorial-plugins-en_US.html" title="Vim Tutorial (4) - Add Plugins by Vundle">Vim Tutorial (4) <small>Add Plugins by Vundle</small></a></li>
+<li><a href="http://lele1122.github.io/sublime-latex-skim-en_US.html" title="Sublime Text + LaTeX Tool + Skim">Sublime Text + LaTeX Tool + Skim</a></li>
 </ul>
 <hr />
 </section>
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="http://lele1122.github.io/bash-to-zsh-en_US.html" title="Previous: From Bash to Zsh">From Bash to Zsh</a></li>
-                <li class="next-article"><a href="http://lele1122.github.io/edit-latex-with-vim-en_US.html" title="Next: Edit LaTeX with Vim">Edit LaTeX with Vim</a> »</li>
+                <li class="previous-article">« <a href="http://lele1122.github.io/sublime-latex-skim-en_US.html" title="Previous: Sublime Text + LaTeX Tool + Skim">Sublime Text + LaTeX Tool + Skim</a></li>
+                <li class="next-article"><a href="http://lele1122.github.io/ibuick-work-zh_CN.html" title="Next: 听ibuick谈找工作">听ibuick谈找工作</a> »</li>
             </ul>
             </nav>
             </aside>
@@ -214,10 +204,10 @@
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time pubdate="pubdate" datetime="2015-10-13T15:34:00+08:00">Oct 13, 2015</time>
+            <time pubdate="pubdate" datetime="2015-10-19T21:32:00+08:00">Oct 19, 2015</time>
 
 <h4>Last Updated</h4>
-<time datetime="2015-10-14T14:57:00+08:00">Oct 14, 2015</time>
+<time datetime="2015-10-19T21:32:00+08:00">Oct 19, 2015</time>
 
             <h4>Category</h4>
             <a class="category-link" href="http://lele1122.github.io/categories.html#coding-ref">Coding</a>
@@ -226,11 +216,14 @@
                 <li><a href="http://lele1122.github.io/tags.html#latex-ref">latex
                     <span>2</span>
 </a></li>
+                <li><a href="http://lele1122.github.io/tags.html#pdf-ref">pdf
+                    <span>1</span>
+</a></li>
                 <li><a href="http://lele1122.github.io/tags.html#skim-ref">skim
                     <span>2</span>
 </a></li>
-                <li><a href="http://lele1122.github.io/tags.html#sublime-ref">sublime
-                    <span>1</span>
+                <li><a href="http://lele1122.github.io/tags.html#vim-ref">vim
+                    <span>6</span>
 </a></li>
             </ul>
 <h4>Contact</h4>

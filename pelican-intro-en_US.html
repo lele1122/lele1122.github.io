@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Joe" />
+        <meta name="copyright" content="Joe" />
+
+        <link rel="author" href=https://plus.google.com/u/0/107872582538413049572/posts />
+        <meta name="twitter:creator" content="@jiahao0516">
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="GitHub, Pelican, Markdown, Coding, " />
+
+<meta property="og:title" content="Introduction to Pelican (1)  - Creating a Personal Web Page "/>
+<meta property="og:url" content="http://lele1122.github.io/pelican-intro-en_US.html" />
+<meta property="og:description" content="Creating a blog page" />
+<meta property="og:site_name" content="+OK" />
+<meta property="og:article:author" content="Joe" />
+<meta property="og:article:published_time" content="2015-09-13T21:07:00+08:00" />
+<meta property="" content="2015-09-13T21:07:00+08:00" />
+<meta name="twitter:title" content="Introduction to Pelican (1)  - Creating a Personal Web Page ">
+<meta name="twitter:description" content="Creating a blog page">
+
+        <title>Introduction to Pelican (1)  - Creating a Personal Web Page  · +OK
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="http://lele1122.github.io/theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="http://lele1122.github.io/theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="http://lele1122.github.io/theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="http://lele1122.github.io/theme/css/custom.css" media="screen">
+        <link rel="shortcut icon" href="http://lele1122.github.io/theme/images/favicon.ico" type="image/x-icon" type="image/png" />
+        <link rel="icon" href="http://lele1122.github.io/theme/images/apple-touch-icon-152x152.png" type="image/png" />
+        <link rel="apple-touch-icon" href="http://lele1122.github.io/theme/images/apple-touch-icon.png"  type="image/png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="http://lele1122.github.io/theme/images/apple-touch-icon-57x57.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="http://lele1122.github.io/theme/images/apple-touch-icon-72x72.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="http://lele1122.github.io/theme/images/apple-touch-icon-76x76.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="http://lele1122.github.io/theme/images/apple-touch-icon-114x114.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="http://lele1122.github.io/theme/images/apple-touch-icon-120x120.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="http://lele1122.github.io/theme/images/apple-touch-icon-144x144.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="http://lele1122.github.io/theme/images/apple-touch-icon-152x152.png" type="image/png" />
+        <link href="http://lele1122.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="+OK - Full Atom Feed" />
+        <link href="http://lele1122.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="+OK - Full RSS Feed" />
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-67534423-1', 'auto');
+    ga('send', 'pageview');
+</script>
+    </head>
+    <body>
+        <div id="content-sans-footer">
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="http://lele1122.github.io/"><span class=site-name>+OK</span></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right top-menu">
+                            <li ><a href="http://lele1122.github.io">Home</a></li>
+                            <li ><a href="http://lele1122.github.io/Me.html">About</a></li>
+                            <li ><a href="http://lele1122.github.io/categories.html">Categories</a></li>
+                            <li ><a href="http://lele1122.github.io/tags.html">Tags</a></li>
+                            <li ><a href="http://lele1122.github.io/archives.html">Archives</a></li>
+                            <li><form class="navbar-search" action="http://lele1122.github.io/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span10">
+<article>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+    <h1><a href="http://lele1122.github.io/pelican-intro-en_US.html"> Introduction to Pelican (1)  <small> Creating a Personal Web Page </small>  </a></h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+    <div class="span2 table-of-content">
+        <nav>
+        <h4>Contents</h4>
+        <div class="toc">
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#preparation">Preparation</a><ul>
+<li><a href="#terminal">Terminal</a></li>
+</ul>
+</li>
+<li><a href="#configure-local-environment">Configure local environment</a></li>
+<li><a href="#writing-articles">Writing articles</a></li>
+<li><a href="#upload-the-pages">Upload the pages</a></li>
+<li><a href="#modify-and-update-pages">Modify and update pages</a></li>
+<li><a href="#summary">Summary</a></li>
+</ul>
+</div>
+        </nav>
+    </div>
+    <div class="span8 article-content">
+
+            
+            
+<h2 id="overview"><a class="toclink" href="#overview">Overview</a></h2>
+<p>This is my first time to use GitHub and Pelican to creating a personal website (blog page). The whole progress was made on Mac OS X, although I tried on the Windows 7 first. It proved it would be much more convenient if you tried on Mac.</p>
+<h2 id="preparation"><a class="toclink" href="#preparation">Preparation</a></h2>
+<p>If this is your first time to use terminal, it will be better to get some basic knowledge about it. <a href="http://www.google.com">Google</a> is always your good teachers and friends! Github should also be learnt if you do not want to be massed with the git codes.
+Here are some recommended websites:</p>
+<h3 id="terminal"><a class="toclink" href="#terminal">Terminal</a></h3>
+<ul>
+<li><a href="http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line">Introduction to the Mac OS X Command Line</a></li>
+<li><a href="https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-)">Terminal Cheatsheet for Mac (basics)</a></li>
+</ul>
+<h3 id="2">GitHub</h3>
+<ul>
+<li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">GitHub教程 (zh-CN)</a></li>
+<li><a href="https://git-scm.com/book/en/v2">git-scm (En)</a></li>
+<li><a href="https://git-scm.com/book/zh/v2">git-scm (zh-CN)</a></li>
+</ul>
+<p>You need to register a GitHub account before the Pelican Setup. A repository named <code>username.github.io</code> should also be created. To reduce trouble, README file is not recommended to be created for the beginner of GitHub. They will be used in Chapter <a href="#1">Pelican Setup</a>.</p>
+<h2 id="configure-local-environment"><a class="toclink" href="#configure-local-environment">Configure local environment</a></h2>
+<p>You will also need to install some basic package before this tutorial. I presume most latest Mac OS X come with Python.It may require administrator password for <code>$ sudo</code>. </p>
+<ol>
+<li>
+<p>Install pip:  </p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo python get-pip.py
+</pre></div>
+</li>
+<li>
+<p>Install Pelican (most important) and Markdown (to support <code>.md</code>):</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo pip install pelican
+<span class="nv">$ </span>sudo pip install markdown
+</pre></div>
+</li>
+</ol>
+<p>Some people may have ValueError because of the unicode. You can check weather your terminal environment is in UTF-8 by <code>$ locale</code>. If not, you can temporarily change it by:</p>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">export </span><span class="nv">LC_ALL</span><span class="o">=</span>en_US.UTF-8
+<span class="nv">$ </span><span class="nb">export </span><span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+</pre></div>
+<p>To change it persistently, you need to add above command in <code>~/.profile</code>.</p>
+<h2 id="1">Pelican Setup</h2>
+<p>Create a local folder for the blog:</p>
+<div class="highlight"><pre><span class="nv">$ </span>mkdir blog <span class="c">#you can decide the name you want</span>
+<span class="nv">$ </span><span class="nb">cd </span>blog
+</pre></div>
+<p>Initialise the blog:</p>
+<div class="highlight"><pre><span class="nv">$ </span>pelican-quickstart
+</pre></div>
+<p>Just follow the steps to initialize:</p>
+<div class="highlight"><pre><span class="nv">$ </span>pelican-quickstart
+Where <span class="k">do</span> you want to create your new web site? <span class="o">[</span>.<span class="o">]</span>
+What will be the title of this web site?
+&gt; &lt;GitHub username&gt; e.g. abc123
+Who will be the author of this web site?
+&gt; &lt;name you want to use&gt; e.g John
+What will be the default language of this web site? <span class="o">[</span>en<span class="o">]</span>
+Do you want to specify a URL prefix? e.g., http://example.com   <span class="o">(</span>Y/n<span class="o">)</span>
+What is your URL prefix? <span class="o">(</span>see above example<span class="p">;</span> no trailing slash<span class="o">)</span>
+&gt; http://username.github.io
+Do you want to <span class="nb">enable </span>article pagination? <span class="o">(</span>Y/n<span class="o">)</span>
+How many articles per page <span class="k">do</span> you want? <span class="o">[</span>5<span class="o">]</span>
+Do you want to generate a Fabfile/Makefile to automate generation and publishing? <span class="o">(</span>Y/n<span class="o">)</span>
+Do you want an auto-reload <span class="p">&amp;</span> simpleHTTP script to assist with theme and site development? <span class="o">(</span>Y/n<span class="o">)</span>
+Do you want to upload your website using FTP? <span class="o">(</span>y/N<span class="o">)</span>
+Do you want to upload your website using SSH? <span class="o">(</span>y/N<span class="o">)</span>
+Do you want to upload your website using Dropbox? <span class="o">(</span>y/N<span class="o">)</span>
+Do you want to upload your website using S3? <span class="o">(</span>y/N<span class="o">)</span>
+Do you want to upload your website using Rackspace Cloud Files? <span class="o">(</span>y/N<span class="o">)</span>
+</pre></div>
+<p>If you want to take a look of the tree structure of the generated files, please install <a href="http://brew.sh/">Homebrew</a> and tree:</p>
+<div class="highlight"><pre><span class="nv">$ </span>ruby -e <span class="s2">"</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">"</span> 
+<span class="nv">$ </span>brew install tree
+</pre></div>
+<p>Then you can use command <code>$ tree</code> to read the folder like this:</p>
+<div class="highlight"><pre>blog/
+├── content               
+├── output               
+├── develop_server.sh    
+├── Makefile             
+├── pelicanconf.py       
+└── publishconf.py
+</pre></div>
+<h2 id="writing-articles"><a class="toclink" href="#writing-articles">Writing articles</a></h2>
+<p>The default folder for writing articles are set in the <code>/blog/content</code>, which can be configured in <code>pelicanconf.py</code> if you want.  In this tutorial, the article (<code>.md</code> file)is put in <code>content</code>.
+Pelican needs metadata like <code>Title</code>(must),  <code>Date</code> (optional) and other optional information for smart settings. For example:</p>
+<div class="highlight"><pre><span class="n">Title</span><span class="o">:</span> <span class="n">Introduction</span> <span class="n">to</span> <span class="n">Creating</span> <span class="n">GitHub</span> <span class="n">Pages</span> <span class="k">with</span> <span class="n">Pelican</span>
+<span class="n">Date</span><span class="o">:</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">13</span> <span class="mi">21</span><span class="o">:</span><span class="mi">07</span>
+<span class="n">Modified</span><span class="o">:</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">13</span> <span class="mi">21</span><span class="o">:</span><span class="mi">07</span>
+<span class="n">Category</span><span class="o">:</span> <span class="n">Coding</span>
+<span class="n">Tags</span><span class="o">:</span> <span class="n">GitHub</span><span class="o">,</span><span class="n">Pelican</span><span class="o">,</span><span class="n">Markdown</span>
+<span class="n">Slug</span><span class="o">:</span> <span class="n">Blog</span>
+<span class="n">Authors</span><span class="o">:</span> <span class="n">Joe</span>
+<span class="n">Summary</span><span class="o">:</span> <span class="n">Creating</span> <span class="n">Blog</span>
+
+<span class="n">Here</span> <span class="k">is</span> <span class="n">the</span> <span class="n">content</span> <span class="n">you</span> <span class="n">want</span> <span class="n">to</span> <span class="n">write</span> <span class="k">in</span> <span class="n">Markdown</span> <span class="n">style</span><span class="o">....</span>
+</pre></div>
+<p>To generate the site locally, you can run command:</p>
+<div class="highlight"><pre><span class="nv">$ </span>make devserver
+</pre></div>
+<p>It serves your site to <a href="http://localhost:8000">http://localhost:8000</a>. You can preview the website locally first.</p>
+<p>Or you can just generate html without testing</p>
+<div class="highlight"><pre><span class="nv">$ </span>make html
+</pre></div>
+<p>No matter which method you choose, some <code>.html</code> file will be generated in folder <code>output</code>. To debug easily and for the future convenient, I recommend to new a folder under blog, e.g. <code>/blog/gitblog</code> and copy the files in <code>output</code>to this folder. Why? I will explain later.</p>
+<h2 id="upload-the-pages"><a class="toclink" href="#upload-the-pages">Upload the pages</a></h2>
+<p>Since all the html files are prepared, we only need to upload them to our GitHub. These part should be done after you have a basic knowledge of <a href="#2">GitHub</a>. If you have already created README file in GitHub, you may need to add <code>$ git pull origin master</code> before <code>$ git add .</code>.</p>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>gitblog
+<span class="nv">$ </span>git init
+<span class="nv">$ </span>git remote add origin https://github.com/username/username.github.io
+<span class="nv">$ </span>git add .
+<span class="nv">$ </span>git commit -m <span class="s2">"first commit"</span>
+<span class="nv">$ </span>git push -u origin master
+</pre></div>
+<p>You may need to input GitHub username and passward if you do not use SSH key introduced in Chapter <a href="#2">GitHub</a>.
+If no error, you can visit you blog by username.github.io.</p>
+<h2 id="modify-and-update-pages"><a class="toclink" href="#modify-and-update-pages">Modify and update pages</a></h2>
+<p>The reason to create another folder instead using <code>output</code> to upload pages is that every time you use <code>$ make html</code>, <code>output</code> will be replaced with new files. Thus, it would be better to copy the files from <code>output</code> into <code>gitblog</code> before uploading.</p>
+<p>Here is some commands for delete and update files:</p>
+<div class="highlight"><pre><span class="nv">$ </span>git rm ×××.html
+<span class="nv">$ </span>git add . 
+<span class="nv">$ </span>git commit -m <span class="s2">"some message"</span>
+<span class="nv">$ </span>git push -u origin master
+</pre></div>
+<h2 id="summary"><a class="toclink" href="#summary">Summary</a></h2>
+<p>This article is only the introduction of setting up a personal blog by using <a href="https://github.com/">GitHub</a> and <a href="http://docs.getpelican.com/en/3.6.3/">Pelican</a>. Since this is my first time to use it, some condition my not be covered. Please comment below if there is any error.</p>
+            <section>
+    <p id="post-share-links">
+    Share on:
+    <a href="http://twitter.com/home?status=Introduction%20to%20Pelican%20%281%29%20Creating%20a%20Personal%20Web%20Page%20http%3A//lele1122.github.io/pelican-intro-en_US.html" target="_blank" title="Share on Twitter">Twitter</a>
+    ❄
+    <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=http%3A//lele1122.github.io/pelican-intro-en_US.html" target="_blank" title="Share on Facebook">Facebook</a>
+    ❄
+    <a href="https://plus.google.com/share?url=http%3A//lele1122.github.io/pelican-intro-en_US.html" target="_blank" title="Share on Google Plus">Google+</a>
+    ❄
+    <a href="mailto:?subject=Introduction%20to%20Pelican%20%281%29%20Creating%20a%20Personal%20Web%20Page&amp;body=http%3A//lele1122.github.io/pelican-intro-en_US.html" target="_blank" title="Share via Email">Email</a>
+    </p>
+</section>
+
+            <section>
+<p id="comment-message">So what do you think of it? Do I miss something? Leave your comments below... </p>
+<div class="accordion" id="accordion2">
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2"
+                href="http://lele1122.github.io/pelican-intro-en_US.html#disqus_thread">
+                Comments
+            </a>
+        </div>
+        <div id="disqus_thread" class="accordion-body collapse">
+            <div class="accordion-inner">
+                <div class="comments">
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'plusok';
+        var disqus_identifier = 'http://lele1122.github.io/pelican-intro-en_US.html';
+    var disqus_url = 'http://lele1122.github.io/pelican-intro-en_US.html';
+
+    (function() {
+         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+            <hr/>
+<section>
+    <h2>Related Posts</h2>
+<ul class="related-posts-list">
+<li><a href="http://lele1122.github.io/pelican-settings-en_US.html" title="Introduction to Pelican (2) - Theme &#39;Elegant&#39; Settings">Introduction to Pelican (2) <small>Theme 'Elegant' Settings</small></a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="http://lele1122.github.io/vim-airline-en_US.html" title="Previous: Vim Tutorial - Airline">Vim Tutorial <small>Airline</small></a></li>
+                <li class="next-article"><a href="http://lele1122.github.io/pelican-settings-en_US.html" title="Next: Introduction to Pelican (2) - Theme &#39;Elegant&#39; Settings">Introduction to Pelican (2) <small>Theme 'Elegant' Settings</small></a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+            <h4>Published</h4>
+            <time pubdate="pubdate" datetime="2015-09-13T21:07:00+08:00">Sep 13, 2015</time>
+
+<h4>Last Updated</h4>
+<time datetime="2015-09-13T21:07:00+08:00">Sep 13, 2015</time>
+
+            <h4>Category</h4>
+            <a class="category-link" href="http://lele1122.github.io/categories.html#coding-ref">Coding</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="http://lele1122.github.io/tags.html#github-ref">GitHub
+                    <span>2</span>
+</a></li>
+                <li><a href="http://lele1122.github.io/tags.html#markdown-ref">Markdown
+                    <span>1</span>
+</a></li>
+                <li><a href="http://lele1122.github.io/tags.html#pelican-ref">Pelican
+                    <span>2</span>
+</a></li>
+            </ul>
+<h4>Contact</h4>
+    <a href="mailto:jiahao0516@gmail.com" title="My Email Address" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-envelope sidebar-social-links"></i></a>
+    <a href="http://www.weibo.com/jiahao0516" title="My Weibo Profile" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-weibo sidebar-social-links"></i></a>
+    <a href="https://www.facebook.com/Jiahao0516" title="My Facebook Profile" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-facebook sidebar-social-links"></i></a>
+    <a href="https://github.com/lele1122" title="My Github Profile" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-github sidebar-social-links"></i></a>
+    <a href="http://twitter.com/jiahao0516" title="My Twitter Profile" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-twitter sidebar-social-links"></i></a>
+<!-- Begin MailChimp Signup Form -->
+<div id="mc-embed-signup">
+<form action="//github.us11.list-manage.com/subscribe/post?u=16aebfa2272c85eff78ea6527&amp;id=3f5bd4746f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<h4>Get Updates</h4>
+<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email..." required>
+<div class="clear"><input type="submit" value="Send Me Free" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
+<!--End mc_embed_signup-->
+        </div>
+        </section>
+</div>
+</article>
+                </div>
+                <div class="span1"></div>
+            </div>
+        </div>
+        <div id="push"></div>
+    </div>
+<footer>
+<div id="footer">
+    <ul class="footer-content">
+        <li class="elegant-license"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a><br />"+OK" by <a rel="name" href="http://lele1122.github.io">Joe</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</li>
+        <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
+    </ul>
+</div>
+</footer>            <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+            <script type="text/javascript">
+var disqus_shortname = 'plusok';
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+<script  language="javascript" type="text/javascript">
+function uncollapse() {
+    if (window.location.hash.match(/^#comment-\d+$/)) {
+        $('#disqus_thread').collapse('show');
+    }
+}
+</script>
+<script type="text/javascript" language="JavaScript">
+uncollapse();
+window.onhashchange=function(){
+    if (window.location.hash.match(/^#comment-\d+$/))
+        window.location.reload(true);
+}
+</script>
+<script>
+$('#disqus_thread').on('shown', function () {
+    var link = document.getElementsByClassName('accordion-toggle');
+    var old_innerHTML = link[0].innerHTML;
+    $(link[0]).fadeOut(500, function() {
+        $(this).text('Click here to hide comments').fadeIn(500);
+    });
+    $('#disqus_thread').on('hidden', function () {
+        $(link[0]).fadeOut(500, function() {
+            $(this).text(old_innerHTML).fadeIn(500);
+        });
+    })
+})
+</script>
+
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+    License : http://oncrashreboot.com/pelican-elegant -->
+</html>

@@ -12,19 +12,19 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="latex, sublime, skim, Coding, " />
+<meta name="keywords" content="bash, zsh, shell, Coding, " />
 
-<meta property="og:title" content="Sublime Text + LaTeX Tool + Skim "/>
-<meta property="og:url" content="http://lele1122.github.io/sublime-latex-skim-en_US.html" />
-<meta property="og:description" content="Preparation Sublime Text 3 + LaTeXTools + Skim Sublime Text 3 You can download Sublime Text 3 for the evaluation without enforced time limit. LaTeXTools LaTeXTools is ..." />
+<meta property="og:title" content="From Bash to Zsh "/>
+<meta property="og:url" content="http://lele1122.github.io/bash-to-zsh-en_US.html" />
+<meta property="og:description" content="Install Zsh With Homebrew, you can just install Zsh by: $ brew install zsh As a beginner, you need not to memorise all the commands&#39; options ..." />
 <meta property="og:site_name" content="+OK" />
 <meta property="og:article:author" content="Joe" />
-<meta property="og:article:published_time" content="2015-10-13T15:34:00+08:00" />
+<meta property="og:article:published_time" content="2015-10-11T18:21:00+08:00" />
 <meta property="" content="2015-10-14T14:57:00+08:00" />
-<meta name="twitter:title" content="Sublime Text + LaTeX Tool + Skim ">
-<meta name="twitter:description" content="Preparation Sublime Text 3 + LaTeXTools + Skim Sublime Text 3 You can download Sublime Text 3 for the evaluation without enforced time limit. LaTeXTools LaTeXTools is ...">
+<meta name="twitter:title" content="From Bash to Zsh ">
+<meta name="twitter:description" content="Install Zsh With Homebrew, you can just install Zsh by: $ brew install zsh As a beginner, you need not to memorise all the commands&#39; options ...">
 
-        <title>Sublime Text + LaTeX Tool + Skim  · +OK
+        <title>From Bash to Zsh  · +OK
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -84,7 +84,7 @@
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="http://lele1122.github.io/sublime-latex-skim-en_US.html"> Sublime Text + LaTeX Tool + Skim  </a></h1>
+    <h1><a href="http://lele1122.github.io/bash-to-zsh-en_US.html"> From Bash to Zsh  </a></h1>
     </header>
 </div>
 
@@ -94,15 +94,11 @@
         <h4>Contents</h4>
         <div class="toc">
 <ul>
-<li><a href="#preparation">Preparation</a><ul>
-<li><a href="#sublime-text-3">Sublime Text 3</a></li>
-<li><a href="#latextools">LaTeXTools</a></li>
-<li><a href="#skim">Skim</a></li>
-</ul>
-</li>
-<li><a href="#basic-operations">Basic Operations</a><ul>
-<li><a href="#compiling-latex-files">Compiling LaTeX files</a></li>
-<li><a href="#tips">Tips</a></li>
+<li><a href="#install-zsh">Install Zsh</a></li>
+<li><a href="#plugin-tips">Plugin Tips</a><ul>
+<li><a href="#git">git</a></li>
+<li><a href="#autojump">autojump</a></li>
+<li><a href="#osx">osx</a></li>
 </ul>
 </li>
 </ul>
@@ -113,49 +109,72 @@
 
             
             
-<h2 id="preparation"><a class="toclink" href="#preparation">Preparation</a></h2>
-<p><a href="http://www.sublimetext.com/3">Sublime Text 3</a> + <a href="https://github.com/SublimeText/LaTeXTools">LaTeXTools</a> + <a href="http://skim-app.sourceforge.net/">Skim</a> </p>
-<h3 id="sublime-text-3"><a class="toclink" href="#sublime-text-3">Sublime Text 3</a></h3>
-<p>You can download <a href="http://www.sublimetext.com/3">Sublime Text 3</a> for the evaluation without enforced time limit.</p>
-<h3 id="latextools"><a class="toclink" href="#latextools">LaTeXTools</a></h3>
-<p><a href="https://github.com/SublimeText/LaTeXTools">LaTeXTools</a> is a plugin for <a href="http://www.sublimetext.com/3">Sublime Text 3</a>, which provides LaTeX supports.</p>
-<p>Install <a href="https://packagecontrol.io/installation">Package Control</a> by following the instructions in <a href="https://packagecontrol.io/installation">Package Control</a>. </p>
-<p>In the Sublime Text 3 window, press Command + Shift + P (Command Palette) and type in <code>install</code> and return. It will search for a while. Then find <code>LaTeXTools</code> and install. </p>
-<p><img alt="Package Control Install" src="https://lh3.googleusercontent.com/pWQSxGVyyuIBccHzBSCNxdrwQqyUy4nA-CqGCwnGOxmrZ6T2IgocVC3T7GI7JZp3TIc07DWs0CBiLMGXu6kv-jY8fQjjzDJP3OI2aQN7pETwdhR-RrXdgu7CYAHnQ3RpXbhU7w8aUHhPta5K8gUY5yYe1bPs4EVyudUmLw3Em5fkGeljhp-1avbjx5uWXICEbCKwWzHmZSi9bikU45FkII-ZIXFHQNrn_mgupPT5gBYLA2eolg8Zq69TVxlt3GrJNUCZjr3BP8riMP2u7uEYMtt01_GZ9HkiZXkHva7f1rd9PU4IuJoci-DhTjiReAGUDeOBI34ngjHPJ381RY_AGG9xqsmh8UwCTBO4yJhoRoPZhSLikS2xGUYdMUaoarKunkl9xUN4pUA-lpAyJ0CIPMkoYcz8BZZUi9eDAtR_bnIPGcLVr-WeFMLhsXZTHTe02sRnaEjXUM23HQtwbnxBEoYXyprTPsIT98wvMc2hqJettCXf7VMcO7M007bqaVF4vxAwRVMrJIo7L6YIabFSg23SXH3mHEqyAfp9iWYi-sRT=w460-h52-no"/></p>
-<p><em>Package control install</em></p>
-<p>If you are installing LaTeXTools for the first time, you need to create a configuration file, <code>LaTeXTools.sublime-settings</code>, in your <code>User</code> directory (off the Packages) directory. To do so, open the command palette from the Tools menu, search for "LaTeXTools: Reconfigure and migrate settings," and hit Return. </p>
-<h3 id="skim"><a class="toclink" href="#skim">Skim</a></h3>
-<p><a href="http://skim-app.sourceforge.net/">Skim</a> is a PDF reader to view PDF files.</p>
-<h2 id="basic-operations"><a class="toclink" href="#basic-operations">Basic Operations</a></h2>
-<p>Most LaTeXTools facilities are triggered using <code>Ctrl-l</code> (Windows, Linux) or <code>Cmd-l</code> (OS X), followed by some other key or key combination.</p>
-<h3 id="compiling-latex-files"><a class="toclink" href="#compiling-latex-files">Compiling LaTeX files</a></h3>
-<p>Keybinding: <code>Cmd-b</code></p>
-<p><strong>Multi-file documents</strong>: first line in the current file consists of the text <code>%!TEX root = &lt;master file name&gt;</code>.</p>
-<p><strong>TeX engine selection</strong>: first line of the current file consists of the text <code>%!TEX program = &lt;program&gt;</code>. 'pdflatex' is the default. For multi-file documents, the directive must be in the <em>root</em> file.</p>
-<h3 id="tips"><a class="toclink" href="#tips">Tips</a></h3>
-<p><strong>Forward Searching</strong>: <code>C-l,j</code></p>
-<p><strong>Reverse Searching</strong>: <code>Cmd+shift+click</code> in Skim, noble-clicking in Sumatra.</p>
-<p><strong>Jumping to sections and labels</strong>: <code>C-r</code></p>
-<p><strong>commands and environments</strong>: <code>C-l,c</code> for commands and <code>C-l,e</code> for environment.</p>
-<p><strong>Wrapping</strong>: <code>C-l,C-c</code> wraps the selected text in a LaTeX command structure, e.g. <code>blah</code> to <code>\cmd{blah}</code>. Then tab to the end of command. </p>
+<h2 id="install-zsh"><a class="toclink" href="#install-zsh">Install Zsh</a></h2>
+<p>With Homebrew, you can just install Zsh by: </p>
+<div class="highlight"><pre><span class="nv">$ </span>brew install zsh
+</pre></div>
+<p>As a beginner, you need not to memorise all the commands' options with autocomplete features of Zsh. The config can be simply clone from <a href="https://github.com/robbyrussell/oh-my-zsh#the-manual-way">oh-my-zsh</a>, which is one of the most starred projects in GitHub and it just fits us beginners!</p>
+<p>Here are some reasons why using Zsh instead of Bash:
+<a href="http://lostjs.com/2012/09/27/zsh/">9 reason to use zsh (zh-CN)</a>.</p>
+<h2 id="plugin-tips"><a class="toclink" href="#plugin-tips">Plugin Tips</a></h2>
+<h3 id="git"><a class="toclink" href="#git">git</a></h3>
+<p>The plugin Git is installed by default. It is very helpful to use the alias provided in this plugin.</p>
+<table>
+<thead>
+<tr>
+<th>Alias</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>g</td>
+<td>git</td>
+</tr>
+<tr>
+<td>ga</td>
+<td>git add</td>
+</tr>
+<tr>
+<td>gas</td>
+<td>git add --all</td>
+</tr>
+<tr>
+<td>gcmsg</td>
+<td>git commit -m</td>
+</tr>
+<tr>
+<td>ggp</td>
+<td>git push origin $(current_branch)</td>
+</tr>
+</tbody>
+</table>
+<p>More alias can be viewed in <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet">Git Commands Cheat Sheet</a>.</p>
+<h3 id="autojump"><a class="toclink" href="#autojump">autojump</a></h3>
+<p>Autojump helps to go to the past folders with <code>j</code> and the folder's name (fuzzy search) to fast jump in Zsh. It is one of the most powerful plugins in Zsh.</p>
+<p>First, you need to install it:</p>
+<div class="highlight"><pre><span class="nv">$ </span>brew install autojump
+</pre></div>
+<p>Then Remember to add the following code in <code>.zshrc</code>:</p>
+<div class="highlight"><pre>[[ -s `brew --prefix`/etc/autojump.sh ]] &amp;&amp; . `brew --prefix`/etc/autojump.sh
+</pre></div>
+<h3 id="osx"><a class="toclink" href="#osx">osx</a></h3>
 <ul>
-<li><code>C-l,C-e</code> gives you <code>\emph{blah}</code>, and the cursor moves to the end of the command.</li>
-<li><code>C-l,C-b</code> gives you <code>\textbf{blah}</code></li>
-<li><code>C-l,C-u</code> gives you <code>\underline{blah}</code></li>
-<li><code>C-l,C-t</code> gives you <code>\texttt{blah}</code></li>
-<li><code>C-l,C-n</code> wraps the selected text in a LaTeX environment structure. You get <code>\begin{env}</code>,<code>blah</code>, <code>\end{env}</code> on three separate lines, with env selected. Change env to whatever environment you want, then hit Tab to move to the end of the environment.</li>
+<li>man-preview file: open file in pdf by preview</li>
+<li>quick-look: quick preview</li>
+<li>pfd: show to the folder of current finder</li>
+<li>cdf: change to the folder of current finder</li>
 </ul>
-<p><strong>Snippets</strong>: Tools|Snippets</p>
             <section>
     <p id="post-share-links">
     Share on:
-    <a href="http://twitter.com/home?status=Sublime%20Text%20%2B%20LaTeX%20Tool%20%2B%20Skim%20http%3A//lele1122.github.io/sublime-latex-skim-en_US.html" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="http://twitter.com/home?status=From%20Bash%20to%20Zsh%20http%3A//lele1122.github.io/bash-to-zsh-en_US.html" target="_blank" title="Share on Twitter">Twitter</a>
     ❄
-    <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=http%3A//lele1122.github.io/sublime-latex-skim-en_US.html" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=http%3A//lele1122.github.io/bash-to-zsh-en_US.html" target="_blank" title="Share on Facebook">Facebook</a>
     ❄
-    <a href="https://plus.google.com/share?url=http%3A//lele1122.github.io/sublime-latex-skim-en_US.html" target="_blank" title="Share on Google Plus">Google+</a>
+    <a href="https://plus.google.com/share?url=http%3A//lele1122.github.io/bash-to-zsh-en_US.html" target="_blank" title="Share on Google Plus">Google+</a>
     ❄
-    <a href="mailto:?subject=Sublime%20Text%20%2B%20LaTeX%20Tool%20%2B%20Skim&amp;body=http%3A//lele1122.github.io/sublime-latex-skim-en_US.html" target="_blank" title="Share via Email">Email</a>
+    <a href="mailto:?subject=From%20Bash%20to%20Zsh&amp;body=http%3A//lele1122.github.io/bash-to-zsh-en_US.html" target="_blank" title="Share via Email">Email</a>
     </p>
 </section>
 
@@ -165,7 +184,7 @@
     <div class="accordion-group">
         <div class="accordion-heading">
             <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2"
-                href="http://lele1122.github.io/sublime-latex-skim-en_US.html#disqus_thread">
+                href="http://lele1122.github.io/bash-to-zsh-en_US.html#disqus_thread">
                 Comments
             </a>
         </div>
@@ -175,8 +194,8 @@
                     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'plusok';
-        var disqus_identifier = 'http://lele1122.github.io/sublime-latex-skim-en_US.html';
-    var disqus_url = 'http://lele1122.github.io/sublime-latex-skim-en_US.html';
+        var disqus_identifier = 'http://lele1122.github.io/bash-to-zsh-en_US.html';
+    var disqus_url = 'http://lele1122.github.io/bash-to-zsh-en_US.html';
 
     (function() {
          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -195,18 +214,11 @@
 </section>
 
             <hr/>
-<section>
-    <h2>Related Posts</h2>
-<ul class="related-posts-list">
-<li><a href="http://lele1122.github.io/edit-latex-with-vim-en_US.html" title="Edit LaTeX with Vim">Edit LaTeX with Vim</a></li>
-</ul>
-<hr />
-</section>
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="http://lele1122.github.io/bash-to-zsh-en_US.html" title="Previous: From Bash to Zsh">From Bash to Zsh</a></li>
-                <li class="next-article"><a href="http://lele1122.github.io/edit-latex-with-vim-en_US.html" title="Next: Edit LaTeX with Vim">Edit LaTeX with Vim</a> »</li>
+                <li class="previous-article">« <a href="http://lele1122.github.io/red-cooked-pork-zh_CN.html" title="Previous: 毛氏红烧肉">毛氏红烧肉</a></li>
+                <li class="next-article"><a href="http://lele1122.github.io/sublime-latex-skim-en_US.html" title="Next: Sublime Text + LaTeX Tool + Skim">Sublime Text + LaTeX Tool + Skim</a> »</li>
             </ul>
             </nav>
             </aside>
@@ -214,7 +226,7 @@
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time pubdate="pubdate" datetime="2015-10-13T15:34:00+08:00">Oct 13, 2015</time>
+            <time pubdate="pubdate" datetime="2015-10-11T18:21:00+08:00">Oct 11, 2015</time>
 
 <h4>Last Updated</h4>
 <time datetime="2015-10-14T14:57:00+08:00">Oct 14, 2015</time>
@@ -223,13 +235,13 @@
             <a class="category-link" href="http://lele1122.github.io/categories.html#coding-ref">Coding</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="http://lele1122.github.io/tags.html#latex-ref">latex
-                    <span>2</span>
+                <li><a href="http://lele1122.github.io/tags.html#bash-ref">bash
+                    <span>1</span>
 </a></li>
-                <li><a href="http://lele1122.github.io/tags.html#skim-ref">skim
-                    <span>2</span>
+                <li><a href="http://lele1122.github.io/tags.html#shell-ref">shell
+                    <span>1</span>
 </a></li>
-                <li><a href="http://lele1122.github.io/tags.html#sublime-ref">sublime
+                <li><a href="http://lele1122.github.io/tags.html#zsh-ref">zsh
                     <span>1</span>
 </a></li>
             </ul>
