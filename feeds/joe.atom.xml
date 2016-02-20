@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>+OK</title><link href="http://lele1122.github.io/" rel="alternate"></link><link href="http://lele1122.github.io/feeds/joe.atom.xml" rel="self"></link><id>http://lele1122.github.io/</id><updated>2015-10-20T21:07:00+08:00</updated><entry><title>听ibuick谈找工作</title><link href="http://lele1122.github.io/ibuick-work-zh_CN.html" rel="alternate"></link><updated>2015-10-20T21:07:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-20:ibuick-work-zh_CN.html</id><summary type="html">&lt;h2 id="ibuick"&gt;&lt;a class="toclink" href="#ibuick"&gt;ibuick&lt;/a&gt;&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>+OK</title><link href="http://lele1122.github.io/" rel="alternate"></link><link href="http://lele1122.github.io/feeds/joe.atom.xml" rel="self"></link><id>http://lele1122.github.io/</id><updated>2016-02-20T12:21:00+08:00</updated><entry><title>Send to Kindle without USB cable</title><link href="http://lele1122.github.io/send-to-kindle-methods-en_US.html" rel="alternate"></link><updated>2016-02-20T12:21:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2016-02-20:send-to-kindle-methods-en_US.html</id><summary type="html">&lt;h1 id="preparation"&gt;&lt;a class="toclink" href="#preparation"&gt;Preparation&lt;/a&gt;&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Kindle with WIFI connection (mine is Kindle Paperwhite 2, bought from Japan)&lt;/li&gt;
+&lt;li&gt;Amazon account (Registered with your kindle; for email sending)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ifttt.com/"&gt;IFTTT&lt;/a&gt; account (for &lt;code&gt;.mobi&lt;/code&gt;, most easy way)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.dropbox.com/"&gt;Dropbox&lt;/a&gt; account (for &lt;code&gt;.mobi&lt;/code&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="why-two-account"&gt;&lt;a class="toclink" href="#why-two-account"&gt;Why Two Account&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Copyright problem&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;.mobi&lt;/code&gt; can be sent by email to amazon account while &lt;code&gt;.azw3&lt;/code&gt; cannot. But why still using &lt;code&gt;.azw3&lt;/code&gt;? Because it supports &lt;code&gt;x-ray&lt;/code&gt; or &lt;code&gt;Word Wise&lt;/code&gt;, which gives you hot highlights and difficult words hints respectively.&lt;/p&gt;
+&lt;h1 id="sending-mobi-files"&gt;&lt;a class="toclink" href="#sending-mobi-files"&gt;Sending ".mobi" Files&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="find-the-kindle-email-address"&gt;&lt;a class="toclink" href="#find-the-kindle-email-address"&gt;Find the Kindle Email Address&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Two methods: 1. From Kindle (recommended) 2. From web&lt;/p&gt;
+&lt;h3 id="from-kindle"&gt;&lt;a class="toclink" href="#from-kindle"&gt;From Kindle&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Settings --&amp;gt; Device Options --&amp;gt; Personalise your Kindle
+Then the Email address will show at the bottom.&lt;/p&gt;
+&lt;h3 id="from-web"&gt;&lt;a class="toclink" href="#from-web"&gt;From web&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Here we use the Amazon.com account for example. To know the email addriese, follow the step: 
+Your Account --&amp;gt; Manage Your Content and Devices --&amp;gt; Settings --&amp;gt; Personal Document Settings --&amp;gt; Send-to-Kindle E-Mail Settings&lt;/p&gt;
+&lt;h2 id="set-up"&gt;&lt;a class="toclink" href="#set-up"&gt;Set Up&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Set up &lt;a href="https://ifttt.com/recipes/17578-if-stored-in-kindle-dropbox-folder-then-send-it-to-your-kindle"&gt;IFTTT&lt;/a&gt; by creating a folder named &lt;code&gt;kindle&lt;/code&gt; in Dropbox and add the Kindle email address to that IFTTT Recipe.&lt;/p&gt;
+&lt;h2 id="how-to-use"&gt;&lt;a class="toclink" href="#how-to-use"&gt;How to Use&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Put any &lt;code&gt;.mobi&lt;/code&gt; files you want to read to that Dropbox folder. It will sync to your Kindle within 10 minutes.&lt;/p&gt;
+&lt;h1 id="sending-azw3-files"&gt;&lt;a class="toclink" href="#sending-azw3-files"&gt;Sending ".azw3" Files&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Put &lt;code&gt;.azw3&lt;/code&gt; files to your Dropbox folder (any folder) and download it from the Kindle browser.&lt;/p&gt;</summary><category term="kindle"></category><category term="book"></category><category term="send"></category></entry><entry><title>Enable Alt Key Macros in LaTeX-Suite</title><link href="http://lele1122.github.io/enable-alt-key-macros-en_US.html" rel="alternate"></link><updated>2015-11-04T00:05:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-11-04:enable-alt-key-macros-en_US.html</id><summary type="html">&lt;p&gt;In the vim latex-suite, there are some alt key macros should be available by &lt;a href="http://vim-latex.sourceforge.net/documentation/latex-suite.html"&gt;latex-suite reference&lt;/a&gt;. However, I tried several times but it only output &lt;code&gt;¬&lt;/code&gt;, &lt;code&gt;∫&lt;/code&gt;, &lt;code&gt;ç&lt;/code&gt; and &lt;code&gt;ˆ&lt;/code&gt; for some reason.&lt;/p&gt;
+&lt;p&gt;Today I found that just adding &lt;code&gt;set macmeta&lt;/code&gt; in &lt;code&gt;.vimrc&lt;/code&gt; will work. It enables the mapping of meta key (alt/option) in macvim.&lt;/p&gt;</summary><category term="vim"></category><category term="alt"></category><category term="meta key"></category></entry><entry><title>听ibuick谈找工作</title><link href="http://lele1122.github.io/ibuick-work-zh_CN.html" rel="alternate"></link><updated>2015-10-20T21:07:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2015-10-20:ibuick-work-zh_CN.html</id><summary type="html">&lt;h2 id="ibuick"&gt;&lt;a class="toclink" href="#ibuick"&gt;ibuick&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;一个很偶然的机会听到ibuick的奇人异事，于是好奇的我就google到了他。又因为在了解他的一些事情中发现了Podcasts这个神奇的网络广播工具（虽然曾在年少清狂时subscribe过一些，但对当时的我来说，然并卵）。听他说了一些个人经历，觉得很有意思。其中有句话让我醍醐灌顶：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;工作经验很重要，不要为了钱找工作。找一个你会喜欢的工作。&lt;/p&gt;
