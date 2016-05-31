@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>+OK</title><link>http://lele1122.github.io/</link><description></description><atom:link href="http://lele1122.github.io/feeds/joe.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 29 May 2016 23:46:00 +0800</lastBuildDate><item><title>Mid-Year Plan</title><link>http://lele1122.github.io/mid-year-plan-2016-en_US.html</link><description>&lt;h1 id="overview"&gt;&lt;a class="toclink" href="#overview"&gt;Overview&lt;/a&gt;&lt;/h1&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>+OK</title><link>http://lele1122.github.io/</link><description></description><atom:link href="http://lele1122.github.io/feeds/joe.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 31 May 2016 20:41:00 +0800</lastBuildDate><item><title>Mid-Year Plan</title><link>http://lele1122.github.io/mid-year-plan-2016-en_US.html</link><description>&lt;h1 id="overview"&gt;&lt;a class="toclink" href="#overview"&gt;Overview&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;After two days, 2016 will come to the middle of the year. As past, I made some plan in mind or paper but most of them were just staying there. Occasionally, I saw someone put some specific plans on her blog summary and realised I have never put any plans publicly. It will never be to late to do so, so here the mid-year plan comes.&lt;/p&gt;
 &lt;h1 id="review"&gt;&lt;a class="toclink" href="#review"&gt;Review&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Past half year summary:&lt;/p&gt;
@@ -424,7 +424,7 @@ Here are some recommended websites:&lt;/p&gt;
 &lt;p&gt;You will also need to install some basic package before this tutorial. I presume most latest Mac OS X come with Python.It may require administrator password for &lt;code&gt;$ sudo&lt;/code&gt;. &lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Install pip:  &lt;/p&gt;
+&lt;p&gt;Install pip (&lt;a href="https://bootstrap.pypa.io/get-pip.py"&gt;get-pip.py&lt;/a&gt;):  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo python get-pip.py
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
@@ -448,7 +448,17 @@ Here are some recommended websites:&lt;/p&gt;
 &lt;p&gt;Initialise the blog:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pelican-quickstart
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Just follow the steps to initialize:&lt;/p&gt;
+&lt;p&gt;Some people may have the error &lt;code&gt;ImportError: No module named html_parser&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Here is the solution: &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;open the file &lt;code&gt;/Library/Python/2.7/site-packages/pelican/readers.py&lt;/code&gt; &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;replace &lt;code&gt;from six.moves.html_parser import HTMLParser&lt;/code&gt; at line 24 with &lt;code&gt;from HTMLParser import HTMLParser&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If everything goes well, the instruction will pop up. Just follow the steps:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pelican-quickstart
 Where &lt;span class="k"&gt;do&lt;/span&gt; you want to create your new web site? &lt;span class="o"&gt;[&lt;/span&gt;.&lt;span class="o"&gt;]&lt;/span&gt;
 What will be the title of this web site?
@@ -524,7 +534,7 @@ If no error, you can visit you blog by username.github.io.&lt;/p&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;git push -u origin master
 &lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id="summary"&gt;&lt;a class="toclink" href="#summary"&gt;Summary&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;This article is only the introduction of setting up a personal blog by using &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; and &lt;a href="http://docs.getpelican.com/en/3.6.3/"&gt;Pelican&lt;/a&gt;. Since this is my first time to use it, some condition my not be covered. Please comment below if there is any error.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Sun, 13 Sep 2015 21:07:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-09-13:pelican-intro-en_US.html</guid><category>GitHub</category><category>Pelican</category><category>Markdown</category></item><item><title>Vim Tutorial</title><link>http://lele1122.github.io/vim-airline-en_US.html</link><description>&lt;h2 id="airline"&gt;&lt;a class="toclink" href="#airline"&gt;Airline&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This article is only the introduction of setting up a personal blog by using &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; and &lt;a href="http://docs.getpelican.com/en/3.6.3/"&gt;Pelican&lt;/a&gt;. Since this is my first time to use it, some condition my not be covered. Please comment below if there is any error.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joe</dc:creator><pubDate>Tue, 31 May 2016 20:41:00 +0800</pubDate><guid>tag:lele1122.github.io,2015-09-13:pelican-intro-en_US.html</guid><category>GitHub</category><category>Pelican</category><category>Markdown</category></item><item><title>Vim Tutorial</title><link>http://lele1122.github.io/vim-airline-en_US.html</link><description>&lt;h2 id="airline"&gt;&lt;a class="toclink" href="#airline"&gt;Airline&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://github.com/bling/vim-airline"&gt;Vim-airline&lt;/a&gt; and &lt;a href="https://github.com/powerline/powerline"&gt;powerline&lt;/a&gt; are both statusline plugins can be used for vim. If you want to use statusline for vim only, try the lightweight plugin &lt;a href="https://github.com/bling/vim-airline"&gt;Vim-airline&lt;/a&gt;. It is easier to setup than &lt;a href="https://github.com/powerline/powerline"&gt;powerline&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="airline 1" src="https://lh3.googleusercontent.com/BlLp_ME1t4LZ9RZSZt9hT2tNOopDm6ReZuWzEYp6Lgw3KhwokCDjIJa8W_sMslmvCSsT34k01j9zDc5V72CjB62i621aVSjk_A-tOmroWgtTCPVV6DY6goxCvDDPyvCBMcLI19UUWIw95iZ727OrfKqUKnEKcs9SZLXGyJeID56MTT0VzpYSBp-Sv1jVwncgWyH1Nq4mZwIwDYVOu_2HZGZiaOazCyf62zORrTNoNPYq6Y6dEyiBXbEl1mNJHcZpoIoUgjjHDjrvkotSnMYnzm9zlEdSMDm-3c3kJJWxQvbWjh9b2Rq7mE0Tht2Pl73uSn7fKm0CtQi8af-tjHETakFOE51pCSQitSd0MwKFAQWbE72yR3wX7py_uwg2K7bRRUN51CPvSeJjGCm0hP3gTyf3rSoy4QrIY2M5Zam8ez8YCj8Owi1HjMIrmpMLI5CdPl8Xa2wjup_IKFR_88JVdq7HXHo5eKKvkb4ADiw2_bmyyVVDE9qD_ZniAvtk3Djzf-DRtyAJ6YlKGH0wtZzUXqLOwND2NCZwBu0HNkFfVh3e=w888-h70-no" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Vim-airline (normal mode)&lt;/em&gt;&lt;/p&gt;
