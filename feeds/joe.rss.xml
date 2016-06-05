@@ -531,6 +531,7 @@ Pelican needs metadata like &lt;code&gt;Title&lt;/code&gt;(must),  &lt;code&gt;D
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;You may need to input GitHub username and passward if you do not use SSH key introduced in Chapter &lt;a href="#2"&gt;GitHub&lt;/a&gt;.
 If no error, you can visit you blog by username.github.io.&lt;/p&gt;
+&lt;p&gt;If you are as lazy as me, you can also use &lt;code&gt;make github&lt;/code&gt; directly after &lt;code&gt;make html&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id="modify-and-update-pages"&gt;&lt;a class="toclink" href="#modify-and-update-pages"&gt;Modify and update pages&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The reason to create another folder instead using &lt;code&gt;output&lt;/code&gt; to upload pages is that every time you use &lt;code&gt;$ make html&lt;/code&gt;, &lt;code&gt;output&lt;/code&gt; will be replaced with new files. Thus, it would be better to copy the files from &lt;code&gt;output&lt;/code&gt; into &lt;code&gt;gitblog&lt;/code&gt; before uploading.&lt;/p&gt;
 &lt;p&gt;Here is some commands for delete and update files:&lt;/p&gt;
