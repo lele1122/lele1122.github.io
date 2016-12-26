@@ -1,5 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>+OK</title><link href="http://lele1122.github.io/" rel="alternate"></link><link href="http://lele1122.github.io/feeds/all.atom.xml" rel="self"></link><id>http://lele1122.github.io/</id><updated>2016-07-31T20:31:00+08:00</updated><entry><title>职业的规划</title><link href="http://lele1122.github.io/the-startup-of-you-zh-CN.html" rel="alternate"></link><updated>2016-07-31T20:31:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2016-07-31:the-startup-of-you-zh-CN.html</id><summary type="html">&lt;p&gt;这本书主要从两个角度讲述了个人发展的关键因素。一个是对自己的认识与规划，另一个是周围社交圈对自己潜在的影响。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>+OK</title><link href="http://lele1122.github.io/" rel="alternate"></link><link href="http://lele1122.github.io/feeds/all.atom.xml" rel="self"></link><id>http://lele1122.github.io/</id><updated>2016-12-31T22:01:00+08:00</updated><entry><title>Window Management Tools</title><link href="http://lele1122.github.io/windows-management-tools-en_US.html" rel="alternate"></link><updated>2016-12-31T22:01:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2016-12-26:windows-management-tools-en_US.html</id><summary type="html">&lt;h1 id="divvy"&gt;&lt;a class="toclink" href="#divvy"&gt;Divvy&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://mizage.com/divvy/"&gt;Divvy&lt;/a&gt; is a good window management tool with Modal Key like &lt;code&gt;cmd + `&lt;/code&gt;, &lt;code&gt;c&lt;/code&gt; for centerring screen. However it is not cheap with only windows management function.&lt;/p&gt;
+&lt;h1 id="window-tidy"&gt;&lt;a class="toclink" href="#window-tidy"&gt;Window Tidy&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://lightpillar.com/window-tidy.html"&gt;Window Tidy&lt;/a&gt; is a tool I bought when it was limited free. When you drag the window, it will give you options for different layout. But I like use shortcuts more and it does not support Modal Key.&lt;/p&gt;
+&lt;h1 id="slate"&gt;&lt;a class="toclink" href="#slate"&gt;Slate&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;I finally choose &lt;a href="https://github.com/jigish/slate"&gt;Slate&lt;/a&gt; because it is open source and it is much more powerful than others. If you like using shortcuts and frustrated by the limited shortcuts, this could be a good choice.&lt;/p&gt;
+&lt;p&gt;Here is the config I used:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;config&lt;/span&gt; &lt;span class="nt"&gt;defaultToCurrentScreen&lt;/span&gt; &lt;span class="nt"&gt;true&lt;/span&gt;
+&lt;span class="nt"&gt;config&lt;/span&gt; &lt;span class="nt"&gt;nudgePercentOf&lt;/span&gt; &lt;span class="nt"&gt;screenSize&lt;/span&gt;
+&lt;span class="nt"&gt;config&lt;/span&gt; &lt;span class="nt"&gt;resizePercentOf&lt;/span&gt; &lt;span class="nt"&gt;screenSize&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;Resize&lt;/span&gt; &lt;span class="nt"&gt;Bindings&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;right&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;     &lt;span class="nt"&gt;resize&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;10&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;left&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;      &lt;span class="nt"&gt;resize&lt;/span&gt; &lt;span class="nt"&gt;-10&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;up&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;        &lt;span class="nt"&gt;resize&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt;   &lt;span class="nt"&gt;-10&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;down&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;      &lt;span class="nt"&gt;resize&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt;   &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;10&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;right&lt;/span&gt;&lt;span class="nd"&gt;:ctrl&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;alt&lt;/span&gt;  &lt;span class="nt"&gt;resize&lt;/span&gt; &lt;span class="nt"&gt;-10&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt; &lt;span class="nt"&gt;bottom-right&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;left&lt;/span&gt;&lt;span class="nd"&gt;:ctrl&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;alt&lt;/span&gt;   &lt;span class="nt"&gt;resize&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;10&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt; &lt;span class="nt"&gt;bottom-right&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;up&lt;/span&gt;&lt;span class="nd"&gt;:ctrl&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;alt&lt;/span&gt;     &lt;span class="nt"&gt;resize&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt;   &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;10&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="nt"&gt;bottom-right&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;down&lt;/span&gt;&lt;span class="nd"&gt;:ctrl&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;alt&lt;/span&gt;   &lt;span class="nt"&gt;resize&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt;   &lt;span class="nt"&gt;-10&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="nt"&gt;bottom-right&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;f&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;   &lt;span class="nt"&gt;move&lt;/span&gt; &lt;span class="nt"&gt;screenOriginX&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;screenOriginY&lt;/span&gt; &lt;span class="nt"&gt;screenSizeX&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;screenSizeY&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;c&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;   &lt;span class="nt"&gt;move&lt;/span&gt; &lt;span class="nt"&gt;screenOriginX&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;screenSizeX&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;6&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;screenOriginY&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;screenSizeY&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;6&lt;/span&gt; &lt;span class="nt"&gt;4&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nt"&gt;screenSizeX&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;6&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;4&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nt"&gt;screenSizeY&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;6&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;Push&lt;/span&gt; &lt;span class="nt"&gt;Bindings&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;d&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;    &lt;span class="nt"&gt;push&lt;/span&gt; &lt;span class="nt"&gt;right&lt;/span&gt; &lt;span class="nt"&gt;bar-resize&lt;/span&gt;&lt;span class="nd"&gt;:screenSizeX&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;2&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;   &lt;span class="nt"&gt;push&lt;/span&gt; &lt;span class="nt"&gt;left&lt;/span&gt;  &lt;span class="nt"&gt;bar-resize&lt;/span&gt;&lt;span class="nd"&gt;:screenSizeX&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;2&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;w&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;     &lt;span class="nt"&gt;push&lt;/span&gt; &lt;span class="nt"&gt;up&lt;/span&gt;    &lt;span class="nt"&gt;bar-resize&lt;/span&gt;&lt;span class="nd"&gt;:screenSizeY&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;2&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;s&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;   &lt;span class="nt"&gt;push&lt;/span&gt; &lt;span class="nt"&gt;down&lt;/span&gt;  &lt;span class="nt"&gt;bar-resize&lt;/span&gt;&lt;span class="nd"&gt;:screenSizeY&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;2&lt;/span&gt;
+
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;Nudge&lt;/span&gt; &lt;span class="nt"&gt;Bindings&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;right&lt;/span&gt;&lt;span class="nd"&gt;:shift&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;alt&lt;/span&gt; &lt;span class="nt"&gt;nudge&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;10&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;left&lt;/span&gt;&lt;span class="nd"&gt;:shift&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;alt&lt;/span&gt;  &lt;span class="nt"&gt;nudge&lt;/span&gt; &lt;span class="nt"&gt;-10&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;up&lt;/span&gt;&lt;span class="nd"&gt;:shift&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;alt&lt;/span&gt;    &lt;span class="nt"&gt;nudge&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt;   &lt;span class="nt"&gt;-10&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;down&lt;/span&gt;&lt;span class="nd"&gt;:shift&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;alt&lt;/span&gt;  &lt;span class="nt"&gt;nudge&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt;   &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;10&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;Throw&lt;/span&gt; &lt;span class="nt"&gt;Bindings&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;1&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;         &lt;span class="nt"&gt;throw&lt;/span&gt; &lt;span class="nt"&gt;0&lt;/span&gt; &lt;span class="nt"&gt;resize&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;2&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;         &lt;span class="nt"&gt;throw&lt;/span&gt; &lt;span class="nt"&gt;1&lt;/span&gt; &lt;span class="nt"&gt;resize&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;3&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;         &lt;span class="nt"&gt;throw&lt;/span&gt; &lt;span class="nt"&gt;2&lt;/span&gt; &lt;span class="nt"&gt;resize&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;right&lt;/span&gt;&lt;span class="nd"&gt;:ctrl&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;alt&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;cmd&lt;/span&gt; &lt;span class="nt"&gt;throw&lt;/span&gt; &lt;span class="nt"&gt;right&lt;/span&gt; &lt;span class="nt"&gt;resize&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;left&lt;/span&gt;&lt;span class="nd"&gt;:ctrl&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;alt&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;cmd&lt;/span&gt;  &lt;span class="nt"&gt;throw&lt;/span&gt; &lt;span class="nt"&gt;left&lt;/span&gt;  &lt;span class="nt"&gt;resize&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;up&lt;/span&gt;&lt;span class="nd"&gt;:ctrl&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;alt&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;cmd&lt;/span&gt;    &lt;span class="nt"&gt;throw&lt;/span&gt; &lt;span class="nt"&gt;up&lt;/span&gt;    &lt;span class="nt"&gt;resize&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;down&lt;/span&gt;&lt;span class="nd"&gt;:ctrl&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;alt&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;cmd&lt;/span&gt;  &lt;span class="nt"&gt;throw&lt;/span&gt; &lt;span class="nt"&gt;down&lt;/span&gt;  &lt;span class="nt"&gt;resize&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;Focus&lt;/span&gt; &lt;span class="nt"&gt;Bindings&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;right&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;    &lt;span class="nt"&gt;focus&lt;/span&gt; &lt;span class="nt"&gt;right&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;left&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;     &lt;span class="nt"&gt;focus&lt;/span&gt; &lt;span class="nt"&gt;left&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;up&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;       &lt;span class="nt"&gt;focus&lt;/span&gt; &lt;span class="nt"&gt;up&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;down&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;     &lt;span class="nt"&gt;focus&lt;/span&gt; &lt;span class="nt"&gt;down&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;up&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;alt&lt;/span&gt;   &lt;span class="nt"&gt;focus&lt;/span&gt; &lt;span class="nt"&gt;behind&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;down&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;alt&lt;/span&gt; &lt;span class="nt"&gt;focus&lt;/span&gt; &lt;span class="nt"&gt;behind&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nt"&gt;Window&lt;/span&gt; &lt;span class="nt"&gt;Hints&lt;/span&gt;
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="nt"&gt;esc&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt; &lt;span class="nt"&gt;hint&lt;/span&gt;
+
+&lt;span class="nt"&gt;bind&lt;/span&gt; &lt;span class="err"&gt;`&lt;/span&gt;&lt;span class="nd"&gt;:cmd&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt; &lt;span class="nt"&gt;grid&lt;/span&gt; &lt;span class="nt"&gt;padding&lt;/span&gt;&lt;span class="nd"&gt;:5&lt;/span&gt; &lt;span class="nt"&gt;1680x1050&lt;/span&gt;&lt;span class="nd"&gt;:16&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;9&lt;/span&gt; &lt;span class="nt"&gt;1050x1680&lt;/span&gt;&lt;span class="nd"&gt;:9&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;16&lt;/span&gt; &lt;span class="nt"&gt;1920x1200&lt;/span&gt;&lt;span class="nd"&gt;:16&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;10&lt;/span&gt; &lt;span class="nt"&gt;1440x900&lt;/span&gt;&lt;span class="nd"&gt;:16:9&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1 id="karabiner-a-keyboard-tool"&gt;&lt;a class="toclink" href="#karabiner-a-keyboard-tool"&gt;Karabiner - A Keyboard Tool&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://pqrs.org/osx/karabiner/"&gt;Karabiner&lt;/a&gt; is a powerful and stable keyboard customizer for OS X. I like my Cherry 3494 but sometimes I need the Mac function keys like volume up and down. This could be a good choice. It can maps those &lt;code&gt;f1-f12&lt;/code&gt; keys to the Mac function keys.&lt;/p&gt;
+&lt;p&gt;Here is the &lt;code&gt;private.xml&lt;/code&gt; from &lt;a href="https://www.zhihu.com/question/25352250"&gt;Zhihu&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;command&lt;/code&gt; interchange with &lt;code&gt;option&lt;/code&gt;，&lt;code&gt;win&lt;/code&gt; changes to &lt;code&gt;command&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;menu&lt;/code&gt; change to &lt;code&gt;fn&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;f1-f3&lt;/code&gt; control brightness&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;f2&lt;/code&gt; mission control&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;f4&lt;/code&gt; launchpad&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;f5-f6&lt;/code&gt; keyboard backlight&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;f7-f9&lt;/code&gt; media control&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;f10-f12&lt;/code&gt; volume control&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PrintScreen&lt;/code&gt; change to &lt;code&gt;Eject&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;NumLock&lt;/code&gt; change to &lt;code&gt;Command+Delete&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;&lt;/span&gt;  
+&lt;span class="nt"&gt;&amp;lt;root&amp;gt;&lt;/span&gt;  
+    &lt;span class="nt"&gt;&amp;lt;devicevendordef&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;vendorname&amp;gt;&lt;/span&gt;CHERRY_KEYBORD&lt;span class="nt"&gt;&amp;lt;/vendorname&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;vendorid&amp;gt;&lt;/span&gt;0x046a&lt;span class="nt"&gt;&amp;lt;/vendorid&amp;gt;&lt;/span&gt;  
+    &lt;span class="nt"&gt;&amp;lt;/devicevendordef&amp;gt;&lt;/span&gt;  
+
+    &lt;span class="nt"&gt;&amp;lt;deviceproductdef&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;productname&amp;gt;&lt;/span&gt;PC_KEYBOARD&lt;span class="nt"&gt;&amp;lt;/productname&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;productid&amp;gt;&lt;/span&gt;0x0011&lt;span class="nt"&gt;&amp;lt;/productid&amp;gt;&lt;/span&gt;  
+    &lt;span class="nt"&gt;&amp;lt;/deviceproductdef&amp;gt;&lt;/span&gt;  
+
+    &lt;span class="nt"&gt;&amp;lt;item&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&lt;/span&gt;CHERRY G80-3000 KEYBOARD&lt;span class="nt"&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;identifier&amp;gt;&lt;/span&gt;private.deviceproductdef&lt;span class="nt"&gt;&amp;lt;/identifier&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;device_only&amp;gt;&lt;/span&gt;DeviceVendor::CHERRY_KEYBORD, DeviceProduct::PC_KEYBOARD&lt;span class="nt"&gt;&amp;lt;/device_only&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;identifier&amp;gt;&lt;/span&gt;private.remap.pc_to_mac&lt;span class="nt"&gt;&amp;lt;/identifier&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::FN&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__ KeyCode::COMMAND_L, KeyCode::OPTION_L&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__ KeyCode::COMMAND_R, KeyCode::OPTION_R&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__ KeyCode::OPTION_L, KeyCode::COMMAND_L&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__ KeyCode::OPTION_R, KeyCode::COMMAND_R&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__ KeyCode::F1,  ConsumerKeyCode::BRIGHTNESS_DOWN&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__ KeyCode::F2,  ConsumerKeyCode::BRIGHTNESS_UP&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__      KeyCode::F3,  KeyCode::EXPOSE_ALL&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__      KeyCode::F4,  KeyCode::DASHBOARD&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__ KeyCode::F7,  ConsumerKeyCode::MUSIC_PREV&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__ KeyCode::F8,  ConsumerKeyCode::MUSIC_PLAY&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__ KeyCode::F9,  ConsumerKeyCode::MUSIC_NEXT&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__ KeyCode::F10, ConsumerKeyCode::VOLUME_MUTE&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__ KeyCode::F11, ConsumerKeyCode::VOLUME_DOWN&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__ KeyCode::F12, ConsumerKeyCode::VOLUME_UP&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__ KeyCode::KEYPAD_CLEAR, KeyCode::DELETE, ModifierFlag::COMMAND_L&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+        &lt;span class="nt"&gt;&amp;lt;autogen&amp;gt;&lt;/span&gt;__KeyToKey__ KeyCode::PC_PRINTSCREEN, ConsumerKeyCode::EJECT&lt;span class="nt"&gt;&amp;lt;/autogen&amp;gt;&lt;/span&gt;  
+    &lt;span class="nt"&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;  
+&lt;span class="nt"&gt;&amp;lt;/root&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="window"></category><category term="mac"></category><category term="tools"></category><category term="management"></category></entry><entry><title>读书摘记</title><link href="http://lele1122.github.io/wanwanmeixiangdao-zh_CN.html" rel="alternate"></link><updated>2016-10-30T20:31:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2016-10-30:wanwanmeixiangdao-zh_CN.html</id><summary type="html">&lt;p&gt;蒙洛迪诺说，人做判断的时候有两种机制:一种是“科学家机制”，先有证据再下结论;一种是“律师机制”，先有了结论再去找证据。世界上科学家很少，你猜绝大多数人使用什么机制思考?每个人都爱看能印证自己已有观念的东西。我们不但不爱看，而且还会直接忽略，那些不符合我们已有观念的证据。&lt;/p&gt;
+&lt;p&gt;这个毛病叫做“确认偏误”(confirmation bias)。如果你已经开始相信一个东西了，那么你就会主动 寻找能够增强这种相信的信息，乃至不顾事实。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;诺贝尔奖得主罗伯特·奥曼(Robert Aumann)在1976年发表了一篇论文Agreeing to Disagree[1]，这篇 论文堪称是传世之作，它指出，如果是两个理性而真诚的真理追求者争论问题，争论的结果必然是两人 达成一致。换句话说如果争论不欢而散，那么其中必然有一方是虚伪的。&lt;/p&gt;
+&lt;p&gt;If two people have the same priors, and their posteriors for an event A are common knowledge, then these posteriors are equal.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;我们的本能工作得如此之好，以至于我们在明明没有规律的地方也能找出规律来。人脑很擅长理解规律，但是很不擅长理解随机性。发现规律任何时候都可以帮助我们更好地生存下去，而理解随机性却是只在现代社会才有意义的一个技能。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;意志力是一种有限的资源，你用在这里就没法用在那里。&lt;/p&gt;
+&lt;p&gt;如果一个人在工作中用到很多意志力，回家以后就很难再用。双职工夫妇很容易为了小事吵架，因为他们懒得控制自己的情绪。反过来说，如果让他们早点下班，虽然在一起的时间增加了，但是却会更少发生争吵。&lt;/p&gt;
+&lt;p&gt;如此。在作者的另一个实验中，研究人员偶然发现如果在实验过程中给受试者喝一点含糖的饮料，比如
+ 果汁，他们的意志力就会被增加。而且必须用真正的糖，甜味替代品没用。据此，研究者推断:人的意
+ 志力能量来自血液中的葡萄糖。&lt;/p&gt;
+&lt;p&gt;一个有意思的发现是:做选择会消耗意志力。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;We are all agreed that your theory is crazy. The question that divides us is whether it is crazy enough to have a chance of being correct&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;每个人的时间都一样多，因此时间不是金钱。时间是围棋:你走一手，牛人也走一手，牛人获胜并不是因为他走得比你多，而是他每一手都走在最有价值的地方。执行这样的效率，需要钢铁般的意志。谁能做到不看无聊的文章，谁能做到不去刷新网页，谁能做到不看电视新闻?牛人都能做到。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;即使不想当专栏作家，做一个有学问的人总是有用的。当没学问的人大惊小怪的时候，有学问的人可以见怪不怪;当没学问的人熟视无睹的时候，有学问的人却可以见微知著。&lt;/p&gt;
+&lt;p&gt;网上有很多人用画“思维导图”的方法来做读书笔记，这种方法的意义也不大。流水账式的读书笔记就好像用胸围、臀围、腰围这三个数字来描写一名美女一样无趣。&lt;/p&gt;
+&lt;p&gt;好书之所以要读两遍，最重要的目的就是为了这些心得、灵感和联系。对一本讲我们不太熟悉的领域的书，在第一次读的时候，我们往往会陷入作者的思想之中，我们大脑的全部带宽都被用于理解作者的思想，而没有更多的余地去产生别的想法了。“幽默是智力过剩的体现”，想法也只在带宽过剩的时候才会冒出来。只有当你读第二遍的时候，你才能气定神闲地发表意见。第一遍读是为了陷进去，第二遍读是为了跳出来。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;一个人的基础睾酮水平可以反映在无名指和食指的长度比上。胎儿在子宫中的发育同时受到睾酮和雌激
+ 素的影响。这两种激素影响胎儿大脑的同时，也影响手指。睾酮水平相对雌激素水平越高，人的无名指
+ 相对于食指就越长。&lt;/p&gt;</summary><category term="万维钢"></category></entry><entry><title>职业的规划</title><link href="http://lele1122.github.io/the-startup-of-you-zh-CN.html" rel="alternate"></link><updated>2016-07-31T20:31:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2016-07-31:the-startup-of-you-zh-CN.html</id><summary type="html">&lt;p&gt;这本书主要从两个角度讲述了个人发展的关键因素。一个是对自己的认识与规划，另一个是周围社交圈对自己潜在的影响。&lt;/p&gt;
 &lt;h1 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;个人&lt;/a&gt;&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;你的竞争优势是由三种各不相同且不断变化的力量相互作用而形成的：你的资产、你的追求/价值观和市场现实，即你的综合能力在竞争市场的供求状况。&lt;/p&gt;
@@ -29,32 +168,7 @@
 &lt;p&gt;再次，人们可以为你过滤你从别处收集到的信息。他们会告诉你需要看哪本书，文章的哪个部分是重要的，哪些搜索结果可以忽略，哪些人值得信任而哪些人不值得。他们可以帮助你将注意力集中于及时可行的相关信息。在信息过多的年代，这样的好处令人难以置信。&lt;/p&gt;
 &lt;p&gt;记住我/我们公式：个人的力量可以在关系网的帮助下迅猛增长。部分原因是，当信息在那些知识渊博并且关注它的人之间来回传播时，它的信号就会增强。两个（或者更多）协作良好的人之间的合作力量总是强于单个人的力量。&lt;/p&gt;
 &lt;p&gt;开始思考这一问题的其中一种方法是将你认识的人分为三类（他们有时会重叠）： 1.领域专家。这类人是能够真正了解手头话题的行家。你碰到有关薪资沟通的问题了吗？去请教你的律师朋友，因为他已经谈妥了上百万份类似的合同。 2.十分了解你的人。你的母亲、你童年时期的朋友，这些人对于行业最新状况不是很清楚，但是他们十分了解你的优势、性格和过往。他们可以帮助你解除疑惑，有时甚至可以凭直觉知道你对自身决定带来的各种结果会有怎样的感受。 3.真正聪明的人。这些人也许不是某个特殊话题方面的专家，也许不是非常了解你。但是，有时候他们的分析能力让你受益匪浅。至少，一个非常聪明的局外人说的话很有可能与你听说的完全不同。&lt;/p&gt;
-&lt;p&gt;在所有这些工作环境中，你必须尽可能快地学习更多东西，从而来影响他人。这其实并不是什么秘密：你必须问许多问题。&lt;/p&gt;</summary><category term="job"></category><category term="people"></category><category term="relation"></category></entry><entry><title>读书摘记</title><link href="http://lele1122.github.io/wanwanmeixiangdao-en_US.html" rel="alternate"></link><updated>2016-07-31T20:31:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2016-07-31:wanwanmeixiangdao-en_US.html</id><summary type="html">&lt;p&gt;蒙洛迪诺说，人做判断的时候有两种机制:一种是“科学家机制”，先有证据再下结论;一种是“律师机制”，先有了结论再去找证据。世界上科学家很少，你猜绝大多数人使用什么机制思考?每个人都爱看能印证自己已有观念的东西。我们不但不爱看，而且还会直接忽略，那些不符合我们已有观念的证据。&lt;/p&gt;
-&lt;p&gt;这个毛病叫做“确认偏误”(confirmation bias)。如果你已经开始相信一个东西了，那么你就会主动 寻找能够增强这种相信的信息，乃至不顾事实。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;诺贝尔奖得主罗伯特·奥曼(Robert Aumann)在1976年发表了一篇论文Agreeing to Disagree[1]，这篇 论文堪称是传世之作，它指出，如果是两个理性而真诚的真理追求者争论问题，争论的结果必然是两人 达成一致。换句话说如果争论不欢而散，那么其中必然有一方是虚伪的。&lt;/p&gt;
-&lt;p&gt;If two people have the same priors, and their posteriors for an event A are common knowledge, then these posteriors are equal.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;我们的本能工作得如此之好，以至于我们在明明没有规律的地方也能找出规律来。人脑很擅长理解规律，但是很不擅长理解随机性。发现规律任何时候都可以帮助我们更好地生存下去，而理解随机性却是只在现代社会才有意义的一个技能。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;意志力是一种有限的资源，你用在这里就没法用在那里。&lt;/p&gt;
-&lt;p&gt;如果一个人在工作中用到很多意志力，回家以后就很难再用。双职工夫妇很容易为了小事吵架，因为他们懒得控制自己的情绪。反过来说，如果让他们早点下班，虽然在一起的时间增加了，但是却会更少发生争吵。&lt;/p&gt;
-&lt;p&gt;如此。在作者的另一个实验中，研究人员偶然发现如果在实验过程中给受试者喝一点含糖的饮料，比如
- 果汁，他们的意志力就会被增加。而且必须用真正的糖，甜味替代品没用。据此，研究者推断:人的意
- 志力能量来自血液中的葡萄糖。&lt;/p&gt;
-&lt;p&gt;一个有意思的发现是:做选择会消耗意志力。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;We are all agreed that your theory is crazy. The question that divides us is whether it is crazy enough to have a chance of being correct&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;每个人的时间都一样多，因此时间不是金钱。时间是围棋:你走一手，牛人也走一手，牛人获胜并不是因为他走得比你多，而是他每一手都走在最有价值的地方。执行这样的效率，需要钢铁般的意志。谁能做到不看无聊的文章，谁能做到不去刷新网页，谁能做到不看电视新闻?牛人都能做到。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;即使不想当专栏作家，做一个有学问的人总是有用的。当没学问的人大惊小怪的时候，有学问的人可以见怪不怪;当没学问的人熟视无睹的时候，有学问的人却可以见微知著。&lt;/p&gt;
-&lt;p&gt;网上有很多人用画“思维导图”的方法来做读书笔记，这种方法的意义也不大。流水账式的读书笔记就好像用胸围、臀围、腰围这三个数字来描写一名美女一样无趣。&lt;/p&gt;
-&lt;p&gt;好书之所以要读两遍，最重要的目的就是为了这些心得、灵感和联系。对一本讲我们不太熟悉的领域的书，在第一次读的时候，我们往往会陷入作者的思想之中，我们大脑的全部带宽都被用于理解作者的思想，而没有更多的余地去产生别的想法了。“幽默是智力过剩的体现”，想法也只在带宽过剩的时候才会冒出来。只有当你读第二遍的时候，你才能气定神闲地发表意见。第一遍读是为了陷进去，第二遍读是为了跳出来。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;一个人的基础睾酮水平可以反映在无名指和食指的长度比上。胎儿在子宫中的发育同时受到睾酮和雌激
- 素的影响。这两种激素影响胎儿大脑的同时，也影响手指。睾酮水平相对雌激素水平越高，人的无名指
- 相对于食指就越长。&lt;/p&gt;</summary><category term="万维钢"></category></entry><entry><title>Back Pain Again</title><link href="http://lele1122.github.io/back-pain-again-en_US.html" rel="alternate"></link><updated>2016-07-10T23:07:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2016-07-10:back-pain-again-en_US.html</id><summary type="html">&lt;p&gt;It has been one month since last time I sprained my back. This week, I sprained it again during playing Ping Pong. I tried to do some exercises during last months and it made me feel good. I also wanted to swim but I was too lazy to go some place apart from the home.&lt;/p&gt;
+&lt;p&gt;在所有这些工作环境中，你必须尽可能快地学习更多东西，从而来影响他人。这其实并不是什么秘密：你必须问许多问题。&lt;/p&gt;</summary><category term="job"></category><category term="people"></category><category term="relation"></category></entry><entry><title>Back Pain Again</title><link href="http://lele1122.github.io/back-pain-again-en_US.html" rel="alternate"></link><updated>2016-07-10T23:07:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2016-07-10:back-pain-again-en_US.html</id><summary type="html">&lt;p&gt;It has been one month since last time I sprained my back. This week, I sprained it again during playing Ping Pong. I tried to do some exercises during last months and it made me feel good. I also wanted to swim but I was too lazy to go some place apart from the home.&lt;/p&gt;
 &lt;p&gt;It might be a signal warning me to live and work in a healthier way. I should not fail it this time.&lt;/p&gt;</summary><category term="back"></category></entry><entry><title>No Title Essay</title><link href="http://lele1122.github.io/windows0in-work-en_US.html" rel="alternate"></link><updated>2016-06-12T20:04:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2016-06-12:windows0in-work-en_US.html</id><summary type="html">&lt;p&gt;To use Microsoft Office VBA, I did borrow one windows laptop (Lenovo X1 Carbon). This is a good laptop that I want to buy before I started to use Macbook Air in the university. It is still a good laptop but with an OS that I do not want to use on the laptop - Windows, especially an office laptop. It is so difficult to use even I just wanted to install a third-party input method (Yes, you need UAC).&lt;/p&gt;
 &lt;p&gt;To input Chinese characters in VBA, I had to ask Techstop for help to change locale. The resolution is quite high (2560*1440) but Windows 7 has a different font render method compared with OS X. This results the small font with such a high resolution or a blur view if you lower the resolution. This is such a waste with such screen.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Work Status" src="https://lh3.googleusercontent.com/NRWV2kC1W_nkdZLsbZYRDHvAUF7rQiN2S2IMESf96Mr2Of32fTlSPJo9hQFs0FPBMP4hl30myiFnZ1uG89Yd-zYQeEDq6Jq0j0GPaGBX_JoJ0fSd51G7urRFkHMWa4nNX7HUbVVQ9h2YEmPOb6UMDbp6Wv7WApENuJ9IyDBINqAtAcYfZp2gYQ0eWHGAYsKc-rs73Ae4q9R1_YFIYjkEmVavlDTLuKyewYb_vrCWh1EtePrMcHbNZKUrXf09aZnpeoWIhDr_lN4p0ww9pBu0g1k6ZJXyzmuCYB9h5ZqResfyCfpxlFN5Qa67W_PyuiH0Cjde00vEOD5XfkL2fMMn3H9jQaAVfrMM5T2Kx3vYbBpd02rOvuS70ggoJsTiqAV_hlgeArdQqPMdGkZZtkumQ1RQ22258EMfP_WbgCULvhNAv6ledHlTUXNav6nN88pb4NBjTZWlnht2uYowOF3tJCMhO8ZThNaM1zMHEra8fnl3Th3iBdJWcNjEdXvScUmEyeqmgPIFhYYYtNmgt_2QN4bRQln1T2cK9_xz5dZcMui-U5MZ5KIVWkxhJIt0D7Z3VIJwjGXrsQm6FIaYbrgSls9HL8cx_B4J=w1239-h697-no" /&gt;
