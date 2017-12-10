@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://lele1122.github.io/</loc>
-<lastmod>2016-12-30T23:57:01-00:00</lastmod>
+<lastmod>2017-12-10T11:30:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://lele1122.github.io/archives.html</loc>
-<lastmod>2016-12-30T23:57:01-00:00</lastmod>
+<lastmod>2017-12-10T11:30:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://lele1122.github.io/tags.html</loc>
-<lastmod>2016-12-30T23:57:01-00:00</lastmod>
+<lastmod>2017-12-10T11:30:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://lele1122.github.io/categories.html</loc>
-<lastmod>2016-12-30T23:57:01-00:00</lastmod>
+<lastmod>2017-12-10T11:30:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -60,7 +60,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://lele1122.github.io/the-startup-of-you-zh-CN.html</loc>
+<loc>http://lele1122.github.io/the-startup-of-you-zh_CN.html</loc>
 <lastmod>2016-07-31T20:31:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -74,7 +74,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://lele1122.github.io/windows0in-work-en_US.html</loc>
+<loc>http://lele1122.github.io/windows-in-work-en_US.html</loc>
 <lastmod>2016-06-12T20:04:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
