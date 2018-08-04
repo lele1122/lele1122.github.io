@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>+OK</title><link href="http://lele1122.github.io/" rel="alternate"></link><link href="http://lele1122.github.io/feeds/all.atom.xml" rel="self"></link><id>http://lele1122.github.io/</id><updated>2018-08-04T14:04:58+08:00</updated><entry><title>如何投资</title><link href="http://lele1122.github.io/reading-notes-jianshi-4-zh_CN.html" rel="alternate"></link><updated>2018-08-04T14:04:58+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2018-08-04:reading-notes-jianshi-4-zh_CN.html</id><summary type="html">&lt;h1 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;金钱观&lt;/a&gt;&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>+OK</title><link href="http://lele1122.github.io/" rel="alternate"></link><link href="http://lele1122.github.io/feeds/all.atom.xml" rel="self"></link><id>http://lele1122.github.io/</id><updated>2018-08-04T14:41:56+08:00</updated><entry><title>如何投资</title><link href="http://lele1122.github.io/reading-notes-jianshi-4-zh_CN.html" rel="alternate"></link><updated>2018-08-04T14:04:58+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2018-08-04:reading-notes-jianshi-4-zh_CN.html</id><summary type="html">&lt;h1 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;金钱观&lt;/a&gt;&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;自由固不是钱所能买到的，但能够为钱而卖掉。&lt;/p&gt;
 &lt;p&gt;钱只有花出去才是你的。&lt;/p&gt;
@@ -23,7 +23,53 @@
 &lt;blockquote&gt;
 &lt;p&gt;对于年轻人来说，如果决定在一座城市居住很长时间，并且有能力买住房（不是投资房），还是应该买房的。
 不过，如果现在没有能力买房子，不要为了买而买，最后让自己以及双方家长都负债累累，生活质量反而下降。&lt;/p&gt;
-&lt;/blockquote&gt;</summary><category term="plan"></category><category term="task"></category><category term="investment"></category></entry><entry><title>人的一生</title><link href="http://lele1122.github.io/reading-notes-jianshi-1-zh_CN.html" rel="alternate"></link><updated>2018-06-17T11:51:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2018-06-15:reading-notes-jianshi-1-zh_CN.html</id><summary type="html">&lt;h1 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;序&lt;/a&gt;&lt;/h1&gt;
+&lt;/blockquote&gt;</summary><category term="plan"></category><category term="task"></category><category term="investment"></category></entry><entry><title>如何工作</title><link href="http://lele1122.github.io/reading-notes-jianshi-2-zh_CN.html" rel="alternate"></link><updated>2018-08-04T14:41:56+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2018-08-04:reading-notes-jianshi-2-zh_CN.html</id><summary type="html">&lt;h1 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;不做伪工作者&lt;/a&gt;&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一个有经验的员工，应该善于找到最重要的工作，并且优先完成它们，而这恰恰是所有新员工都欠缺的技能。&lt;/p&gt;
+&lt;p&gt;首先，管理者要让员工站在“做什么事情能让公司最大获益”的高度去工作。
+其次，管理者要让员工明白，他们积极工作（而不是消极完成任务），最大的受益方是自己。&lt;/p&gt;
+&lt;p&gt;主动地站在对公司业务帮助最大的角度，站在提升自己能力的角度，把那些最重要的工作找出来并完成它们。
+我一向反对在教育孩子时拿什么起跑线来说事，因为教育是一辈子的事。但是如果一定要说有什么起跑线的话，父母的见识就是起跑线。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="_2"&gt;&lt;a class="toclink" href="#_2"&gt;伪工作者的典型特征&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;那些既不能给公司带来较大收益，又不能给用户带来价值的改进和“升级”，很多是伪工作。比如，在互联网行业里，如果一个产品中某些功能或者设计上线之后生命周期不到三个月，那么当初很多开发的工作都是伪工作。按照这个标准衡量，微软在Windows、Office（基于Windows操作系统的办公软件套装）和 IE（网页浏览器）上很多工作其实都是伪工作。&lt;/li&gt;
+&lt;li&gt;有的人明明能够通过学习一种新技能更有效地工作，却偏偏要守着过去 的旧工具工作，甚至手工操作，这种人是典型的伪工作者。&lt;/li&gt;
+&lt;li&gt;在做事情前不认真思考，做事时通过简单的试错方法(trial and error)盲目寻找答案。&lt;/li&gt;
+&lt;li&gt;做产品不讲究质量、不认真测试，上线后不停地修补，总是在花费很多的时间和精力找漏洞和打补丁。&lt;/li&gt;
+&lt;li&gt;不注重用有限的资源解决95%的问题，而是把大部分时间和精力用于纠结不重要的5%的问题。&lt;/li&gt;
+&lt;li&gt;每次开会找来大量不必要的人员旁听，或者总去参加那些不必要参加的会议。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="10000"&gt;&lt;a class="toclink" href="#10000"&gt;努力10000小时？（误区）&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;误区一：简单重复&lt;/strong&gt; 低层次重复（伪工作者）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;误区二：习惯性失败&lt;/strong&gt; 简单重复失败不总结&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;误区三：林黛玉式困境&lt;/strong&gt; 在自己的世界越精进，对外界就越排斥&lt;/p&gt;
+&lt;p&gt;有两类科学家，一类是掌握了一个方法，研究什么都是一流的，他们越往后走路越宽，比如爱因斯坦、费米和鲍林（两次获得诺贝尔奖的化学家)；另一类是路越走越窄，比如发明晶体管的夏克利（也因此获得了诺贝尔奖)，他对自己研究的晶体管越来越熟悉，就对其他技术越来越不愿意接受，最后无法和工业界和学术界的同行交流。你会发现生活中有大量这样的人。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;误区四：狗熊掰棒子&lt;/strong&gt; 要成体系，避免从头开始。（积累效应）&lt;/p&gt;
+&lt;h1 id="_3"&gt;&lt;a class="toclink" href="#_3"&gt;三板斧破四困境（解决办法）&lt;/a&gt;&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第一板斧：确立“愿景一目标一道路”&lt;/p&gt;
+&lt;p&gt;第二板斧：即使听到不中听的话，也要试着找出其中的合理之处&lt;/p&gt;
+&lt;p&gt;第三板斧：凡事做记录，这样可以避免狗熊掰棒子&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="okr"&gt;&lt;a class="toclink" href="#okr"&gt;OKR:谷歌的目标管理法（解决办法续）&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;OKR一年计划及季度目标完成情况，这个方法也推荐用于个人一年计划目标的制定&lt;/p&gt;
+&lt;h1 id="1"&gt;&lt;a class="toclink" href="#1"&gt;做好最后的1%&lt;/a&gt;&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;大部分人愿意开头而不愿意收尾，九十九步都走了，就是懒得把最后一步走完 ...
+这些人实际上可能和走完一百步的人同样辛苦，但是成就却相去甚远。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!--第六章开始
+##
+第一份工作不要太在乎工资，而是必须能够让自己快速地成长，养成良好习惯，快速了解全行业
+
+&gt;我们的大度应该表现在指出施暴者错误后的宽容，而不是在是非问题上没有原则。
+
+&gt;善于沟通的人会理解对方提问的目的，然后提供有用的信息，而不是按照自己的意思解释字面上的问题。
+
+专业人员应该要有**大局观**，管理者得**了解细节**。--&gt;</summary><category term="plan"></category><category term="task"></category></entry><entry><title>人的一生</title><link href="http://lele1122.github.io/reading-notes-jianshi-1-zh_CN.html" rel="alternate"></link><updated>2018-06-17T11:51:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2018-06-15:reading-notes-jianshi-1-zh_CN.html</id><summary type="html">&lt;h1 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;序&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;从《浪潮之巅》起看到现在，《见识》是第三本我所完整阅读过的吴军老师的书。有其他几本我是看了一部分后来因为没有连续看下去而中断的。吴军老师所作的这些书虽然都比较好读，但道理却很深，值得反复思考。&lt;/p&gt;
 &lt;h1 id="_2"&gt;&lt;a class="toclink" href="#_2"&gt;从幸福看人生&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;《见识》本书一开篇就提到了关于逆袭的观点。很多人都想着有一天能从一个底层阶级跨越到顶层阶级，这其实是非常不容易的。社会是分层的，而好一点的社会只是让不同层级的人有机会上下流动。同时因为层级的不同，低层级的可能得付出80%的努力才能收获上一层及20%努力带来的成果，而每个层级的人其实都在努力着向前爬，并不能因为自己努力了就一定期望着可以往上升。&lt;/p&gt;
@@ -111,53 +157,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;世界上所有的人都喜欢买东西，而不是被买东西，因此那种求人的营销¥一定无法成功。&lt;/p&gt;
 &lt;p&gt;我们有时在讲，创造出一个市场，其实就是让潜在的消费者认可一种过去他没有意识到的价值。&lt;/p&gt;
-&lt;/blockquote&gt;</summary><category term="plan"></category><category term="task"></category></entry><entry><title>如何工作</title><link href="http://lele1122.github.io/reading-notes-jianshi-2-zh_CN.html" rel="alternate"></link><updated>2018-06-17T11:51:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2018-06-15:reading-notes-jianshi-2-zh_CN.html</id><summary type="html">&lt;h1 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;不做伪工作者&lt;/a&gt;&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;一个有经验的员工，应该善于找到最重要的工作，并且优先完成它们，而这恰恰是所有新员工都欠缺的技能。&lt;/p&gt;
-&lt;p&gt;首先，管理者要让员工站在“做什么事情能让公司最大获益”的高度去工作。
-其次，管理者要让员工明白，他们积极工作（而不是消极完成任务），最大的受益方是自己。&lt;/p&gt;
-&lt;p&gt;主动地站在对公司业务帮助最大的角度，站在提升自己能力的角度，把那些最重要的工作找出来并完成它们。
-我一向反对在教育孩子时拿什么起跑线来说事，因为教育是一辈子的事。但是如果一定要说有什么起跑线的话，父母的见识就是起跑线。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="_2"&gt;&lt;a class="toclink" href="#_2"&gt;伪工作者的典型特征&lt;/a&gt;&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;那些既不能给公司带来较大收益，又不能给用户带来价值的改进和“升级”，很多是伪工作。比如，在互联网行业里，如果一个产品中某些功能或者设计上线之后生命周期不到三个月，那么当初很多开发的工作都是伪工作。按照这个标准衡量，微软在Windows、Office（基于Windows操作系统的办公软件套装）和 IE（网页浏览器）上很多工作其实都是伪工作。&lt;/li&gt;
-&lt;li&gt;有的人明明能够通过学习一种新技能更有效地工作，却偏偏要守着过去 的旧工具工作，甚至手工操作，这种人是典型的伪工作者。&lt;/li&gt;
-&lt;li&gt;在做事情前不认真思考，做事时通过简单的试错方法(trial and error)盲目寻找答案。&lt;/li&gt;
-&lt;li&gt;做产品不讲究质量、不认真测试，上线后不停地修补，总是在花费很多的时间和精力找漏洞和打补丁。&lt;/li&gt;
-&lt;li&gt;不注重用有限的资源解决95%的问题，而是把大部分时间和精力用于纠结不重要的5%的问题。&lt;/li&gt;
-&lt;li&gt;每次开会找来大量不必要的人员旁听，或者总去参加那些不必要参加的会议。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="10000"&gt;&lt;a class="toclink" href="#10000"&gt;努力10000小时？（误区）&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;误区一：简单重复&lt;/strong&gt; 低层次重复（伪工作者）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;误区二：习惯性失败&lt;/strong&gt; 简单重复失败不总结&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;误区三：林黛玉式困境&lt;/strong&gt; 在自己的世界越精进，对外界就越排斥&lt;/p&gt;
-&lt;p&gt;有两类科学家，一类是掌握了一个方法，研究什么都是一流的，他们越往后走路越宽，比如爱因斯坦、费米和鲍林（两次获得诺贝尔奖的化学家)；另一类是路越走越窄，比如发明晶体管的夏克利（也因此获得了诺贝尔奖)，他对自己研究的晶体管越来越熟悉，就对其他技术越来越不愿意接受，最后无法和工业界和学术界的同行交流。你会发现生活中有大量这样的人。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;误区四：狗熊掰棒子&lt;/strong&gt; 要成体系，避免从头开始。（积累效应）&lt;/p&gt;
-&lt;h1 id="_3"&gt;&lt;a class="toclink" href="#_3"&gt;三板斧破四困境（解决办法）&lt;/a&gt;&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;第一板斧：确立“愿景一目标一道路”&lt;/p&gt;
-&lt;p&gt;第二板斧：即使听到不中听的话，也要试着找出其中的合理之处&lt;/p&gt;
-&lt;p&gt;第三板斧：凡事做记录，这样可以避免狗熊掰棒子&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="okr"&gt;&lt;a class="toclink" href="#okr"&gt;OKR:谷歌的目标管理法（解决办法续）&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;OKR一年计划及季度目标完成情况，这个方法也推荐用于个人一年计划目标的制定&lt;/p&gt;
-&lt;h1 id="1"&gt;&lt;a class="toclink" href="#1"&gt;做好最后的1%&lt;/a&gt;&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;大部分人愿意开头而不愿意收尾，九十九步都走了，就是懒得把最后一步走完 ...
-这些人实际上可能和走完一百步的人同样辛苦，但是成就却相去甚远。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;!--第六章开始
-##
-第一份工作不要太在乎工资，而是必须能够让自己快速地成长，养成良好习惯，快速了解全行业
-
-&gt;我们的大度应该表现在指出施暴者错误后的宽容，而不是在是非问题上没有原则。
-
-&gt;善于沟通的人会理解对方提问的目的，然后提供有用的信息，而不是按照自己的意思解释字面上的问题。
-
-专业人员应该要有**大局观**，管理者得**了解细节**。--&gt;</summary><category term="plan"></category><category term="task"></category></entry><entry><title>新年计划</title><link href="http://lele1122.github.io/new-year-plan-2018-life-zh_CN.html" rel="alternate"></link><updated>2018-01-01T22:25:45+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2017-12-10:new-year-plan-2018-life-zh_CN.html</id><summary type="html">&lt;h1 id="2017"&gt;&lt;a class="toclink" href="#2017"&gt;2017年底回顾&lt;/a&gt;&lt;/h1&gt;
+&lt;/blockquote&gt;</summary><category term="plan"></category><category term="task"></category></entry><entry><title>新年计划</title><link href="http://lele1122.github.io/new-year-plan-2018-life-zh_CN.html" rel="alternate"></link><updated>2018-01-01T22:25:45+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2017-12-10:new-year-plan-2018-life-zh_CN.html</id><summary type="html">&lt;h1 id="2017"&gt;&lt;a class="toclink" href="#2017"&gt;2017年底回顾&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;让我先面对残酷的年底回顾。一年过去了，作为当时的一个计划，与之一起的Blog竟停止更新了一年😅。再一次打开它竟然是为了写2018新年计划，似乎有点讽刺。就让我来看看到底完成了多少目标，做了多少改变。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
