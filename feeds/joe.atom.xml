@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>+OK</title><link href="http://lele1122.github.io/" rel="alternate"></link><link href="http://lele1122.github.io/feeds/joe.atom.xml" rel="self"></link><id>http://lele1122.github.io/</id><updated>2018-06-17T11:51:00+08:00</updated><entry><title>人的一生</title><link href="http://lele1122.github.io/reading-notes-jianshi-1-zh_CN.html" rel="alternate"></link><updated>2018-06-17T11:51:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2018-06-15:reading-notes-jianshi-1-zh_CN.html</id><summary type="html">&lt;h1 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;序&lt;/a&gt;&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>+OK</title><link href="http://lele1122.github.io/" rel="alternate"></link><link href="http://lele1122.github.io/feeds/joe.atom.xml" rel="self"></link><id>http://lele1122.github.io/</id><updated>2018-08-04T14:04:58+08:00</updated><entry><title>如何投资</title><link href="http://lele1122.github.io/reading-notes-jianshi-4-zh_CN.html" rel="alternate"></link><updated>2018-08-04T14:04:58+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2018-08-04:reading-notes-jianshi-4-zh_CN.html</id><summary type="html">&lt;h1 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;金钱观&lt;/a&gt;&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;自由固不是钱所能买到的，但能够为钱而卖掉。&lt;/p&gt;
+&lt;p&gt;钱只有花出去才是你的。&lt;/p&gt;
+&lt;p&gt;但是为了攒钱而牺牲当下的生活，是很不值得的事情。&lt;/p&gt;
+&lt;p&gt;钱和任何东西，都是为了让你生活得更好，而不是给你带来麻烦。&lt;/p&gt;
+&lt;p&gt;钱是挣出来的，不是省出来的，而挣钱的效率取决于一个人的气度&lt;/p&gt;
+&lt;p&gt;钱是花不光的，但是可以迅速（投资、投机）光&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="_2"&gt;&lt;a class="toclink" href="#_2"&gt;风险意识&lt;/a&gt;&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;任何好的投资都要建立在控制风险的基础之上&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="_3"&gt;&lt;a class="toclink" href="#_3"&gt;第一堂投资课&lt;/a&gt;&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;投资的第一目的是为了保证财产不受损失&lt;/p&gt;
+&lt;p&gt;夏普比率 = （投资回报 - 无风险回报）/ 波动性的标准差
+夏普比率越高越好&lt;/p&gt;
+&lt;p&gt;关键不在于是否把握了多少次机会，而在于是否能少犯错误。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="_4"&gt;&lt;a class="toclink" href="#_4"&gt;围绕投资目的进行资产配置&lt;/a&gt;&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对于年轻人来说，如果决定在一座城市居住很长时间，并且有能力买住房（不是投资房），还是应该买房的。
+不过，如果现在没有能力买房子，不要为了买而买，最后让自己以及双方家长都负债累累，生活质量反而下降。&lt;/p&gt;
+&lt;/blockquote&gt;</summary><category term="plan"></category><category term="task"></category><category term="investment"></category></entry><entry><title>人的一生</title><link href="http://lele1122.github.io/reading-notes-jianshi-1-zh_CN.html" rel="alternate"></link><updated>2018-06-17T11:51:00+08:00</updated><author><name>Joe</name></author><id>tag:lele1122.github.io,2018-06-15:reading-notes-jianshi-1-zh_CN.html</id><summary type="html">&lt;h1 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;序&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;从《浪潮之巅》起看到现在，《见识》是第三本我所完整阅读过的吴军老师的书。有其他几本我是看了一部分后来因为没有连续看下去而中断的。吴军老师所作的这些书虽然都比较好读，但道理却很深，值得反复思考。&lt;/p&gt;
 &lt;h1 id="_2"&gt;&lt;a class="toclink" href="#_2"&gt;从幸福看人生&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;《见识》本书一开篇就提到了关于逆袭的观点。很多人都想着有一天能从一个底层阶级跨越到顶层阶级，这其实是非常不容易的。社会是分层的，而好一点的社会只是让不同层级的人有机会上下流动。同时因为层级的不同，低层级的可能得付出80%的努力才能收获上一层及20%努力带来的成果，而每个层级的人其实都在努力着向前爬，并不能因为自己努力了就一定期望着可以往上升。&lt;/p&gt;
@@ -179,7 +203,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;2月&lt;/td&gt;
-&lt;td&gt;《编程珠玑》 《制度是如何形成的》&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
 &lt;td&gt;张爱玲&lt;/td&gt;
 &lt;td&gt;《旅行的艺术》《活出生命的意义》&lt;/td&gt;
 &lt;td&gt;《腾讯传》&lt;/td&gt;
@@ -200,16 +224,16 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5月&lt;/td&gt;
-&lt;td&gt;《JavaScript语言精粹》&lt;/td&gt;
+&lt;td&gt;《制度是如何形成的》&lt;/td&gt;
 &lt;td&gt;《刀锋》&lt;/td&gt;
 &lt;td&gt;《The Art of Travel》&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;《消失的微生物》&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;6月&lt;/td&gt;
-&lt;td&gt;《游戏改变世界》&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
 &lt;td&gt;《金锁记》&lt;/td&gt;
-&lt;td&gt;《Vagabonding》&lt;/td&gt;
+&lt;td&gt;《见识》&lt;/td&gt;
 &lt;td&gt;《囚徒健身》《体适能基础理论》&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -228,14 +252,14 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;9月&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;《游戏改变世界》&lt;/td&gt;
+&lt;td&gt;《Vagabonding》&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;《轴心时代》&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;10月&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;《JavaScript语言精粹》&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
@@ -259,7 +283,7 @@
 &lt;h2 id="_5"&gt;&lt;a class="toclink" href="#_5"&gt;旅游计划 （未完）&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;斯里兰卡 2月10-18日
 吴哥窟
-上海
+上海 5月19日 - 6月2日
 诗巴丹潜水
 菲律宾潜水
 &lt;!--stackedit_data:
