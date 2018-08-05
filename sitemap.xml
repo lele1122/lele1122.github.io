@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://lele1122.github.io/</loc>
-<lastmod>2018-08-04T14:54:25-00:00</lastmod>
+<lastmod>2018-08-05T11:54:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://lele1122.github.io/archives.html</loc>
-<lastmod>2018-08-04T14:54:25-00:00</lastmod>
+<lastmod>2018-08-05T11:54:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://lele1122.github.io/tags.html</loc>
-<lastmod>2018-08-04T14:54:25-00:00</lastmod>
+<lastmod>2018-08-05T11:54:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://lele1122.github.io/categories.html</loc>
-<lastmod>2018-08-04T14:54:25-00:00</lastmod>
+<lastmod>2018-08-05T11:54:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -41,6 +41,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://lele1122.github.io/reading-notes-jianshi-4-zh_CN.html</loc>
 <lastmod>2018-08-04T14:04:58+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://lele1122.github.io/nian-zhong-fen-xiang-zh_CN.html</loc>
+<lastmod>2018-08-05T11:53:16+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
