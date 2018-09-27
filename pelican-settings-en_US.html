@@ -89,63 +89,63 @@
 </div>
 
 <div class="row-fluid">
-    <div class="span2 table-of-content">
-        <nav>
-        <h4>Contents</h4>
-        <div class="toc">
-<ul>
-<li><a href="#disqus">Disqus</a></li>
-<li><a href="#theme">Theme</a></li>
-<li><a href="#search">Search</a></li>
-<li><a href="#plugins">Plugins</a></li>
-<li><a href="#pages">Pages</a></li>
-</ul>
-</div>
-        </nav>
-    </div>
-    <div class="span8 article-content">
+        <div class="span8 offset2 article-content">
 
             
-            
-<h2 id="disqus"><a class="toclink" href="#disqus">Disqus</a></h2>
+            <p>[TOC]</p>
+<h2>Disqus</h2>
 <p>Comments feature can be added by <a href="https://disqus.com/">Disqus</a>. If you do not have it, just register an account and set by steps. Add the following command in <code>pelicanconf.py</code>:</p>
-<div class="highlight"><pre><span class="nv">$ DISQUS_SITENAME</span> <span class="o">=</span> <span class="s1">'shortname'</span>
+<div class="highlight"><pre><span></span>$ <span class="nv">DISQUS_SITENAME</span> <span class="o">=</span> <span class="s1">&#39;shortname&#39;</span>
 </pre></div>
+
+
 <p>At first I tried several times but the function did not work. The reason is that I ignored the <code>SITEURL</code>. To enable the comments feature, even you do not have a domain, you need to add the github page url:</p>
-<div class="highlight"><pre><span class="nv">$ ITEURL</span> <span class="o">=</span> <span class="s1">'http://username.github.io'</span>
+<div class="highlight"><pre><span></span>$ <span class="nv">ITEURL</span> <span class="o">=</span> <span class="s1">&#39;http://username.github.io&#39;</span>
 </pre></div>
-<h2 id="theme"><a class="toclink" href="#theme">Theme</a></h2>
+
+
+<h2>Theme</h2>
 <p>If you want to use themes other than the default one, you need to download the themes you want first. There is one way:</p>
-<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>blog
-<span class="nv">$ </span>git clone https://github.com/getpelican/pelican-themes.git
-<span class="nv">$ </span><span class="nb">cd </span>pelican-themes
+<div class="highlight"><pre><span></span>$ <span class="nb">cd</span> blog
+$ git clone https://github.com/getpelican/pelican-themes.git
+$ <span class="nb">cd</span> pelican-themes
 </pre></div>
+
+
 <p>It seems that some themes are lost when I clone them from pelican github, so it will be better to check the folders before using them. You can always download themes online and put them in the folder you want.</p>
 <p>Then, you can choose the themes you have in the <code>pelican-themes</code> folder. To change the theme, you need to configure in <code>pelicanconf.py</code>.For example:</p>
-<div class="highlight"><pre><span class="nv">$ THEME</span> <span class="o">=</span> <span class="s1">'/Users/User/Blog/pelican-themes/elegant'</span>
+<div class="highlight"><pre><span></span>$ <span class="nv">THEME</span> <span class="o">=</span> <span class="s1">&#39;/Users/User/Blog/pelican-themes/elegant&#39;</span>
 </pre></div>
-<h2 id="search"><a class="toclink" href="#search">Search</a></h2>
+
+
+<h2>Search</h2>
 <p>The theme elegent v1.3 should have included the following search engin plugin.</p>
 <p><a href="http://www.tipue.com/search/">Tipue Search</a>, an open source site search engine jQuery plugin available under the <a href="http://opensource.org/licenses/mit-license.php">MIT License</a>, is used in my theme.</p>
 <p>BeautifulSoup is required to use this plugin:</p>
-<div class="highlight"><pre><span class="nv">$ </span>sudo pip install beautifulsoup4
+<div class="highlight"><pre><span></span>$ sudo pip install beautifulsoup4
 </pre></div>
+
+
 <p>The latest <a href="http://www.tipue.com/search/">Tipue Search</a> is version 5.0. If you meet any problem with the search, please replace the default version with the newest version in <a href="http://www.tipue.com/search/">Tipue Search</a>. The format may change because of the replacement, so you may need to modify the <code>tipuesearch.css</code> file or just use the default version. By the test, I found the main problem the all the results are <code>undefined</code> may be caused by default <code>tipuesearch_set.js</code> file in this theme.</p>
-<h2 id="plugins"><a class="toclink" href="#plugins">Plugins</a></h2>
+<h2>Plugins</h2>
 <p>Easiest way to install and use these plugins is cloning this repo:</p>
-<div class="highlight"><pre><span class="nv">$ </span>git clone --recursive https://github.com/getpelican/pelican-plugins
+<div class="highlight"><pre><span></span>$ git clone --recursive https://github.com/getpelican/pelican-plugins
 </pre></div>
+
+
 <p>and activating the ones you want in your settings file:</p>
-<div class="highlight"><pre><span class="nv">$ PLUGIN_PATHS</span> <span class="o">=</span> <span class="o">[</span><span class="s1">'/Users/User/Blog/pelican-plugins'</span><span class="o">]</span>
-<span class="nv">$ PLUGINS</span> <span class="o">=</span> <span class="o">[</span><span class="s1">'tipue_search'</span><span class="o">]</span>
+<div class="highlight"><pre><span></span>$ <span class="nv">PLUGIN_PATHS</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;/Users/User/Blog/pelican-plugins&#39;</span><span class="o">]</span>
+$ <span class="nv">PLUGINS</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;tipue_search&#39;</span><span class="o">]</span>
 </pre></div>
+
+
 <p>The detail of plugins can be read from on <a href="https://github.com/getpelican/pelican-plugins">GitHub</a>.</p>
-<h2 id="pages"><a class="toclink" href="#pages">Pages</a></h2>
+<h2>Pages</h2>
 <p>If you create a folder named <code>pages</code>, all the files in this folder will be static pages. All the pages can be added to the menu By setting <code>DISPLAY_PAGES_ON_MENU</code> in <code>pelicanconf.py</code>.</p>
             <section>
     <p id="post-share-links">
     Share on:
-    <a href="http://twitter.com/home?status=Introduction%20to%20Pelican%20%282%29%20Theme%20%27Elegant%27%20Settings%20http%3A//lele1122.github.io/pelican-settings-en_US.html" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="http://twitter.com/home?status=b'Introduction%20to%20Pelican%20%282%29%20Theme%20%27Elegant%27%20Settings%20http%3A//lele1122.github.io/pelican-settings-en_US.html'" target="_blank" title="Share on Twitter">Twitter</a>
     ❄
     <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=http%3A//lele1122.github.io/pelican-settings-en_US.html" target="_blank" title="Share on Facebook">Facebook</a>
     ❄

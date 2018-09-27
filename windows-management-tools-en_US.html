@@ -16,13 +16,13 @@
 
 <meta property="og:title" content="Window Management Tools "/>
 <meta property="og:url" content="http://lele1122.github.io/windows-management-tools-en_US.html" />
-<meta property="og:description" content="Divvy Divvy is a good window management tool with Modal Key like cmd + `, c for centerring screen. However it is not cheap with only windows ..." />
+<meta property="og:description" content="Divvy Divvy is a good window management tool with Modal Key like cmd + `, c for centerring screen. However it is not cheap with only windows …" />
 <meta property="og:site_name" content="+OK" />
 <meta property="og:article:author" content="Joe" />
 <meta property="og:article:published_time" content="2016-12-26T22:01:00+08:00" />
 <meta property="" content="2016-12-31T22:01:00+08:00" />
 <meta name="twitter:title" content="Window Management Tools ">
-<meta name="twitter:description" content="Divvy Divvy is a good window management tool with Modal Key like cmd + `, c for centerring screen. However it is not cheap with only windows ...">
+<meta name="twitter:description" content="Divvy Divvy is a good window management tool with Modal Key like cmd + `, c for centerring screen. However it is not cheap with only windows …">
 
         <title>Window Management Tools  · +OK
 </title>
@@ -92,67 +92,67 @@
         <div class="span8 offset2 article-content">
 
             
-            <h1 id="divvy"><a class="toclink" href="#divvy">Divvy</a></h1>
+            <h1>Divvy</h1>
 <p><a href="http://mizage.com/divvy/">Divvy</a> is a good window management tool with Modal Key like <code>cmd + `</code>, <code>c</code> for centerring screen. However it is not cheap with only windows management function.</p>
-<h1 id="window-tidy"><a class="toclink" href="#window-tidy">Window Tidy</a></h1>
+<h1>Window Tidy</h1>
 <p><a href="http://lightpillar.com/window-tidy.html">Window Tidy</a> is a tool I bought when it was limited free. When you drag the window, it will give you options for different layout. But I like use shortcuts more and it does not support Modal Key.</p>
-<h1 id="slate"><a class="toclink" href="#slate">Slate</a></h1>
+<h1>Slate</h1>
 <p>I finally choose <a href="https://github.com/jigish/slate">Slate</a> because it is open source and it is much more powerful than others. If you like using shortcuts and frustrated by the limited shortcuts, this could be a good choice.</p>
 <p>Here is the config I used:</p>
-<div class="highlight"><pre><span class="nt">config</span> <span class="nt">defaultToCurrentScreen</span> <span class="nt">true</span>
+<div class="highlight"><pre><span></span><span class="nt">config</span> <span class="nt">defaultToCurrentScreen</span> <span class="nt">true</span>
 <span class="nt">config</span> <span class="nt">nudgePercentOf</span> <span class="nt">screenSize</span>
 <span class="nt">config</span> <span class="nt">resizePercentOf</span> <span class="nt">screenSize</span>
 
 <span class="err">#</span> <span class="nt">Resize</span> <span class="nt">Bindings</span>
-<span class="nt">bind</span> <span class="nt">right</span><span class="nd">:cmd</span><span class="o">,</span><span class="err">`</span>     <span class="nt">resize</span> <span class="o">+</span><span class="nt">10</span><span class="o">%</span> <span class="o">+</span><span class="nt">0</span>
-<span class="nt">bind</span> <span class="nt">left</span><span class="nd">:cmd</span><span class="o">,</span><span class="err">`</span>      <span class="nt">resize</span> <span class="nt">-10</span><span class="o">%</span> <span class="o">+</span><span class="nt">0</span>
-<span class="nt">bind</span> <span class="nt">up</span><span class="nd">:cmd</span><span class="o">,</span><span class="err">`</span>        <span class="nt">resize</span> <span class="o">+</span><span class="nt">0</span>   <span class="nt">-10</span><span class="o">%</span>
-<span class="nt">bind</span> <span class="nt">down</span><span class="nd">:cmd</span><span class="o">,</span><span class="err">`</span>      <span class="nt">resize</span> <span class="o">+</span><span class="nt">0</span>   <span class="o">+</span><span class="nt">10</span><span class="o">%</span>
-<span class="err">#</span> <span class="nt">bind</span> <span class="nt">right</span><span class="nd">:ctrl</span><span class="o">;</span><span class="nt">alt</span>  <span class="nt">resize</span> <span class="nt">-10</span><span class="o">%</span> <span class="o">+</span><span class="nt">0</span> <span class="nt">bottom-right</span>
-<span class="err">#</span> <span class="nt">bind</span> <span class="nt">left</span><span class="nd">:ctrl</span><span class="o">;</span><span class="nt">alt</span>   <span class="nt">resize</span> <span class="o">+</span><span class="nt">10</span><span class="o">%</span> <span class="o">+</span><span class="nt">0</span> <span class="nt">bottom-right</span>
-<span class="err">#</span> <span class="nt">bind</span> <span class="nt">up</span><span class="nd">:ctrl</span><span class="o">;</span><span class="nt">alt</span>     <span class="nt">resize</span> <span class="o">+</span><span class="nt">0</span>   <span class="o">+</span><span class="nt">10</span><span class="o">%</span> <span class="nt">bottom-right</span>
-<span class="err">#</span> <span class="nt">bind</span> <span class="nt">down</span><span class="nd">:ctrl</span><span class="o">;</span><span class="nt">alt</span>   <span class="nt">resize</span> <span class="o">+</span><span class="nt">0</span>   <span class="nt">-10</span><span class="o">%</span> <span class="nt">bottom-right</span>
-<span class="nt">bind</span> <span class="nt">f</span><span class="nd">:cmd</span><span class="o">,</span><span class="err">`</span>   <span class="nt">move</span> <span class="nt">screenOriginX</span><span class="o">;</span><span class="nt">screenOriginY</span> <span class="nt">screenSizeX</span><span class="o">;</span><span class="nt">screenSizeY</span>
-<span class="nt">bind</span> <span class="nt">c</span><span class="nd">:cmd</span><span class="o">,</span><span class="err">`</span>   <span class="nt">move</span> <span class="nt">screenOriginX</span><span class="o">+</span><span class="nt">screenSizeX</span><span class="o">/</span><span class="nt">6</span><span class="o">;</span><span class="nt">screenOriginY</span><span class="o">+</span><span class="nt">screenSizeY</span><span class="o">/</span><span class="nt">6</span> <span class="nt">4</span><span class="o">*</span><span class="nt">screenSizeX</span><span class="o">/</span><span class="nt">6</span><span class="o">;</span><span class="nt">4</span><span class="o">*</span><span class="nt">screenSizeY</span><span class="o">/</span><span class="nt">6</span>
+<span class="nt">bind</span> <span class="nt">right</span><span class="p">:</span><span class="nd">cmd</span><span class="o">,</span><span class="err">`</span>     <span class="nt">resize</span> <span class="o">+</span><span class="nt">10</span><span class="o">%</span> <span class="o">+</span><span class="nt">0</span>
+<span class="nt">bind</span> <span class="nt">left</span><span class="p">:</span><span class="nd">cmd</span><span class="o">,</span><span class="err">`</span>      <span class="nt">resize</span> <span class="nt">-10</span><span class="o">%</span> <span class="o">+</span><span class="nt">0</span>
+<span class="nt">bind</span> <span class="nt">up</span><span class="p">:</span><span class="nd">cmd</span><span class="o">,</span><span class="err">`</span>        <span class="nt">resize</span> <span class="o">+</span><span class="nt">0</span>   <span class="nt">-10</span><span class="o">%</span>
+<span class="nt">bind</span> <span class="nt">down</span><span class="p">:</span><span class="nd">cmd</span><span class="o">,</span><span class="err">`</span>      <span class="nt">resize</span> <span class="o">+</span><span class="nt">0</span>   <span class="o">+</span><span class="nt">10</span><span class="o">%</span>
+<span class="err">#</span> <span class="nt">bind</span> <span class="nt">right</span><span class="p">:</span><span class="nd">ctrl</span><span class="o">;</span><span class="nt">alt</span>  <span class="nt">resize</span> <span class="nt">-10</span><span class="o">%</span> <span class="o">+</span><span class="nt">0</span> <span class="nt">bottom-right</span>
+<span class="err">#</span> <span class="nt">bind</span> <span class="nt">left</span><span class="p">:</span><span class="nd">ctrl</span><span class="o">;</span><span class="nt">alt</span>   <span class="nt">resize</span> <span class="o">+</span><span class="nt">10</span><span class="o">%</span> <span class="o">+</span><span class="nt">0</span> <span class="nt">bottom-right</span>
+<span class="err">#</span> <span class="nt">bind</span> <span class="nt">up</span><span class="p">:</span><span class="nd">ctrl</span><span class="o">;</span><span class="nt">alt</span>     <span class="nt">resize</span> <span class="o">+</span><span class="nt">0</span>   <span class="o">+</span><span class="nt">10</span><span class="o">%</span> <span class="nt">bottom-right</span>
+<span class="err">#</span> <span class="nt">bind</span> <span class="nt">down</span><span class="p">:</span><span class="nd">ctrl</span><span class="o">;</span><span class="nt">alt</span>   <span class="nt">resize</span> <span class="o">+</span><span class="nt">0</span>   <span class="nt">-10</span><span class="o">%</span> <span class="nt">bottom-right</span>
+<span class="nt">bind</span> <span class="nt">f</span><span class="p">:</span><span class="nd">cmd</span><span class="o">,</span><span class="err">`</span>   <span class="nt">move</span> <span class="nt">screenOriginX</span><span class="o">;</span><span class="nt">screenOriginY</span> <span class="nt">screenSizeX</span><span class="o">;</span><span class="nt">screenSizeY</span>
+<span class="nt">bind</span> <span class="nt">c</span><span class="p">:</span><span class="nd">cmd</span><span class="o">,</span><span class="err">`</span>   <span class="nt">move</span> <span class="nt">screenOriginX</span><span class="o">+</span><span class="nt">screenSizeX</span><span class="o">/</span><span class="nt">6</span><span class="o">;</span><span class="nt">screenOriginY</span><span class="o">+</span><span class="nt">screenSizeY</span><span class="o">/</span><span class="nt">6</span> <span class="nt">4</span><span class="o">*</span><span class="nt">screenSizeX</span><span class="o">/</span><span class="nt">6</span><span class="o">;</span><span class="nt">4</span><span class="o">*</span><span class="nt">screenSizeY</span><span class="o">/</span><span class="nt">6</span>
 
 <span class="err">#</span> <span class="nt">Push</span> <span class="nt">Bindings</span>
-<span class="nt">bind</span> <span class="nt">d</span><span class="nd">:cmd</span><span class="o">,</span><span class="err">`</span>    <span class="nt">push</span> <span class="nt">right</span> <span class="nt">bar-resize</span><span class="nd">:screenSizeX</span><span class="o">/</span><span class="nt">2</span>
-<span class="nt">bind</span> <span class="nt">a</span><span class="nd">:cmd</span><span class="o">,</span><span class="err">`</span>   <span class="nt">push</span> <span class="nt">left</span>  <span class="nt">bar-resize</span><span class="nd">:screenSizeX</span><span class="o">/</span><span class="nt">2</span>
-<span class="nt">bind</span> <span class="nt">w</span><span class="nd">:cmd</span><span class="o">,</span><span class="err">`</span>     <span class="nt">push</span> <span class="nt">up</span>    <span class="nt">bar-resize</span><span class="nd">:screenSizeY</span><span class="o">/</span><span class="nt">2</span>
-<span class="nt">bind</span> <span class="nt">s</span><span class="nd">:cmd</span><span class="o">,</span><span class="err">`</span>   <span class="nt">push</span> <span class="nt">down</span>  <span class="nt">bar-resize</span><span class="nd">:screenSizeY</span><span class="o">/</span><span class="nt">2</span>
+<span class="nt">bind</span> <span class="nt">d</span><span class="p">:</span><span class="nd">cmd</span><span class="o">,</span><span class="err">`</span>    <span class="nt">push</span> <span class="nt">right</span> <span class="nt">bar-resize</span><span class="p">:</span><span class="nd">screenSizeX</span><span class="o">/</span><span class="nt">2</span>
+<span class="nt">bind</span> <span class="nt">a</span><span class="p">:</span><span class="nd">cmd</span><span class="o">,</span><span class="err">`</span>   <span class="nt">push</span> <span class="nt">left</span>  <span class="nt">bar-resize</span><span class="p">:</span><span class="nd">screenSizeX</span><span class="o">/</span><span class="nt">2</span>
+<span class="nt">bind</span> <span class="nt">w</span><span class="p">:</span><span class="nd">cmd</span><span class="o">,</span><span class="err">`</span>     <span class="nt">push</span> <span class="nt">up</span>    <span class="nt">bar-resize</span><span class="p">:</span><span class="nd">screenSizeY</span><span class="o">/</span><span class="nt">2</span>
+<span class="nt">bind</span> <span class="nt">s</span><span class="p">:</span><span class="nd">cmd</span><span class="o">,</span><span class="err">`</span>   <span class="nt">push</span> <span class="nt">down</span>  <span class="nt">bar-resize</span><span class="p">:</span><span class="nd">screenSizeY</span><span class="o">/</span><span class="nt">2</span>
 
 
 <span class="err">#</span> <span class="nt">Nudge</span> <span class="nt">Bindings</span>
-<span class="err">#</span> <span class="nt">bind</span> <span class="nt">right</span><span class="nd">:shift</span><span class="o">;</span><span class="nt">alt</span> <span class="nt">nudge</span> <span class="o">+</span><span class="nt">10</span><span class="o">%</span> <span class="o">+</span><span class="nt">0</span>
-<span class="err">#</span> <span class="nt">bind</span> <span class="nt">left</span><span class="nd">:shift</span><span class="o">;</span><span class="nt">alt</span>  <span class="nt">nudge</span> <span class="nt">-10</span><span class="o">%</span> <span class="o">+</span><span class="nt">0</span>
-<span class="err">#</span> <span class="nt">bind</span> <span class="nt">up</span><span class="nd">:shift</span><span class="o">;</span><span class="nt">alt</span>    <span class="nt">nudge</span> <span class="o">+</span><span class="nt">0</span>   <span class="nt">-10</span><span class="o">%</span>
-<span class="err">#</span> <span class="nt">bind</span> <span class="nt">down</span><span class="nd">:shift</span><span class="o">;</span><span class="nt">alt</span>  <span class="nt">nudge</span> <span class="o">+</span><span class="nt">0</span>   <span class="o">+</span><span class="nt">10</span><span class="o">%</span>
+<span class="err">#</span> <span class="nt">bind</span> <span class="nt">right</span><span class="p">:</span><span class="nd">shift</span><span class="o">;</span><span class="nt">alt</span> <span class="nt">nudge</span> <span class="o">+</span><span class="nt">10</span><span class="o">%</span> <span class="o">+</span><span class="nt">0</span>
+<span class="err">#</span> <span class="nt">bind</span> <span class="nt">left</span><span class="p">:</span><span class="nd">shift</span><span class="o">;</span><span class="nt">alt</span>  <span class="nt">nudge</span> <span class="nt">-10</span><span class="o">%</span> <span class="o">+</span><span class="nt">0</span>
+<span class="err">#</span> <span class="nt">bind</span> <span class="nt">up</span><span class="p">:</span><span class="nd">shift</span><span class="o">;</span><span class="nt">alt</span>    <span class="nt">nudge</span> <span class="o">+</span><span class="nt">0</span>   <span class="nt">-10</span><span class="o">%</span>
+<span class="err">#</span> <span class="nt">bind</span> <span class="nt">down</span><span class="p">:</span><span class="nd">shift</span><span class="o">;</span><span class="nt">alt</span>  <span class="nt">nudge</span> <span class="o">+</span><span class="nt">0</span>   <span class="o">+</span><span class="nt">10</span><span class="o">%</span>
 
 <span class="err">#</span> <span class="nt">Throw</span> <span class="nt">Bindings</span>
-<span class="nt">bind</span> <span class="nt">1</span><span class="nd">:cmd</span><span class="o">,</span><span class="err">`</span>         <span class="nt">throw</span> <span class="nt">0</span> <span class="nt">resize</span>
-<span class="nt">bind</span> <span class="nt">2</span><span class="nd">:cmd</span><span class="o">,</span><span class="err">`</span>         <span class="nt">throw</span> <span class="nt">1</span> <span class="nt">resize</span>
-<span class="nt">bind</span> <span class="nt">3</span><span class="nd">:cmd</span><span class="o">,</span><span class="err">`</span>         <span class="nt">throw</span> <span class="nt">2</span> <span class="nt">resize</span>
-<span class="nt">bind</span> <span class="nt">right</span><span class="nd">:ctrl</span><span class="o">;</span><span class="nt">alt</span><span class="o">;</span><span class="nt">cmd</span> <span class="nt">throw</span> <span class="nt">right</span> <span class="nt">resize</span>
-<span class="nt">bind</span> <span class="nt">left</span><span class="nd">:ctrl</span><span class="o">;</span><span class="nt">alt</span><span class="o">;</span><span class="nt">cmd</span>  <span class="nt">throw</span> <span class="nt">left</span>  <span class="nt">resize</span>
-<span class="nt">bind</span> <span class="nt">up</span><span class="nd">:ctrl</span><span class="o">;</span><span class="nt">alt</span><span class="o">;</span><span class="nt">cmd</span>    <span class="nt">throw</span> <span class="nt">up</span>    <span class="nt">resize</span>
-<span class="nt">bind</span> <span class="nt">down</span><span class="nd">:ctrl</span><span class="o">;</span><span class="nt">alt</span><span class="o">;</span><span class="nt">cmd</span>  <span class="nt">throw</span> <span class="nt">down</span>  <span class="nt">resize</span>
+<span class="nt">bind</span> <span class="nt">1</span><span class="p">:</span><span class="nd">cmd</span><span class="o">,</span><span class="err">`</span>         <span class="nt">throw</span> <span class="nt">0</span> <span class="nt">resize</span>
+<span class="nt">bind</span> <span class="nt">2</span><span class="p">:</span><span class="nd">cmd</span><span class="o">,</span><span class="err">`</span>         <span class="nt">throw</span> <span class="nt">1</span> <span class="nt">resize</span>
+<span class="nt">bind</span> <span class="nt">3</span><span class="p">:</span><span class="nd">cmd</span><span class="o">,</span><span class="err">`</span>         <span class="nt">throw</span> <span class="nt">2</span> <span class="nt">resize</span>
+<span class="nt">bind</span> <span class="nt">right</span><span class="p">:</span><span class="nd">ctrl</span><span class="o">;</span><span class="nt">alt</span><span class="o">;</span><span class="nt">cmd</span> <span class="nt">throw</span> <span class="nt">right</span> <span class="nt">resize</span>
+<span class="nt">bind</span> <span class="nt">left</span><span class="p">:</span><span class="nd">ctrl</span><span class="o">;</span><span class="nt">alt</span><span class="o">;</span><span class="nt">cmd</span>  <span class="nt">throw</span> <span class="nt">left</span>  <span class="nt">resize</span>
+<span class="nt">bind</span> <span class="nt">up</span><span class="p">:</span><span class="nd">ctrl</span><span class="o">;</span><span class="nt">alt</span><span class="o">;</span><span class="nt">cmd</span>    <span class="nt">throw</span> <span class="nt">up</span>    <span class="nt">resize</span>
+<span class="nt">bind</span> <span class="nt">down</span><span class="p">:</span><span class="nd">ctrl</span><span class="o">;</span><span class="nt">alt</span><span class="o">;</span><span class="nt">cmd</span>  <span class="nt">throw</span> <span class="nt">down</span>  <span class="nt">resize</span>
 
 <span class="err">#</span> <span class="nt">Focus</span> <span class="nt">Bindings</span>
-<span class="err">#</span> <span class="nt">bind</span> <span class="nt">right</span><span class="nd">:cmd</span>    <span class="nt">focus</span> <span class="nt">right</span>
-<span class="err">#</span> <span class="nt">bind</span> <span class="nt">left</span><span class="nd">:cmd</span>     <span class="nt">focus</span> <span class="nt">left</span>
-<span class="err">#</span> <span class="nt">bind</span> <span class="nt">up</span><span class="nd">:cmd</span>       <span class="nt">focus</span> <span class="nt">up</span>
-<span class="err">#</span> <span class="nt">bind</span> <span class="nt">down</span><span class="nd">:cmd</span>     <span class="nt">focus</span> <span class="nt">down</span>
-<span class="err">#</span> <span class="nt">bind</span> <span class="nt">up</span><span class="nd">:cmd</span><span class="o">;</span><span class="nt">alt</span>   <span class="nt">focus</span> <span class="nt">behind</span>
-<span class="err">#</span> <span class="nt">bind</span> <span class="nt">down</span><span class="nd">:cmd</span><span class="o">;</span><span class="nt">alt</span> <span class="nt">focus</span> <span class="nt">behind</span>
+<span class="err">#</span> <span class="nt">bind</span> <span class="nt">right</span><span class="p">:</span><span class="nd">cmd</span>    <span class="nt">focus</span> <span class="nt">right</span>
+<span class="err">#</span> <span class="nt">bind</span> <span class="nt">left</span><span class="p">:</span><span class="nd">cmd</span>     <span class="nt">focus</span> <span class="nt">left</span>
+<span class="err">#</span> <span class="nt">bind</span> <span class="nt">up</span><span class="p">:</span><span class="nd">cmd</span>       <span class="nt">focus</span> <span class="nt">up</span>
+<span class="err">#</span> <span class="nt">bind</span> <span class="nt">down</span><span class="p">:</span><span class="nd">cmd</span>     <span class="nt">focus</span> <span class="nt">down</span>
+<span class="err">#</span> <span class="nt">bind</span> <span class="nt">up</span><span class="p">:</span><span class="nd">cmd</span><span class="o">;</span><span class="nt">alt</span>   <span class="nt">focus</span> <span class="nt">behind</span>
+<span class="err">#</span> <span class="nt">bind</span> <span class="nt">down</span><span class="p">:</span><span class="nd">cmd</span><span class="o">;</span><span class="nt">alt</span> <span class="nt">focus</span> <span class="nt">behind</span>
 
 <span class="err">#</span> <span class="nt">Window</span> <span class="nt">Hints</span>
-<span class="nt">bind</span> <span class="nt">esc</span><span class="nd">:cmd</span> <span class="nt">hint</span>
+<span class="nt">bind</span> <span class="nt">esc</span><span class="p">:</span><span class="nd">cmd</span> <span class="nt">hint</span>
 
-<span class="nt">bind</span> <span class="err">`</span><span class="nd">:cmd</span><span class="o">,</span><span class="err">`</span> <span class="nt">grid</span> <span class="nt">padding</span><span class="nd">:5</span> <span class="nt">1680x1050</span><span class="nd">:16</span><span class="o">,</span><span class="nt">9</span> <span class="nt">1050x1680</span><span class="nd">:9</span><span class="o">,</span><span class="nt">16</span> <span class="nt">1920x1200</span><span class="nd">:16</span><span class="o">,</span><span class="nt">10</span> <span class="nt">1440x900</span><span class="nd">:16:9</span>
+<span class="nt">bind</span> <span class="err">`</span><span class="p">:</span><span class="nd">cmd</span><span class="o">,</span><span class="err">`</span> <span class="nt">grid</span> <span class="nt">padding</span><span class="p">:</span><span class="nd">5</span> <span class="nt">1680x1050</span><span class="p">:</span><span class="nd">16</span><span class="o">,</span><span class="nt">9</span> <span class="nt">1050x1680</span><span class="p">:</span><span class="nd">9</span><span class="o">,</span><span class="nt">16</span> <span class="nt">1920x1200</span><span class="p">:</span><span class="nd">16</span><span class="o">,</span><span class="nt">10</span> <span class="nt">1440x900</span><span class="p">:</span><span class="nd">16</span><span class="p">:</span><span class="nd">9</span>
 </pre></div>
 
 
-<h1 id="karabiner-a-keyboard-tool"><a class="toclink" href="#karabiner-a-keyboard-tool">Karabiner - A Keyboard Tool</a></h1>
+<h1>Karabiner - A Keyboard Tool</h1>
 <p><a href="https://pqrs.org/osx/karabiner/">Karabiner</a> is a powerful and stable keyboard customizer for OS X. I like my Cherry 3494 but sometimes I need the Mac function keys like volume up and down. This could be a good choice. It can maps those <code>f1-f12</code> keys to the Mac function keys.</p>
 <p>Here is the <code>private.xml</code> from <a href="https://www.zhihu.com/question/25352250">Zhihu</a>:</p>
 <ul>
@@ -167,7 +167,7 @@
 <li><code>PrintScreen</code> change to <code>Eject</code></li>
 <li><code>NumLock</code> change to <code>Command+Delete</code></li>
 </ul>
-<div class="highlight"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot;?&gt;</span>  
+<div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot;?&gt;</span>  
 <span class="nt">&lt;root&gt;</span>  
     <span class="nt">&lt;devicevendordef&gt;</span>  
         <span class="nt">&lt;vendorname&gt;</span>CHERRY_KEYBORD<span class="nt">&lt;/vendorname&gt;</span>  
@@ -210,7 +210,7 @@
             <section>
     <p id="post-share-links">
     Share on:
-    <a href="http://twitter.com/home?status=Window%20Management%20Tools%20%20http%3A//lele1122.github.io/windows-management-tools-en_US.html" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="http://twitter.com/home?status=b'Window%20Management%20Tools%20%20http%3A//lele1122.github.io/windows-management-tools-en_US.html'" target="_blank" title="Share on Twitter">Twitter</a>
     ❄
     <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=http%3A//lele1122.github.io/windows-management-tools-en_US.html" target="_blank" title="Share on Facebook">Facebook</a>
     ❄
